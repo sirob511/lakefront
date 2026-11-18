@@ -30,4 +30,4 @@ const locations=read('data/location-audit.json');assert.equal(locations.records.
 for(const place of places){const evidence=locations.records.find(a=>a.id===place.id);assert(evidence,place.id);assert.equal(evidence.lat,place.lat);assert.equal(evidence.lon,place.lon);}
 const lily=places.find(p=>p.id==='caldwell-lily-pool');assert(lily.lon> -87.6348&&lily.lon< -87.6332&&lily.lat>41.9243&&lily.lat<41.9254,'Lily Pool must sit in its garden east of the Conservatory');
 for(const id of ['belmont-harbor','diversey-harbor','montrose-harbor','monroe-harbor','burnham-harbor','31st-street-harbor']){const place=places.find(p=>p.id===id);assert(waterAt([place.lon,place.lat]),`${id} must anchor inside its harbor water`)}
-console.log('PASS: river and harbor water, restored beach boundaries, offshore lake labels, all source-audited marker coordinates, corrected Lily Pool and harbor locations, and 24 audited photos.');
+console.log(`PASS: river and harbor water, restored beach boundaries, offshore lake labels, all source-audited marker coordinates, corrected Lily Pool and harbor locations, and ${places.filter(p=>p.photo).length} audited photos.`);

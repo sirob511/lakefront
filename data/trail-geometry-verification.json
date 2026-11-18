@@ -1,0 +1,17 @@
+{
+  "reviewedAt": "2026-11-18",
+  "sampleCount": 1994,
+  "strictlyIncreasingMapY": true,
+  "maxSampleDistanceFromSourceSpinePixels": 0.0007063774289685154,
+  "maxInterpolatedDistanceFromSourceSpinePixels": 0.3079705031130143,
+  "connectedRouteRelations": [
+    "8676789",
+    "17527976"
+  ],
+  "flyoverWaysDrawn": [
+    "267163766",
+    "756335277"
+  ],
+  "staticLandmarkAnchorCircles": 0,
+  "navyPier": "Source footprint with its original east–west orientation; misleading vignette suppressed."
+}

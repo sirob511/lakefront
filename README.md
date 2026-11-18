@@ -17,8 +17,8 @@ Preview: http://127.0.0.1:4179. Static deploy output: `dist/`. `vercel.json` sup
 ## Structure
 
 - `data/geography.json`: OpenStreetMap geometry, retrieved November 18, 2026; source URLs and original way IDs retained. Raw download cache is excluded from Git.
-- `data/places.json`: 120 source-audited places and 14 extended destination stories. Minor destinations remain substantive entries in the collection rather than thin standalone pages.
-- `data/photos.json`: licensed photographs, creator attribution, license and source links.
+- `data/places.json`: 169 source-audited places and 14 extended destination stories. Minor destinations remain substantive entries in the collection rather than thin standalone pages.
+- `data/photos.json`: 144 subject-reviewed photographs with creator attribution, photo licenses and source links; 25 discoveries currently use accurate location headers.
 - `data/home-template.html`: editable homepage markup. `dist/index.html` is rebuilt from this template.
 - `scripts/build-map.mjs`: shared coordinate projection, continuous geographic shapes, separate trail styles, original artwork, ten adjacent SVG sections.
 - `scripts/render-map.mjs`: pre-renders the ten source SVG rows into forty WebP display tiles, with a source-hash cache.
@@ -35,7 +35,7 @@ Edit the structured content and rerun the build. Preserve stable place IDs so sh
 
 The first fetch script obtains small OSM API extracts, combines Lake Michigan shoreline relation members, and preserves path geometry. `fetch-geo.py` requires network access. The script reconnects shoreline relation members into a continuous chain. The committed processed geometry supports ordinary offline builds.
 
-Photography scripts are acquisition tools, not unattended content feeds. Search candidates must be reviewed for the actual subject and license before publication. `data/reviewed-photos.json` specifies exact reviewed Commons files; both acquisition scripts use this manifest. `data/photo-audit.json` records subject and license review for every place. Missing photographs use a location header, never a generic landmark image.
+Photography scripts are acquisition tools, not unattended content feeds. Search candidates must be reviewed for the actual subject and license before publication. `data/reviewed-photos.json` specifies exact reviewed Commons files and individually reviewed Flickr sources; both acquisition scripts use this manifest. `data/photo-audit.json` records subject and license review for every place. Missing photographs use a location header, never a generic landmark image. `data/photo-gaps.json` keeps the outstanding acquisition list; `data/discoveries-audit-round2.json` records inventory coverage and deliberate exclusions. Context images carry visible captions, portrait subjects retain their full framing, and photos load on demand.
 
 ## Art direction and geography
 
@@ -54,3 +54,11 @@ New art should use a high aerial viewpoint, fine ink, muted watercolor, sage/oli
 The site has no analytics, accounts, user database, or live conditions service. New Sites are private by default. Canonical URLs use the requested future domain `lakefronttrail.org`; custom-domain connection is separate from this implementation.
 
 The revised photo-based South Shore and 63rd Street illustrations are saved in `data/artwork/*-v2.png`, with optimized copies in `dist/assets/*-v2.webp`. `data/artwork/revision-prompts.json` retains the exact built-in image-generation prompts, reference photographs, creator credits and derivative licenses.
+
+The discovery audit expanded the collection from 120 to 169 stops. The second photo review brings verified coverage to 144 photographs, with 25 explicit gaps; see `data/photo-integration-audit.json` and `data/photo-gaps.json`.
+
+Map controls support two-axis mouse and single-finger dragging; native pinch zoom remains available. Every discovery uses the same unnumbered dot. Place details are nonmodal, with a compact mobile sheet and a visible selected pin; the end-of-trail message is below the map. Opening and closing a card preserves the camera, and zoom preserves the geographic center after manual panning.
+
+Both detailed trail lines and the overview derive from connected OSM route relations, including the Navy Pier Flyover. `data/trail-routes.json` is a reproducible extract from the cached geography download, `scripts/trail-geometry.mjs` builds the shared geometry, and `data/trail-render-audit.json` records source IDs and connectivity. The overview preserves geographic aspect and uses latitude-based position samples. The former inaccurate Navy Pier vignette is suppressed in favor of its actual mapped footprint. `scripts/street-labels.mjs` adds 35 selected street names along their source road centerlines in the atlas palette.
+
+`npm run check` also validates trail connectivity, flyover rendering and overview interpolation. `scripts/check-map-interactions.mjs` verifies mouse dragging, compact nonmodal details, consistent dots and unobstructed endpoints across three viewport sizes; native Chromium touch verification is recorded in `data/touch-verification.json`.

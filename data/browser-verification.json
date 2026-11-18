@@ -2,11 +2,16 @@
   "tested": "2026-11-18",
   "report": [
     {
+      "flow": "Map photo loading",
+      "status": "pass",
+      "initialPhotographRequests": 0
+    },
+    {
       "flow": "Attraction card image identity",
       "status": "pass",
-      "checkedPlaces": 120,
-      "verifiedPhotoCards": 24,
-      "locationHeaders": 96
+      "checkedPlaces": 169,
+      "verifiedPhotoCards": 144,
+      "locationHeaders": 25
     },
     {
       "viewport": "1440x1000",
@@ -14,11 +19,11 @@
       "checks": [
         "render",
         "no horizontal overflow",
-        "120 coordinate markers",
+        "169 coordinate markers",
         "lazy tiles",
         "search and empty state",
         "shareable place URL",
-        "modal and Escape",
+        "nonmodal details and Escape",
         "position preserved",
         "category filter",
         "section jumps",
@@ -35,11 +40,11 @@
       "checks": [
         "render",
         "no horizontal overflow",
-        "120 coordinate markers",
+        "169 coordinate markers",
         "lazy tiles",
         "search and empty state",
         "shareable place URL",
-        "modal and Escape",
+        "nonmodal details and Escape",
         "position preserved",
         "category filter",
         "section jumps",
@@ -56,11 +61,11 @@
       "checks": [
         "render",
         "no horizontal overflow",
-        "120 coordinate markers",
+        "169 coordinate markers",
         "lazy tiles",
         "search and empty state",
         "shareable place URL",
-        "modal and Escape",
+        "nonmodal details and Escape",
         "position preserved",
         "category filter",
         "section jumps",

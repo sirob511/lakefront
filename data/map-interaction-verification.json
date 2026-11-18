@@ -1,0 +1,50 @@
+[
+  {
+    "viewport": "1440x1000",
+    "status": "pass",
+    "checks": [
+      "uniform unnumbered dots",
+      "end message below map",
+      "two-axis drag",
+      "pan retained",
+      "drag suppresses clicks",
+      "nonmodal details",
+      "visible Navy Pier dot",
+      "drag with details open",
+      "compact mobile card",
+      "footer controls hidden"
+    ]
+  },
+  {
+    "viewport": "390x844",
+    "status": "pass",
+    "checks": [
+      "uniform unnumbered dots",
+      "end message below map",
+      "two-axis drag",
+      "pan retained",
+      "drag suppresses clicks",
+      "nonmodal details",
+      "visible Navy Pier dot",
+      "drag with details open",
+      "compact mobile card",
+      "footer controls hidden"
+    ]
+  },
+  {
+    "viewport": "320x740",
+    "status": "pass",
+    "checks": [
+      "uniform unnumbered dots",
+      "end message below map",
+      "two-axis drag",
+      "pan retained",
+      "drag suppresses clicks",
+      "nonmodal details",
+      "visible Navy Pier dot",
+      "drag with details open",
+      "compact mobile card",
+      "footer controls hidden"
+    ]
+  }
+]

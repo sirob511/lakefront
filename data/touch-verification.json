@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "viewport": "390x844",
+  "input": "Chromium native CDP touch events",
+  "events": [
+    {
+      "type": "touch",
+      "trusted": true
+    }
+  ],
+  "before": {
+    "scrollY": 1991,
+    "x": -1837.28
+  },
+  "after": {
+    "scrollY": 2091,
+    "x": -1767.28
+  },
+  "checks": [
+    "trusted touch pointer",
+    "two-axis drag",
+    "no accidental card"
+  ]
+}

@@ -22,3 +22,64 @@
 @media(max-width:700px){.map-zoom{right:12px;top:82px}.map-zoom button{width:31px;height:34px}.map-zoom span{font-size:9px;min-width:24px}.map-marker .marker-label{max-width:145px}.map-marker .marker-dot{width:28px;min-width:28px;height:28px}.map-marker.detail .marker-dot{width:12px;min-width:12px;height:12px}.map-marker.detail .marker-label{max-width:135px}.map-marker.align-left:not(.mobile-left){flex-direction:initial}}
 
 .map-marker.hidden{display:none}
+
+.card-photo.photo-fit-contain{object-fit:contain;background:#e8e9de}
+
+.card-photo-caption{font-size:9px;line-height:1.5;margin:0;padding:9px 16px;color:#60745e;background:#eeefe4}
+
+/* Leave the atlas itself open to wandering, with the same quiet dot at every place. */
+.atlas{cursor:grab;touch-action:pinch-zoom;user-select:none;-webkit-user-select:none}
+.atlas.dragging,.atlas.dragging .map-marker{cursor:grabbing}
+.atlas.dragging .marker-label{pointer-events:none}
+.map-marker,.map-marker.align-left{width:44px;height:44px;min-height:44px}
+.map-marker:is(.nature,.beach,.harbor,.landmark) .marker-dot,.map-marker.small .marker-dot,.map-marker.detail .marker-dot{width:12px;min-width:12px;height:12px;border:2px solid #f7f4e6;background:#527261;box-shadow:0 0 0 1px #78917b,0 1px 4px #294b4030;font-size:0}
+.map-marker:hover .marker-dot,.map-marker:focus-visible .marker-dot,.map-marker.selected .marker-dot{background:#b46f4e;transform:scale(1.18)}
+.map-marker .marker-label{left:42px;max-width:175px;font-size:10px}
+.map-marker.align-left .marker-label{left:auto;right:42px}
+.map-marker .marker-label small{font-size:7px}
+.map-end{position:relative;inset:auto;max-width:none;margin:0;padding:38px 7%;border:0;border-top:1px solid #ccd1bd;background:var(--paper);display:grid;grid-template-columns:1fr auto;column-gap:30px;align-items:center}
+.map-end .eyebrow{grid-column:1/-1;font-size:8px;margin-bottom:13px}
+.map-end h2{font-size:34px;margin:0;line-height:1.2}
+.map-end p:not(.eyebrow){margin:12px 0 0}
+.map-end .text-button{grid-column:2;grid-row:2/4}
+.map-tools{bottom:24px;display:flex;flex-direction:row;align-items:stretch;gap:8px;max-width:calc(100% - 54px)}
+.filter-control{align-self:stretch;display:flex;align-items:stretch}
+.filter-control>button{min-height:44px;padding:10px 13px}
+.section-trigger{padding:9px 13px;gap:10px;min-height:44px}
+.section-number{font-size:20px;padding-right:10px}
+.section-trigger small{display:none}
+.section-trigger strong{min-width:0;max-width:210px;font-size:10px}
+.section-chevron{margin-left:7px}
+.place-card{z-index:40;width:340px;overflow:visible;max-height:calc(100dvh - 145px)}
+.place-card>#card-content{max-height:inherit;overflow-y:auto;overscroll-behavior:contain;border-radius:inherit}
+.card-photo{height:170px}
+.card-content{padding:20px 23px 24px}
+.card-content h2{font-size:31px}
+.card-close{right:10px;top:10px}
+.place-open .map-zoom{right:390px}
+@media(max-width:1200px) and (min-width:701px){.place-open .map-zoom{right:380px}}
+@media(max-width:700px){
+ .map-tools{left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));max-width:none;gap:7px}
+ .filter-control>button{padding:9px 11px;gap:6px}
+ #filter-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .filter-count{font-size:10px;margin:0}
+ .section-trigger{flex:1;min-width:0;max-width:none;padding:9px 11px;gap:8px}
+ .section-trigger strong{font-size:9px;max-width:none}
+ .section-trigger>span:nth-child(2){flex:1}
+ .section-number{font-size:19px;padding-right:8px}
+ .overview{bottom:77px;right:10px}
+ .map-end{display:block;padding:30px 25px}
+ .map-end h2{font-size:29px}
+ .map-end .text-button{margin-top:12px}
+ .atlas-colophon{padding:32px 25px 45px}
+ .place-card{left:8px;right:8px;bottom:max(8px,env(safe-area-inset-bottom));top:auto;width:auto;max-height:45dvh;border-radius:12px 12px 7px 7px}
+ .card-photo{height:115px}
+ .card-location{min-height:80px;padding:20px}
+ .card-content{padding:16px 20px 23px}
+ .card-content h2{font-size:28px}
+ .card-content>.eyebrow{font-size:6.5px}
+ .card-description{font-size:11px}
+ .card-photo-caption{font-size:8px;padding:7px 14px}
+ .place-open .map-zoom{right:12px}
+ .map-marker .marker-label{max-width:145px}
+}

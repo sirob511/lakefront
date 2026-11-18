@@ -35,12 +35,14 @@ def get(url):
 
 
 for place_id, reviewed in MANIFEST.items():
-    dest = OUT / f'{place_id}.webp'
     existing = photos.get(place_id)
+    dest = ROOT / 'dist' / existing['src'].lstrip('/') if existing else OUT / f'{place_id}.webp'
     if (not args.refresh and dest.exists() and existing
             and existing['title'] == reviewed['title']):
         existing['alt'] = reviewed['alt']
         continue
+    if reviewed.get('sourceType', 'commons') != 'commons':
+        raise RuntimeError(f'{place_id} uses an individually reviewed non-Commons source; re-review its original photo and license before refreshing.')
     query = urllib.parse.urlencode({
         'action': 'query', 'titles': reviewed['title'], 'prop': 'imageinfo',
         'iiprop': 'url|extmetadata', 'iiurlwidth': 960, 'format': 'json'
@@ -53,7 +55,9 @@ for place_id, reviewed in MANIFEST.items():
     metadata = info['extmetadata']
     license_name = metadata['LicenseShortName']['value']
     license_url = metadata.get('LicenseUrl', {}).get('value')
-    if not license_name.startswith(('CC BY', 'CC0')) or not license_url:
+    if reviewed.get('manualLicenseApproval') and reviewed.get('license') == license_name:
+        license_url = reviewed['licenseUrl']
+    elif not license_name.startswith(('CC BY', 'CC0')) or not license_url:
         raise RuntimeError(f'License requires manual review for {place_id}: {license_name}')
     with tempfile.TemporaryDirectory(prefix='lakefront-photo-') as temporary:
         original = pathlib.Path(temporary) / 'source.image'
