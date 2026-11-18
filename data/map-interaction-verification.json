@@ -4,7 +4,7 @@
     "status": "pass",
     "checks": [
       "uniform unnumbered dots",
-      "end message below map",
+      "shared footer below map",
       "two-axis drag",
       "pan retained",
       "drag suppresses clicks",
@@ -20,7 +20,7 @@
     "status": "pass",
     "checks": [
       "uniform unnumbered dots",
-      "end message below map",
+      "shared footer below map",
       "two-axis drag",
       "pan retained",
       "drag suppresses clicks",
@@ -36,7 +36,7 @@
     "status": "pass",
     "checks": [
       "uniform unnumbered dots",
-      "end message below map",
+      "shared footer below map",
       "two-axis drag",
       "pan retained",
       "drag suppresses clicks",

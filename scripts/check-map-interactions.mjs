@@ -11,7 +11,7 @@ try{
  for(const [width,height] of [[1440,1000],[390,844],[320,740]]){
   b('set','viewport',String(width),String(height));b('open','http://127.0.0.1:4179/?at=41.895');ready();
   assert(ev(`[...document.querySelectorAll('.marker-dot')].every(e=>!e.textContent.trim()&&getComputedStyle(e).width==='12px'&&getComputedStyle(e).height==='12px')`),'Every discovery uses the same dot');
-  assert(ev(`!document.querySelector('#atlas .map-end')`),'End message must not cover map');
+  assert(ev(`!document.querySelector('#atlas .site-footer')`),'Footer must not cover map');
   const before=coords(),x=Math.round(width*.4),y=Math.round(height*.45);
   b('mouse','move',String(x),String(y));b('mouse','down');b('mouse','move',String(x+70),String(y-100));b('mouse','up');
   const after=coords();assert(Math.abs(after.scrollY-before.scrollY-100)<3,'Drag vertically');assert(Math.abs(after.x-before.x-70)<3,'Drag horizontally');assert(!ev(`document.querySelector('#place-card').open`),'Drag does not open a place');
@@ -28,9 +28,9 @@ try{
   b('screenshot',`/tmp/lakefront-navy-${width}.png`);b('press','Escape');assert(!ev(`document.querySelector('#place-card').open`));
   ev(`scrollTo({top:document.querySelector('#atlas').getBoundingClientRect().bottom+scrollY-innerHeight+100,behavior:'instant'})`);
   b('wait','--fn',`document.querySelector('#map-tools').inert`);
-  assert(ev(`document.querySelector('.map-end').getBoundingClientRect().top>=document.querySelector('#atlas').getBoundingClientRect().bottom`));
+  assert(ev(`document.querySelector('.site-footer').getBoundingClientRect().top>=document.querySelector('#atlas').getBoundingClientRect().bottom`));
   b('screenshot',`/tmp/lakefront-south-${width}.png`);
-  report.push({viewport:`${width}x${height}`,status:'pass',checks:['uniform unnumbered dots','end message below map','two-axis drag','pan retained','drag suppresses clicks','nonmodal details','visible Navy Pier dot','drag with details open','compact mobile card','footer controls hidden']});
+  report.push({viewport:`${width}x${height}`,status:'pass',checks:['uniform unnumbered dots','shared footer below map','two-axis drag','pan retained','drag suppresses clicks','nonmodal details','visible Navy Pier dot','drag with details open','compact mobile card','footer controls hidden']});
  }
  fs.writeFileSync('data/map-interaction-verification.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
 }finally{b('close')}

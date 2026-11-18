@@ -1,0 +1,112 @@
+{
+  "tested": "2026-11-18",
+  "checks": [
+    "consistent logo/navigation",
+    "identical compact footer",
+    "removed footer text",
+    "fixed header clears titles",
+    "mobile menu and Escape",
+    "search from every page to a map discovery",
+    "north control",
+    "no horizontal overflow",
+    "map controls hidden at footer"
+  ],
+  "report": [
+    {
+      "viewport": "1440x1000",
+      "route": "/places/",
+      "footerHeight": 118.875,
+      "status": "pass"
+    },
+    {
+      "viewport": "1440x1000",
+      "route": "/places/promontory-point/",
+      "footerHeight": 118.875,
+      "status": "pass"
+    },
+    {
+      "viewport": "1440x1000",
+      "route": "/credits/",
+      "footerHeight": 118.875,
+      "status": "pass"
+    },
+    {
+      "viewport": "800x900",
+      "route": "/places/",
+      "footerHeight": 116.875,
+      "status": "pass"
+    },
+    {
+      "viewport": "800x900",
+      "route": "/places/promontory-point/",
+      "footerHeight": 116.875,
+      "status": "pass"
+    },
+    {
+      "viewport": "800x900",
+      "route": "/credits/",
+      "footerHeight": 116.875,
+      "status": "pass"
+    },
+    {
+      "viewport": "390x844",
+      "route": "/places/",
+      "footerHeight": 168.078125,
+      "status": "pass"
+    },
+    {
+      "viewport": "390x844",
+      "route": "/places/promontory-point/",
+      "footerHeight": 168.078125,
+      "status": "pass"
+    },
+    {
+      "viewport": "390x844",
+      "route": "/credits/",
+      "footerHeight": 168.078125,
+      "status": "pass"
+    },
+    {
+      "viewport": "320x740",
+      "route": "/places/",
+      "footerHeight": 168.078125,
+      "status": "pass"
+    },
+    {
+      "viewport": "320x740",
+      "route": "/places/promontory-point/",
+      "footerHeight": 168.078125,
+      "status": "pass"
+    },
+    {
+      "viewport": "320x740",
+      "route": "/credits/",
+      "footerHeight": 168.078125,
+      "status": "pass"
+    },
+    {
+      "viewport": "1440x1000",
+      "route": "/",
+      "footerHeight": 118.875,
+      "status": "pass"
+    },
+    {
+      "viewport": "800x900",
+      "route": "/",
+      "footerHeight": 116.875,
+      "status": "pass"
+    },
+    {
+      "viewport": "390x844",
+      "route": "/",
+      "footerHeight": 168.078125,
+      "status": "pass"
+    },
+    {
+      "viewport": "320x740",
+      "route": "/",
+      "footerHeight": 168.078125,
+      "status": "pass"
+    }
+  ]
+}

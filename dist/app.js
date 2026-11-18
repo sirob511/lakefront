@@ -1,5 +1,6 @@
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const [places,config]=await Promise.all([fetch(`/places-data.json?v=${$('#atlas').dataset.revision}`).then(r=>r.json()),fetch(`/map-config.json?v=${$('#atlas').dataset.mapRevision}`).then(r=>r.json())]);
+const {initSiteSearch}=await import($('.site-header').dataset.siteScript||'/site.js');
 const byId=new Map(places.map(p=>[p.id,p]));
 const symbols={beach:'≈',nature:'♧',harbor:'⚓',landmark:'◇'};
 const regions=[['Edgewater & Montrose',41.979,'Quiet beaches & the Magic Hedge'],['Harbors of Lincoln Park',41.945,'Masts, lawns & open water'],['Lincoln Park & North Avenue',41.920,'Park paths meet the skyline'],['The Gold Coast',41.906,'Sand at the foot of the city'],['Streeterville & Navy Pier',41.895,'A city reaching into the lake'],['The downtown lakefront',41.879,'Grand parks & a thousand sails'],['Museum Campus',41.863,'Big discoveries, wider horizons'],['The southern harbors',41.834,'A different view of downtown'],['Burnham Park & the Point',41.803,'Long lawns & limestone edges'],['Jackson Park & South Shore',41.781,'Lagoons, history & one last beach']];
@@ -12,7 +13,7 @@ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const mobile=()=>innerWidth<=700;
 const canvas=$('#map-canvas'),atlas=$('#atlas'),miniDot=$('#mini-dot');
 const markers=$$('.map-marker').map(el=>({el,p:byId.get(el.dataset.place),label:el.querySelector('.marker-label')}));
-const controls=[$('#map-tools'),$('.overview'),$('.route-key'),$('.map-zoom')];
+const controls=[$('#map-tools'),$('.overview'),$('.route-key'),$('.map-zoom'),$('.map-attribution')].filter(Boolean);
 let lastRegion=-1;
 const clampX=x=>Math.max(Math.min(0,innerWidth-config.width*scale),Math.min(0,x));
 function viewAnchor(){
@@ -154,25 +155,17 @@ function openCard(id,{travel=false,historyUpdate=true}={}){
 function cleanSelection(){if($('#place-card').open)return;selected=null;holdCamera();$$('.map-marker').forEach(el=>el.classList.remove('selected'));const u=new URL(location.href);u.searchParams.delete('place');u.searchParams.set('at',currentLat.toFixed(4));history.replaceState({},'',u);updatePosition();if(lastTrigger?.isConnected)lastTrigger.focus({preventScroll:true})}
 $('#place-card').addEventListener('close',cleanSelection);
 $$('.map-marker').forEach(el=>{el.addEventListener('click',()=>openCard(el.dataset.place));el.addEventListener('focus',()=>{if(keyboardNavigation){focusPlace=el.dataset.place;panX=0;schedulePosition()}})});
-$$('[data-close]').forEach(b=>b.onclick=()=>$('#'+b.dataset.close).close());
-$$('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}}));
-function search(query=''){
- const q=query.toLowerCase().trim();const matches=places.filter(p=>[p.name,p.category,p.subtype,...(p.aliases??[]),p.description,p.regionName,p.id,p.id==='osterman-beach'?'Hollywood':''].join(' ').toLowerCase().includes(q));
- $('#search-count').textContent=q?`${matches.length} ${matches.length===1?'discovery':'discoveries'} found`:'From the northern beaches to South Shore';
- $('#search-results').innerHTML=matches.length?matches.map(p=>`<button class="search-result" data-result="${p.id}"><span>${symbols[p.category]}</span><span><strong>${escape(p.name)}</strong><small>${escape(p.regionName)} · ${escape(p.access)}</small></span><span class="result-arrow">↗</span></button>`).join(''):'<p class="empty-search">No places found. Try “beach,” “museum,” or a neighborhood name.</p>';
- $$('[data-result]').forEach(el=>el.onclick=()=>{$('#search-dialog').close();setFilter('all');openCard(el.dataset.result,{travel:true})});
-}
-function openSearch(){if($('#place-card').open)$('#place-card').close();search();$('#search-dialog').showModal();$('#search-input').value='';$('#search-input').focus()}
-$('#search-open').onclick=openSearch;$('#search-input').addEventListener('input',e=>search(e.target.value));
-addEventListener('keydown',e=>{if(((e.metaKey||e.ctrlKey)&&e.key==='k')||(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))){e.preventDefault();openSearch()}if(e.key==='Escape'){$('#filters').hidden=true;$('#filter-toggle').setAttribute('aria-expanded','false');if($('#place-card').open)$('#place-card').close()}});
-$('#search-input').addEventListener('keydown',e=>{if(e.key==='ArrowDown'){e.preventDefault();$('#search-results button')?.focus()}if(e.key==='Enter')$('#search-results button')?.click()});
+$$('[data-close]').filter(b=>b.dataset.close!=='search-dialog').forEach(b=>b.onclick=()=>$('#'+b.dataset.close).close());
+$$('dialog').filter(d=>d.id!=='search-dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}}));
+initSiteSearch({places,onSelect:id=>{setFilter('all');openCard(id,{travel:true})},beforeOpen:()=>{if($('#place-card').open)$('#place-card').close()}});
+addEventListener('keydown',e=>{if(e.key==='Escape'){$('#filters').hidden=true;$('#filter-toggle').setAttribute('aria-expanded','false');if($('#place-card').open)$('#place-card').close()}});
 $('#section-list').innerHTML=regions.map((r,i)=>`<button class="section-list-item" data-region="${i}"><span>${String(i+1).padStart(2,'0')}</span><div><strong>${r[0]}</strong><small>${r[2]}</small></div></button>`).join('');
 $('#section-open').onclick=()=>{if($('#place-card').open)$('#place-card').close();$('#section-dialog').showModal()};$$('[data-region]').forEach(el=>el.onclick=()=>{const latitude=regions[+el.dataset.region][1];$('#section-dialog').close();requestAnimationFrame(()=>jump(latitude))});
 $('#filter-toggle').onclick=()=>{const h=$('#filters').hidden;$('#filters').hidden=!h;$('#filter-toggle').setAttribute('aria-expanded',String(h))};
 function setFilter(value){filter=value;const list=places.filter(p=>matchesFilter(p,value));markers.forEach(({el,p})=>el.classList.toggle('hidden',!matchesFilter(p,value)));$$('[data-filter]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.filter===value)));$('#filter-label').textContent={all:'All discoveries',beach:'Beaches',nature:'Nature & quiet corners',harbor:'Harbors',landmark:'Landmarks',art:'Art & monuments',culture:'Stages & museums'}[value];$('#filter-count').textContent=list.length;$('#filters').hidden=true;$('#filter-toggle').setAttribute('aria-expanded','false');arrangeMarkers()}
 $$('[data-filter]').forEach(el=>el.onclick=()=>setFilter(el.dataset.filter));
 addEventListener('click',e=>{if(!e.target.closest('.filter-control')){$('#filters').hidden=true;$('#filter-toggle').setAttribute('aria-expanded','false')}});
-$('#begin').onclick=()=>jump(41.977);$('#back-north').onclick=()=>{focusPlace=null;panX=0;scrollTo({top:0,behavior:reduced.matches?'instant':'smooth'});schedulePosition()};$('#north-jump').onclick=$('#back-north').onclick;$('#south-jump').onclick=()=>jump(41.7669);$('#share-map').onclick=()=>share();
+$('#begin').onclick=()=>jump(41.977);$('#north-jump').onclick=()=>{focusPlace=null;panX=0;scrollTo({top:0,behavior:reduced.matches?'instant':'smooth'});schedulePosition()};$('#south-jump').onclick=()=>jump(41.7669);$('#share-map').onclick=()=>share();
 layout();
 document.fonts.ready.then(arrangeMarkers);
 const params=new URLSearchParams(location.search);if(params.has('place')&&byId.has(params.get('place')))openCard(params.get('place'),{travel:true,historyUpdate:false});else if(params.has('at')){const at=Number(params.get('at'));if(at>=41.76&&at<=42)jump(at,{smooth:false})}

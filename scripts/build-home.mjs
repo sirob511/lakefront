@@ -1,3 +1,4 @@
+import {siteHeader,siteFooter,siteSearch} from './site-chrome.mjs';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 const revision=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex').slice(0,12);
@@ -8,7 +9,7 @@ fs.writeFileSync('dist/places-data.json',JSON.stringify(places));
 const X=lon=>project([lon,0])[0],Y=lat=>project([0,lat])[1];
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 const left=new Set(['cricket-hill','north-pond','caldwell-lily-pool','lincoln-park-zoo','millennium-park','buckingham-fountain','field-museum','soldier-field','burnham-harbor','burnham-park','griffin-msi','jackson-park','31st-street-beach']);
-let html=fs.readFileSync('data/home-template.html','utf8');
+let html=fs.readFileSync('data/home-template.html','utf8').replace('<!-- SITE_HEADER -->',siteHeader('/')).replace('<!-- SITE_FOOTER -->',siteFooter()).replace('<!-- SITE_SEARCH -->',siteSearch(places.length));
 const tiles=Array.from({length:10},(_,row)=>Array.from({length:4},(_,col)=>`<div class="map-tile" data-tile="${row}-${col}" style="left:${col*1300}px;top:${row*MAP.tileHeight}px;width:1300px"><img src="/assets/map/preview-${row}.svg" width="1300" height="${MAP.tileHeight}" alt="" loading="lazy" style="object-position:${col*100/3}% center"></div>`).join('')).join('');
 const markers=places.map(p=>`<button class="map-marker ${p.category} ${left.has(p.id)?'align-left':''}" data-place="${p.id}" style="left:${X(p.lon).toFixed(1)}px;top:${Y(p.lat).toFixed(1)}px" aria-label="Discover ${esc(p.name)}"><span class="marker-dot" aria-hidden="true"></span><span class="marker-label">${esc(p.name)}${p.story?`<small>${p.category==='nature'?'A LITTLE ESCAPE':p.category==='beach'?'SAND & SKY':p.category==='harbor'?'BY THE WATER':'A CHICAGO STORY'}</small>`:''}</span></button>`).join('');
 const overview=JSON.parse(fs.readFileSync('dist/map-config.json')).overview;

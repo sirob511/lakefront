@@ -25,7 +25,9 @@ Preview: http://127.0.0.1:4179. Static deploy output: `dist/`. `vercel.json` sup
 - `scripts/build-home.mjs`: lightweight geographic placeholders, accessible coordinate anchors and versioned client assets. Two-dimensional lazy loading fetches only tiles near the viewport.
 - `data/location-audit.json`: source feature IDs, point meanings, verified coordinates and per-attraction evidence. North/south and original audits retain detailed methods.
 - `scripts/build-pages.mjs`: destination pages, collection, credits, sitemap and robots.
-- `dist/app.js`: native-scroll camera, lazy map loading, search, filters, section jumps, shareable positions and accessible dialogs.
+- `scripts/site-chrome.mjs`: shared header, compact footer and search-dialog markup for every page.
+- `dist/site.js`: shared discovery search, keyboard shortcuts and mobile navigation.
+- `dist/app.js`: native-scroll camera, lazy map loading, filters, section jumps, shareable positions and accessible dialogs.
 - `dist/styles.css`, `dist/editorial.css`: responsive presentation, local fonts, reduced-motion support.
 - `data/artwork/`: original generated PNGs and prompt record. Optimized transparent WebP assets are in `dist/assets/`.
 
@@ -49,7 +51,7 @@ New art should use a high aerial viewpoint, fine ink, muted watercolor, sage/oli
 
 ## Verification
 
-`npm run check` verifies local links, metadata, coordinate ranges, image credits, section continuity, actual river/harbor water probes, missing-beach regressions, offshore lake labels and shared marker projection. Browser checks cover desktop/mobile rendering, search-to-card flows, close-and-return behavior, category filtering, section jumps, shareable URLs, reduced motion, keyboard access, and the southern endpoint. Browser checks require the installed `agent-browser` CLI and a local preview server; `scripts/browser-check.mjs` records results.
+`npm run check` verifies local links, metadata, coordinate ranges, image credits, section continuity, actual river/harbor water probes, missing-beach regressions, offshore lake labels and shared marker projection. Browser checks cover desktop/mobile rendering, search-to-card flows, close-and-return behavior, category filtering, section jumps, shareable URLs, reduced motion, keyboard access, and the southern endpoint. Browser checks require the installed `agent-browser` CLI and a local preview server; `scripts/browser-check.mjs` records results. `scripts/check-site-chrome.mjs` verifies the shared header, footer and search across map, list, attraction and credits pages at four viewport sizes.
 
 The site has no analytics, accounts, user database, or live conditions service. New Sites are private by default. Canonical URLs use the requested future domain `lakefronttrail.org`; custom-domain connection is separate from this implementation.
 
