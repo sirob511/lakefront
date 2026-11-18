@@ -1,6 +1,6 @@
 # Lakefront Trail
 
-An original, continuous illustrated atlas of Chicago’s lakefront. The map is the homepage; guide, history, and place pages support the journey.
+An original, continuous illustrated atlas of Chicago’s lakefront. The map is the homepage; the attraction collection and individual place pages support the journey.
 
 ## Run and build
 
@@ -24,7 +24,7 @@ Preview: http://127.0.0.1:4179. Static deploy output: `dist/`. `vercel.json` sup
 - `scripts/render-map.mjs`: pre-renders the ten source SVG rows into forty WebP display tiles, with a source-hash cache.
 - `scripts/build-home.mjs`: lightweight geographic placeholders, accessible coordinate anchors and versioned client assets. Two-dimensional lazy loading fetches only tiles near the viewport.
 - `data/location-audit.json`: source feature IDs, point meanings, verified coordinates and per-attraction evidence. North/south and original audits retain detailed methods.
-- `scripts/build-pages.mjs`: destination pages, collection, guide, history, credits, sitemap and robots.
+- `scripts/build-pages.mjs`: destination pages, collection, credits, sitemap and robots.
 - `dist/app.js`: native-scroll camera, lazy map loading, search, filters, section jumps, shareable positions and accessible dialogs.
 - `dist/styles.css`, `dist/editorial.css`: responsive presentation, local fonts, reduced-motion support.
 - `data/artwork/`: original generated PNGs and prompt record. Optimized transparent WebP assets are in `dist/assets/`.
@@ -62,3 +62,5 @@ Map controls support two-axis mouse and single-finger dragging; native pinch zoo
 Both detailed trail lines and the overview derive from connected OSM route relations, including the Navy Pier Flyover. `data/trail-routes.json` is a reproducible extract from the cached geography download, `scripts/trail-geometry.mjs` builds the shared geometry, and `data/trail-render-audit.json` records source IDs and connectivity. The overview preserves geographic aspect and uses latitude-based position samples. The former inaccurate Navy Pier vignette is suppressed in favor of its actual mapped footprint. `scripts/street-labels.mjs` adds 35 selected street names along their source road centerlines in the atlas palette.
 
 `npm run check` also validates trail connectivity, flyover rendering and overview interpolation. `scripts/check-map-interactions.mjs` verifies mouse dragging, compact nonmodal details, consistent dots and unobstructed endpoints across three viewport sizes; native Chromium touch verification is recorded in `data/touch-verification.json`.
+
+The main navigation focuses on the map and attractions. The former Trail guide and History pages are retired and removed from build output and the sitemap. The opening card shows the official 18-mile bicycle and 18.5-mile walking distances, the live discovery count, and the Park District’s 2018 trail-separation milestone.
