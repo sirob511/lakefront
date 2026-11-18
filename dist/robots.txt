@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lakefronttrail.org/sitemap.xml

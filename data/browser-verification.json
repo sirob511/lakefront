@@ -1,0 +1,75 @@
+{
+  "tested": "2026-11-18",
+  "report": [
+    {
+      "viewport": "1440x1000",
+      "status": "pass",
+      "checks": [
+        "render",
+        "no horizontal overflow",
+        "38 coordinate markers",
+        "lazy tiles",
+        "search and empty state",
+        "shareable place URL",
+        "modal and Escape",
+        "position preserved",
+        "category filter",
+        "section jumps",
+        "return from destination",
+        "reduced motion"
+      ]
+    },
+    {
+      "viewport": "390x844",
+      "status": "pass",
+      "checks": [
+        "render",
+        "no horizontal overflow",
+        "38 coordinate markers",
+        "lazy tiles",
+        "search and empty state",
+        "shareable place URL",
+        "modal and Escape",
+        "position preserved",
+        "category filter",
+        "section jumps",
+        "return from destination",
+        "reduced motion"
+      ]
+    },
+    {
+      "viewport": "320x740",
+      "status": "pass",
+      "checks": [
+        "render",
+        "no horizontal overflow",
+        "38 coordinate markers",
+        "lazy tiles",
+        "search and empty state",
+        "shareable place URL",
+        "modal and Escape",
+        "position preserved",
+        "category filter",
+        "section jumps",
+        "return from destination",
+        "reduced motion"
+      ]
+    },
+    {
+      "route": "/guide/",
+      "status": "pass"
+    },
+    {
+      "route": "/history/",
+      "status": "pass"
+    },
+    {
+      "route": "/places/",
+      "status": "pass"
+    },
+    {
+      "route": "/credits/",
+      "status": "pass"
+    }
+  ]
+}

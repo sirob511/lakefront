@@ -1,0 +1,17 @@
+{
+  "tool": "OpenAI built-in image_gen",
+  "transparent_background": true,
+  "art_direction": "Original watercolor and fine-ink bird’s-eye atlas illustration. Muted sage and olive trees, warm cream limestone, dusty blue, terracotta accents, soft light from upper left. Isolated objects on genuine transparency; no text, borders, watermarks, or surrounding city. Geographic route must come from source data, never generation.",
+  "assets": {
+    "grove": "Naturalistic grove of mature elms, oaks and honey locusts on pale sage park lawn; 15 varied trees, ivory footpaths, two tiny pedestrians. High elevated aerial perspective, detailed branches and soft painted leaf clusters, organically fading transparent edges.",
+    "harbor": "Bird’s-eye Chicago marina vignette, oval protected inlet, slender breakwaters, four wooden piers and 25 white sailboats, curved shore path and leafy trees. Pale sea-glass water.",
+    "navy-pier": "Recognizable Chicago Navy Pier miniature extending east/right. Red-roofed halls, two towers at the eastern end, white Centennial Ferris wheel near the west entrance. Elevated southwest viewpoint, tiny trees and visitors.",
+    "museum": "Chicago Field Museum: broad neoclassical limestone building, central Ionic colonnade and monumental steps, low broad wings and terraced roof, small lawn base. High aerial view with roof visible.",
+    "skyline": "Narrow group of Chicago lakefront towers, including tapering black John Hancock Center with twin antennas and X braces, cream stone apartment towers and pale-blue glass high-rises. High southwest aerial view.",
+    "beach-house": "Chicago 63rd Street Beach House, 1919 Classical Revival bathing pavilion: symmetrical cream building, terracotta roofs, two wings and open-air arched loggias surrounding landscaped courtyard, pale sand foreground.",
+    "south-shore": "South Shore Cultural Center, recognizable Mediterranean Revival former country club: cream palatial low building, red tiled hipped roofs, tall central pavilion, arches, green lawn and mature trees.",
+    "shedd": "Shedd Aquarium: historic octagonal neoclassical marble building, central stepped octagonal roof, low curved glass Oceanarium wing, small lawn and trees. High southwest aerial viewpoint.",
+    "soldier-field": "Soldier Field: historic long limestone neoclassical colonnades around the modern elliptical silver stadium seating bowl, visible green football field. High aerial miniature."
+  },
+  "postprocessing": "Format conversion and resizing to WebP for delivery; original PNGs retained. No third-party inspiration artwork reproduced."
+}
