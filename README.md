@@ -4,7 +4,7 @@ An original, continuous illustrated atlas of Chicago’s lakefront. The map is t
 
 ## Run and build
 
-Requires Node 20+ and Python 3; no npm dependencies.
+Requires Node 20+ and Python 3. Rendering changed map drawings also requires the `agent-browser` CLI with its Chromium browser installed. Unchanged map tiles are reused from the source-hash cache. The browser site has no framework dependencies.
 
 ```sh
 npm run build
@@ -17,11 +17,13 @@ Preview: http://127.0.0.1:4179. Static deploy output: `dist/`. `vercel.json` sup
 ## Structure
 
 - `data/geography.json`: OpenStreetMap geometry, retrieved November 18, 2026; source URLs and original way IDs retained. Raw download cache is excluded from Git.
-- `data/places.json`: 38 coordinate-anchored places and 14 extended destination stories. Minor destinations remain substantive entries in the collection rather than thin standalone pages.
+- `data/places.json`: 120 source-audited places and 14 extended destination stories. Minor destinations remain substantive entries in the collection rather than thin standalone pages.
 - `data/photos.json`: licensed photographs, creator attribution, license and source links.
 - `data/home-template.html`: editable homepage markup. `dist/index.html` is rebuilt from this template.
 - `scripts/build-map.mjs`: shared coordinate projection, continuous geographic shapes, separate trail styles, original artwork, ten adjacent SVG sections.
-- `scripts/build-home.mjs`: eager first-section image, accessible hotspot buttons, client data. Detailed SVG tiles embed their own landmark assets and render as images, keeping the larger geography out of the interactive DOM.
+- `scripts/render-map.mjs`: pre-renders the ten source SVG rows into forty WebP display tiles, with a source-hash cache.
+- `scripts/build-home.mjs`: lightweight geographic placeholders, accessible coordinate anchors and versioned client assets. Two-dimensional lazy loading fetches only tiles near the viewport.
+- `data/location-audit.json`: source feature IDs, point meanings, verified coordinates and per-attraction evidence. North/south and original audits retain detailed methods.
 - `scripts/build-pages.mjs`: destination pages, collection, guide, history, credits, sitemap and robots.
 - `dist/app.js`: native-scroll camera, lazy map loading, search, filters, section jumps, shareable positions and accessible dialogs.
 - `dist/styles.css`, `dist/editorial.css`: responsive presentation, local fonts, reduced-motion support.
@@ -37,9 +39,11 @@ Photography scripts are acquisition tools, not unattended content feeds. Search 
 
 ## Art direction and geography
 
-The map layers use a shared latitude/longitude projection. The east–west map scale is expanded to expose city context, while small landmark vignettes share the same coordinate anchors as their places. `scripts/map-coordinates.mjs` is the common projection used by map artwork and interactive markers. This is an illustrated atlas, not turn-by-turn navigation or a survey. Official Park District maps and on-site signs take precedence. The public credits page explains the simplification.
+The map layers use a shared latitude/longitude projection. The east–west map scale is expanded to expose city context, while small landmark vignettes use their actual building anchors, separately from beach-area pins where needed. `scripts/map-coordinates.mjs` is the common projection used by map artwork and interactive markers. This is an illustrated atlas, not turn-by-turn navigation or a survey. Official Park District maps and on-site signs take precedence. The public credits page explains the simplification.
 
 The November 18 geography revision was visually checked against five north-up Cook County GIS aerial panels and five USGS/USDA NAIP panels. `data/aerial-reference-audit.json` records sources, geographic bounds, acquisition-date limitations and regional findings. These are references, not shipped basemaps. Real building footprints, local roads, sports areas, paved grounds, railway corridors and mapped trees remain visible. Only mapped wood/scrub polygons receive dense canopy; generic forest and marina stamps are removed. `data/map-render-audit.json` records the resulting layer counts, landmark anchors and offshore lake-label positions.
+
+Label placement runs on layout, zoom or filter changes; the scroll loop does not measure or reposition each label. Small discoveries keep exact geographic anchors and reveal their labels on hover/focus when nearby labels need space. Zoom controls, art/culture filters and search support dense areas. Asset and data URLs are versioned so published HTML cannot reuse an incompatible older script.
 
 New art should use a high aerial viewpoint, fine ink, muted watercolor, sage/olive vegetation, warm limestone, terracotta details, and soft shadows toward the lower right. Generate isolated objects with transparent backgrounds; do not ask an image model to invent an accurate map. Place each illustration over sourced geography, preserve the shared coordinates and neighboring tile boundaries, and inspect desktop/mobile alignment. Keep native geographic features visible and avoid using generic architecture for named landmarks.
 

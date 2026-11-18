@@ -1,6 +1,6 @@
 {
   "reviewedAt": "2026-11-18",
-  "scope": "All 38 attraction cards and all published photos",
+  "scope": "All 120 attraction cards and all published photos",
   "photoCount": 24,
   "note": "Photos establish the identity of each place; historic capture dates do not assert current conditions. Images are resized and format-converted only. Missing photos must never fall back to category artwork that depicts a different place.",
   "places": [
@@ -230,7 +230,7 @@
       "status": "verified-subject-and-license",
       "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shedd_Aquarium_Exterior_May_2014_Chicago_Illinois.jpg",
-      "alt": "The classical entrance façade of Shedd Aquarium in Chicago",
+      "alt": "The classical entrance fa\u00e7ade of Shedd Aquarium in Chicago",
       "action": "retained",
       "previousTitle": null
     },
@@ -240,7 +240,7 @@
       "status": "verified-subject-and-license",
       "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adler_external_1.jpg",
-      "alt": "Adler Planetarium’s domed main building and glass wings",
+      "alt": "Adler Planetarium\u2019s domed main building and glass wings",
       "action": "replaced-with-clearer-subject-view",
       "previousTitle": "File:Chicago - Adler Planetarium Sundial & Skyline (983196683).jpg"
     },
@@ -250,7 +250,7 @@
       "status": "verified-subject-and-license",
       "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soldier_Field,_Lake_Shore_Drive,_Chicago,_IL;_November_2023_(54215628332).jpg",
-      "alt": "Soldier Field’s stone exterior and modern seating bowl",
+      "alt": "Soldier Field\u2019s stone exterior and modern seating bowl",
       "action": "added",
       "previousTitle": null
     },
@@ -340,7 +340,7 @@
       "status": "verified-subject-and-license",
       "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Science_and_Industry_Chicago_exterior_01.jpg",
-      "alt": "The north façade and central dome of Chicago’s Museum of Science and Industry",
+      "alt": "The north fa\u00e7ade and central dome of Chicago\u2019s Museum of Science and Industry",
       "action": "added",
       "previousTitle": null
     },
@@ -370,19 +370,675 @@
       "status": "verified-subject-and-license",
       "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_Shore_Cultural_Center.jpg",
-      "alt": "The red-roofed entrance façade of South Shore Cultural Center",
+      "alt": "The red-roofed entrance fa\u00e7ade of South Shore Cultural Center",
       "action": "replaced-with-clearer-subject-view",
       "previousTitle": "File:South Shore Cultural Center (24895141981).jpg"
     },
     {
       "placeId": "71st-street-trailhead",
-      "placeName": "71st Street · The southern end",
+      "placeName": "71st Street \u00b7 The southern end",
       "status": "no-photo-selected",
       "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
       "sourceUrl": null,
       "alt": null,
       "action": "no-photo",
       "previousTitle": null
+    },
+    {
+      "placeId": "jose-rizal-monument",
+      "placeName": "Dr. Jos\u00e9 Rizal Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/dr-jose-rizal-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "montrose-beach-dunes",
+      "placeName": "Montrose Beach Dunes",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-montrose-beach-dunes-natural-area",
+      "action": "location-header"
+    },
+    {
+      "placeId": "peace-garden",
+      "placeName": "Lincoln Park Peace Garden",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-peace-garden",
+      "action": "location-header"
+    },
+    {
+      "placeId": "waveland-clock-tower",
+      "placeName": "Waveland Clock Tower",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/media/35311/download?inline=",
+      "action": "location-header"
+    },
+    {
+      "placeId": "kwa-ma-rolas",
+      "placeName": "Kwa-Ma-Rolas \u00b7 Kwanusila",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/kwa-ma-rolas-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "bill-jarvis-sanctuary",
+      "placeName": "Bill Jarvis Migratory Bird Sanctuary",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/natural-areas-community-stewardship-days",
+      "action": "location-header"
+    },
+    {
+      "placeId": "sheridan-monument",
+      "placeName": "General Philip Sheridan Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/general-philip-henry-sheridan-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "aids-garden",
+      "placeName": "AIDS Garden Chicago",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-aids-garden-chicago",
+      "action": "location-header"
+    },
+    {
+      "placeId": "diversey-natural-area",
+      "placeName": "Diversey Natural Area",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-diversey-natural-area",
+      "action": "location-header"
+    },
+    {
+      "placeId": "the-alarm",
+      "placeName": "The Alarm",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/alarm-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "signal-of-peace",
+      "placeName": "A Signal of Peace",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/signal-peace-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "goethe-monument",
+      "placeName": "Goethe Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/johann-wolfgang-von-goethe-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "altgeld-monument",
+      "placeName": "John Peter Altgeld Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/john-peter-altgeld-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "hamilton-monument",
+      "placeName": "Alexander Hamilton Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/alexander-hamilton-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "swedenborg-monument",
+      "placeName": "Emanuel Swedenborg Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/emanuel-swedenborg-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "oglesby-monument",
+      "placeName": "Richard Oglesby Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/richard-oglesby-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "theater-on-the-lake",
+      "placeName": "Theater on the Lake",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/theatre-lake",
+      "action": "location-header"
+    },
+    {
+      "placeId": "peggy-notebaert-nature-museum",
+      "placeName": "Peggy Notebaert Nature Museum",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://naturemuseum.org/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "lincoln-park-conservatory",
+      "placeName": "Lincoln Park Conservatory",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-conservatory",
+      "action": "location-header"
+    },
+    {
+      "placeId": "shakespeare-monument",
+      "placeName": "William Shakespeare Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/william-shakespeare-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "grandmothers-garden",
+      "placeName": "Grandmother\u2019s Garden",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/grandmothers-garden",
+      "action": "location-header"
+    },
+    {
+      "placeId": "eli-bates-fountain",
+      "placeName": "Eli Bates Fountain",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/eli-bates-fountain",
+      "action": "location-header"
+    },
+    {
+      "placeId": "schiller-monument",
+      "placeName": "Schiller Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/johann-christoph-friedrich-von-schiller-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "eugene-field-memorial",
+      "placeName": "Eugene Field Memorial",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-eugene-field-memorial",
+      "action": "location-header"
+    },
+    {
+      "placeId": "andersen-monument",
+      "placeName": "Hans Christian Andersen Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/hans-christian-andersen-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "cafe-brauer",
+      "placeName": "Caf\u00e9 Brauer",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/cafe-brauer-cermanic-tile-murals-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "nature-boardwalk",
+      "placeName": "South Pond \u00b7 Nature Boardwalk",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.lpzoo.org/pressroom/nature-boardwalk/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "peoples-gas-pavilion",
+      "placeName": "Peoples Gas Education Pavilion",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.lpzoo.org/pressroom/nature-boardwalk/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "grant-monument",
+      "placeName": "Ulysses S. Grant Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/ulysses-s-grant-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "franklin-monument",
+      "placeName": "Benjamin Franklin Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/benjamin-franklin-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "north-avenue-beach-house",
+      "placeName": "North Avenue Beach House",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/north-avenue-beach-house",
+      "action": "location-header"
+    },
+    {
+      "placeId": "lasalle-monument",
+      "placeName": "Robert Cavelier de La Salle Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/robert-cavelier-de-lasalle-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "chicago-fire-relic",
+      "placeName": "Chicago Fire Relic",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/chicago-fire-relic",
+      "action": "location-header"
+    },
+    {
+      "placeId": "couch-tomb",
+      "placeName": "Couch Tomb",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/couch-tomb-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "standing-lincoln",
+      "placeName": "Abraham Lincoln: The Man",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/abraham-lincoln-man-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "fountain-girl",
+      "placeName": "Fountain Girl",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/fountain-girl-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "chicago-history-museum",
+      "placeName": "Chicago History Museum",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagohistory.org/about-us/museum-history/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "greene-vardiman-black",
+      "placeName": "Greene Vardiman Black Memorial",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/greene-vardiman-black-memorial",
+      "action": "location-header"
+    },
+    {
+      "placeId": "chess-pavilion",
+      "placeName": "Chess Pavilion",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/chess-pavilion-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "olive-park",
+      "placeName": "Milton Lee Olive Park",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.choosechicago.com/listing/olive-park/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "chicago-shakespeare-theater",
+      "placeName": "Chicago Shakespeare Theater",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoshakes.com/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "polk-bros-park",
+      "placeName": "Polk Bros Park",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://navypier.org/pier-locations/polk-bros-park/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "federal-building-columns",
+      "placeName": "Federal Building Columns",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/federal-building-columns",
+      "action": "location-header"
+    },
+    {
+      "placeId": "harris-theater",
+      "placeName": "Harris Theater for Music and Dance",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.harristheaterchicago.org/our-story",
+      "action": "location-header"
+    },
+    {
+      "placeId": "jay-pritzker-pavilion",
+      "placeName": "Jay Pritzker Pavilion",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.millenniumparkfoundation.org/art-architecture",
+      "action": "location-header"
+    },
+    {
+      "placeId": "cloud-gate",
+      "placeName": "Cloud Gate \u00b7 The Bean",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.millenniumparkfoundation.org/art-architecture",
+      "action": "location-header"
+    },
+    {
+      "placeId": "crown-fountain",
+      "placeName": "Crown Fountain",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.millenniumparkfoundation.org/art-architecture",
+      "action": "location-header"
+    },
+    {
+      "placeId": "lurie-garden",
+      "placeName": "Lurie Garden",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.luriegarden.org/about/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "chicago-stock-exchange-arch",
+      "placeName": "Chicago Stock Exchange Arch",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.artic.edu/files/1d601e15-af7f-4dc2-8aaf-f82030261b59/AIC_MuseumStudies_14-1_UPDF.pdf",
+      "action": "location-header"
+    },
+    {
+      "placeId": "art-institute-lions",
+      "placeName": "The Art Institute Lions",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/lions-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "fountain-great-lakes",
+      "placeName": "Fountain of the Great Lakes",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/fountain-great-lakes-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "sir-georg-solti",
+      "placeName": "Sir Georg Solti Bust & Garden",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/sir-georg-solti-bust",
+      "action": "location-header"
+    },
+    {
+      "placeId": "seated-lincoln",
+      "placeName": "Abraham Lincoln \u00b7 Head of State",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/abraham-lincoln-head-state-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "bowman-and-spearman",
+      "placeName": "The Bowman & The Spearman",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/equestrian-indians-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "spirit-of-music",
+      "placeName": "Spirit of Music & Garden",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/spirit-music-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "logan-monument",
+      "placeName": "John Alexander Logan Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/john-alexander-logan-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "rosenberg-fountain",
+      "placeName": "Joseph Rosenberg Fountain",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/joseph-rosenberg-fountain",
+      "action": "location-header"
+    },
+    {
+      "placeId": "agora",
+      "placeName": "Agora",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/agora-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "olmec-head",
+      "placeName": "Olmec Head",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/olmec-head-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "man-with-fish",
+      "placeName": "Man with Fish",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/man-fish-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "man-enters-cosmos",
+      "placeName": "Man Enters the Cosmos",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/man-enters-cosmos-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "brachiosaurus-replica",
+      "placeName": "Brachiosaurus Replica",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/brachiosaurus-replica-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "copernicus-monument",
+      "placeName": "Nicolaus Copernicus Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/nicolaus-copernicus-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "karel-havlicek-monument",
+      "placeName": "Karel Havl\u00ed\u010dek Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/karel-havlicek-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "kosciuszko-monument",
+      "placeName": "Tadeusz Ko\u015bciuszko Monument",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/thaddeus-kosciuszko-monument",
+      "action": "location-header"
+    },
+    {
+      "placeId": "spiral-galaxy",
+      "placeName": "Spiral Galaxy",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/spiral-galaxy-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "americas-courtyard",
+      "placeName": "Americas Courtyard",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/americas-courtyard-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "tribute-to-freedom",
+      "placeName": "Tribute to Freedom & Water Wall",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/tribute-freedom-and-water-wall-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "huntington-bank-pavilion",
+      "placeName": "Huntington Bank Pavilion",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/huntington-bank-pavilion-northerly-island",
+      "action": "location-header"
+    },
+    {
+      "placeId": "gold-star-families-memorial",
+      "placeName": "Gold Star Families Memorial & Park",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/gold-star-family-memorial",
+      "action": "location-header"
+    },
+    {
+      "placeId": "daphne-garden",
+      "placeName": "Daphne Garden",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/daphne-garden-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "arie-crown-theater",
+      "placeName": "Arie Crown Theater",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.ariecrown.com/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "great-northern-migration",
+      "placeName": "Monument to the Great Northern Migration",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://bmrc.lib.uchicago.edu/portal/curated/south-side-chicago-neighborhoods/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "1919-race-riot-memorial",
+      "placeName": "1919 Race Riot Memorial Plaque",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://library.isgs.illinois.edu/Pubs/pdfs/walkingguide/burnham-park.pdf",
+      "action": "location-header"
+    },
+    {
+      "placeId": "la-sirena",
+      "placeName": "Mermaid \u00b7 La Sirena",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/mermaid-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "david-wallach-fountain",
+      "placeName": "David Wallach Memorial Fountain",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/david-wallach-memorial-fountain",
+      "action": "location-header"
+    },
+    {
+      "placeId": "garden-of-the-phoenix",
+      "placeName": "Osaka Garden \u00b7 Garden of the Phoenix",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/osaka-garden",
+      "action": "location-header"
+    },
+    {
+      "placeId": "sky-landing",
+      "placeName": "Sky Landing",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/sky-landing-artwork",
+      "action": "location-header"
+    },
+    {
+      "placeId": "statue-of-the-republic",
+      "placeName": "Statue of the Republic",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/statue-republic",
+      "action": "location-header"
+    },
+    {
+      "placeId": "jackson-harbor-station",
+      "placeName": "Jackson Harbor Station",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://uslife-savingservice.org/station-buildings/jackson-park-station-house-2/",
+      "action": "location-header"
+    },
+    {
+      "placeId": "south-shore-nature-sanctuary",
+      "placeName": "South Shore Nature Sanctuary",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/south-shore-nature-sanctuary",
+      "action": "location-header"
+    },
+    {
+      "placeId": "south-shore-formal-garden",
+      "placeName": "South Shore Formal Garden",
+      "status": "location-header-no-photo",
+      "method": "No additional artwork or photography requested for this attraction expansion. A location header identifies the actual mapped place.",
+      "sourceUrl": "https://www.chicagoparkdistrict.com/parks-facilities/south-shore-formal-garden",
+      "action": "location-header"
     }
   ],
   "illustrationReview": [
@@ -394,7 +1050,7 @@
     {
       "asset": "/assets/south-shore.webp",
       "intendedSubject": "South Shore Cultural Center",
-      "finding": "Existing artwork has a generic pale villa façade and one central tower; visually differs from verified red-brick entrance façade with two towers. Regenerate from the verified photograph or omit the vignette.",
+      "finding": "Existing artwork has a generic pale villa fa\u00e7ade and one central tower; visually differs from verified red-brick entrance fa\u00e7ade with two towers. Regenerate from the verified photograph or omit the vignette.",
       "referencePhoto": "/assets/photos/south-shore-cultural-center.webp"
     },
     {

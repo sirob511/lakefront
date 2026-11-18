@@ -1,0 +1,2981 @@
+{
+  "reviewedAt": "2026-11-18",
+  "count": 120,
+  "method": "Identity checked against official sources; coordinates matched to named OpenStreetMap geometry. Area pins represent places, not entrances.",
+  "records": [
+    {
+      "id": "ardmore-trailhead",
+      "name": "Ardmore Avenue",
+      "lat": 41.9873702,
+      "lon": -87.6550183,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1434229563",
+        "https://www.chicagoparkdistrict.com/lakefront-trail",
+        "https://www.chicagoparkdistrict.com/media/26856"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/1434229563; exact final vertex of named Lakefront Trail way, cross-checked against official trail endpoint maps; OSM extract reviewed 2026-11-18.",
+      "pointKind": "trail access junction",
+      "notes": "Trail junction with the east end of Ardmore Avenue, immediately east of Sheridan Road; replaces a point farther northeast in the dunes.",
+      "originalLat": 41.9878,
+      "originalLon": -87.6542,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 82.8,
+      "osmFeatureName": "Lakefront Trail",
+      "coordinateMethod": "exact final vertex of named Lakefront Trail way, cross-checked against official trail endpoint maps"
+    },
+    {
+      "id": "osterman-beach",
+      "name": "Kathy Osterman Beach",
+      "lat": 41.9867066,
+      "lon": -87.6523439,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/156422882",
+        "https://www.chicagoparkdistrict.com/parks-facilities/osterman-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/156422882; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "Pin represents the sand beach polygon; the former point was the beach house, a separate building on its inland edge.",
+      "originalLat": 41.986203,
+      "originalLon": -87.652941,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 74.6,
+      "osmFeatureName": "Ardmore Hollywood (Osterman) Beach",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "illustrationAnchor": {
+        "lat": 41.9861947,
+        "lon": -87.6528806,
+        "sourceUrl": "https://www.openstreetmap.org/way/211424761",
+        "featureName": "Kathy Osterman Beach House",
+        "pointKind": "beach house building reference point",
+        "coordinateMethod": "area-weighted centroid, checked inside the mapped feature"
+      },
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "foster-beach",
+      "name": "Foster Beach",
+      "lat": 41.97854,
+      "lon": -87.6495977,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/17775339",
+        "https://www.chicagoparkdistrict.com/parks-facilities/foster-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/17775339; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "Pin represents Foster Beach sand; moved north from the former point south of the beach.",
+      "originalLat": 41.9768,
+      "originalLon": -87.6485,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 213.7,
+      "osmFeatureName": "Foster Beach",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "illustrationAnchor": {
+        "lat": 41.9776712,
+        "lon": -87.6490595,
+        "sourceUrl": "https://www.openstreetmap.org/way/210392211",
+        "featureName": "Foster Beach House",
+        "pointKind": "beach house building reference point",
+        "coordinateMethod": "area-weighted centroid, checked inside the mapped feature"
+      },
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "cricket-hill",
+      "name": "Cricket Hill",
+      "lat": 41.9643352,
+      "lon": -87.642767,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/node/1474219292",
+        "https://www.chicagoparkdistrict.com/parks-facilities/cricket-hill"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/node/1474219292; exact named OSM point feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "named hill point",
+      "notes": "Exact OSM natural=hill point, cross-checked against the Park District Cricket Hill facility page.",
+      "originalLat": 41.964335,
+      "originalLon": -87.642767,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 0,
+      "osmFeatureName": "Cricket Hill",
+      "coordinateMethod": "exact named OSM point feature"
+    },
+    {
+      "id": "montrose-beach",
+      "name": "Montrose Beach",
+      "lat": 41.9661992,
+      "lon": -87.6362584,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/17834016",
+        "https://www.chicagoparkdistrict.com/parks-facilities/montrose-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/17834016; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "Main public sand beach, excluding the separately mapped dog beach. Mapped beach extent is a cartographic reference and varies with lake levels.",
+      "originalLat": 41.9654,
+      "originalLon": -87.638,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 169.2,
+      "osmFeatureName": "Montrose Beach",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "illustrationAnchor": {
+        "lat": 41.9646892,
+        "lon": -87.6356161,
+        "sourceUrl": "https://www.openstreetmap.org/way/133995056",
+        "featureName": "Montrose Beachhouse",
+        "pointKind": "beach house building reference point",
+        "coordinateMethod": "area-weighted centroid, checked inside the mapped feature"
+      },
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "montrose-point",
+      "name": "Montrose Point Bird Sanctuary",
+      "lat": 41.9631433,
+      "lon": -87.633361,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/23946659",
+        "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-montrose-point-bird-sanctuary"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/23946659; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "nature sanctuary interior reference point",
+      "notes": "Represents the bird sanctuary area, not its entrance or the separate beach dunes.",
+      "originalLat": 41.963182,
+      "originalLon": -87.633485,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 11.1,
+      "osmFeatureName": "Montrose Point Bird Sanctuary",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "montrose-harbor",
+      "name": "Montrose Harbor",
+      "lat": 41.9614688,
+      "lon": -87.6389228,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/17766874",
+        "https://www.chicagoharbors.info/harbors/montrose/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/17766874; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "harbor basin reference point",
+      "notes": "Pin sits within the mapped harbor water. It does not identify a dock gate or a navigational entrance.",
+      "originalLat": 41.9614,
+      "originalLon": -87.64,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 89.4,
+      "osmFeatureName": "Montrose Harbor",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "belmont-harbor",
+      "name": "Belmont Harbor",
+      "lat": 41.9432412,
+      "lon": -87.6374968,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/17766386",
+        "https://www.chicagoharbors.info/harbors/belmont/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/17766386; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "harbor basin reference point",
+      "notes": "Selected a reproducible reference point in the main harbor basin. The former point was also within the mapped harbor water, toward its southern extent; neither point is a dock gate or navigational entrance.",
+      "originalLat": 41.9405,
+      "originalLon": -87.6355,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 346.7,
+      "osmFeatureName": "Belmont Harbor",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "diversey-harbor",
+      "name": "Diversey Harbor",
+      "lat": 41.9302067,
+      "lon": -87.6335213,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/17766292",
+        "https://www.chicagoharbors.info/harbors/diversey/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/17766292; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "harbor basin reference point",
+      "notes": "Moved into the actual sheltered basin west of Lake Shore Drive; previous point lay north of the harbor.",
+      "originalLat": 41.933,
+      "originalLon": -87.6351,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 336.9,
+      "osmFeatureName": "Diversey Harbor",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "north-pond",
+      "name": "North Pond",
+      "lat": 41.9280372,
+      "lon": -87.6371442,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/4390641",
+        "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-north-pond"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/4390641; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "pond reference point",
+      "notes": "Represents the pond water feature, not the nearby restaurant with the same name.",
+      "originalLat": 41.928011,
+      "originalLon": -87.636986,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 13.4,
+      "osmFeatureName": "North Pond",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "caldwell-lily-pool",
+      "name": "Alfred Caldwell Lily Pool",
+      "lat": 41.9248399,
+      "lon": -87.6339954,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/23986661",
+        "https://lincolnparkconservancy.org/projects/alfred-caldwell-lily-pool/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/23986661; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "garden interior reference point",
+      "notes": "Actual 2.7-acre Lily Pool garden east of Stockton Drive and south of Fullerton Parkway. Former longitude placed it several hundred meters too far west. Public entrance is through the Fullerton gate, north of this area pin.",
+      "originalLat": 41.9243,
+      "originalLon": -87.6386,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 385.6,
+      "osmFeatureName": "Alfred Caldwell Lily Pool",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "lincoln-park-zoo",
+      "name": "Lincoln Park Zoo",
+      "lat": 41.9209986,
+      "lon": -87.6334291,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/5328430",
+        "https://www.lpzoo.org/visit/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/5328430; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "zoo interior reference point",
+      "notes": "Represents the zoo grounds rather than a specific entrance. The zoo spans multiple blocks and has multiple gates.",
+      "originalLat": 41.9212,
+      "originalLon": -87.6337,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 31.7,
+      "osmFeatureName": "Lincoln Park Zoo",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "north-avenue-beach",
+      "name": "North Avenue Beach",
+      "lat": 41.9185265,
+      "lon": -87.6280409,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/12788474",
+        "https://www.chicagoparkdistrict.com/parks-facilities/north-avenue-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/12788474; interior representative point of the mapped polygon (centroid lies outside the usable footprint); OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "Represents the mapped sand beach, which extends north of the boat-shaped beach house. The beach house must use its own building anchor if illustrated.",
+      "originalLat": 41.9145,
+      "originalLon": -87.6262,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 472.9,
+      "osmFeatureName": "North Avenue Beach",
+      "coordinateMethod": "interior representative point of the mapped polygon (centroid lies outside the usable footprint)",
+      "illustrationAnchor": {
+        "lat": 41.9134844,
+        "lon": -87.6241901,
+        "sourceUrl": "https://www.openstreetmap.org/way/417380833",
+        "featureName": "North Avenue Beach House",
+        "pointKind": "beach house building reference point",
+        "coordinateMethod": "area-weighted centroid, checked inside the mapped feature"
+      },
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "oak-street-beach",
+      "name": "Oak Street Beach",
+      "lat": 41.9028654,
+      "lon": -87.6227919,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/23803745",
+        "https://www.chicagoparkdistrict.com/parks-facilities/oak-street-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/23803745; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "Pin moved into the mapped sand crescent instead of the trail/shoreline north of the principal beach.",
+      "originalLat": 41.9036,
+      "originalLon": -87.6238,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 116.8,
+      "osmFeatureName": "Oak Street Beach",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "ohio-street-beach",
+      "name": "Ohio Street Beach",
+      "lat": 41.8934052,
+      "lon": -87.612696,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/211039469",
+        "https://www.chicagoparkdistrict.com/parks-facilities/ohio-street-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/211039469; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "Small sand beach south of Milton Lee Olive Park; distinct from the beach-access point farther west.",
+      "originalLat": 41.8934,
+      "originalLon": -87.6127,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 0.7,
+      "osmFeatureName": "Ohio Street Beach",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "navy-pier",
+      "name": "Navy Pier",
+      "lat": 41.8917156,
+      "lon": -87.6044164,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/24800238",
+        "https://navypier.org/plan-your-visit/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/24800238; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "pier complex reference point",
+      "notes": "Represents the long Navy Pier attraction footprint, not the Centennial Wheel or the entrance. Those features require separate anchors.",
+      "originalLat": 41.8917,
+      "originalLon": -87.6045,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 7.1,
+      "osmFeatureName": "Navy Pier",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "dusable-harbor",
+      "name": "DuSable Harbor",
+      "lat": 41.8856608,
+      "lon": -87.611458,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/2271425",
+        "https://www.chicagoharbors.info/harbors/dusable/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/2271425; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "harbor basin reference point",
+      "notes": "Pin sits inside DuSable Harbor water south of the Chicago River. Not a dock gate or navigation instruction.",
+      "originalLat": 41.8857,
+      "originalLon": -87.612,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 45.1,
+      "osmFeatureName": "DuSable Harbor",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "millennium-park",
+      "name": "Millennium Park",
+      "lat": 41.8826229,
+      "lon": -87.6225554,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/23888253",
+        "https://chicago.gov/city/en/depts/dca/supp_info/millennium_park.html"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/23888253; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "park interior reference point",
+      "notes": "Represents the park footprint between Michigan, Randolph, Columbus and Monroe; not the Cloud Gate sculpture or a specific entrance.",
+      "originalLat": 41.8826,
+      "originalLon": -87.6226,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 4.5,
+      "osmFeatureName": "Millennium Park",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "maggie-daley-park",
+      "name": "Maggie Daley Park",
+      "lat": 41.8828754,
+      "lon": -87.6184202,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/224231352",
+        "https://maggiedaleypark.com/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/224231352; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "park interior reference point",
+      "notes": "Represents the park interior east of Columbus Drive; separate from the fieldhouse, skating ribbon and individual play spaces.",
+      "originalLat": 41.8825,
+      "originalLon": -87.6192,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 76.9,
+      "osmFeatureName": "Maggie Daley Park",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "monroe-harbor",
+      "name": "Monroe Harbor",
+      "lat": 41.876941,
+      "lon": -87.6133926,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/17766901",
+        "https://www.chicagoharbors.info/harbors/monroe/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/17766901; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "harbor basin reference point",
+      "notes": "Represents the harbor water including its mapped inner hole; not a dock gate or navigational entrance.",
+      "originalLat": 41.8793,
+      "originalLon": -87.612,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 286.5,
+      "osmFeatureName": "Monroe Harbor",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "buckingham-fountain",
+      "name": "Buckingham Fountain",
+      "lat": 41.8758022,
+      "lon": -87.6189724,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/561821879",
+        "https://www.chicagoparkdistrict.com/parks-facilities/clarence-f-buckingham-memorial-fountain"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/561821879; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "fountain basin center",
+      "notes": "Exact named fountain basin geometry in Grant Park.",
+      "originalLat": 41.8758,
+      "originalLon": -87.6189,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 6,
+      "osmFeatureName": "Buckingham Fountain",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "field-museum",
+      "name": "Field Museum",
+      "lat": 41.8662138,
+      "lon": -87.6170011,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/24825537",
+        "https://www.fieldmuseum.org/landing/visit"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/24825537; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "museum building reference point",
+      "notes": "Named museum building footprint; not an entrance or the nearby Divvy station named Field Museum.",
+      "originalLat": 41.866226,
+      "originalLon": -87.616668,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 27.6,
+      "osmFeatureName": "Field Museum",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "shedd-aquarium",
+      "name": "Shedd Aquarium",
+      "lat": 41.867607,
+      "lon": -87.6136369,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/17430414",
+        "https://www.sheddaquarium.org/plan-a-visit"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/17430414; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "aquarium building reference point",
+      "notes": "Named aquarium building multipolygon, including its actual footprint and courtyards.",
+      "originalLat": 41.8676,
+      "originalLon": -87.614,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 30.1,
+      "osmFeatureName": "Shedd Aquarium",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "adler-planetarium",
+      "name": "Adler Planetarium",
+      "lat": 41.8663642,
+      "lon": -87.6066086,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/24825591",
+        "https://www.adlerplanetarium.org/plan-your-visit/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/24825591; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "planetarium building reference point",
+      "notes": "Named planetarium building footprint at the end of Solidarity Drive; not the bus stop.",
+      "originalLat": 41.866389,
+      "originalLon": -87.606647,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 4.2,
+      "osmFeatureName": "Adler Planetarium",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "soldier-field",
+      "name": "Soldier Field",
+      "lat": 41.8623987,
+      "lon": -87.616714,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/24587933",
+        "https://www.soldierfield.com/plan-your-visit"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/24587933; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "stadium grounds center",
+      "notes": "Named stadium area, including the playing field; not a gate or parking location.",
+      "originalLat": 41.8623,
+      "originalLon": -87.6167,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 11,
+      "osmFeatureName": "Soldier Field",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "northerly-island",
+      "name": "Northerly Island",
+      "lat": 41.8566052,
+      "lon": -87.6082331,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/283223890",
+        "https://www.chicagoparkdistrict.com/parks-facilities/northerly-island-park"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/283223890; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "natural area interior reference point",
+      "notes": "Intentionally represents the southern Northerly Island Natural Area discussed in the card. The larger park also includes the visitor center and concert pavilion farther north; this is not their entrance.",
+      "originalLat": 41.8569,
+      "originalLon": -87.6092,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "High confidence in the mapped feature; the representative subarea is an explicit editorial choice within a much larger park, not a unique entrance.",
+      "offsetFromOriginalMeters": 86.5,
+      "osmFeatureName": "Northerly Island Natural Area",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "burnham-harbor",
+      "name": "Burnham Harbor",
+      "lat": 41.8575421,
+      "lon": -87.6112436,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/17767649",
+        "https://www.chicagoharbors.info/harbors/burnham/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/17767649; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "harbor south basin reference point",
+      "notes": "Represents the larger southern basin of Burnham Harbor; the north basin is part of the same marina. Previous point was inland west of the water.",
+      "originalLat": 41.8577,
+      "originalLon": -87.6144,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 262,
+      "osmFeatureName": "Burnham Harbor South Basin",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "31st-street-beach",
+      "name": "Margaret T. Burroughs Beach",
+      "lat": 41.8392629,
+      "lon": -87.6064538,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/185415594",
+        "https://www.chicagoparkdistrict.com/parks-facilities/margaret-t-burroughs-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/185415594; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "Named in OSM as Margaret Burroughs Beach; official Park District name is Margaret T. Burroughs Beach at 31st Street.",
+      "originalLat": 41.839447,
+      "originalLon": -87.606892,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 41.7,
+      "osmFeatureName": "Margaret Burroughs Beach",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "31st-street-harbor",
+      "name": "31st Street Harbor",
+      "lat": 41.8361264,
+      "lon": -87.6035149,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/17779015",
+        "https://www.chicagoharbors.info/harbors/31st-street/"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/17779015; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "harbor basin reference point",
+      "notes": "Represents the water basin south of 31st Street Beach, not the marina office or parking garage.",
+      "originalLat": 41.8357,
+      "originalLon": -87.6049,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 124.2,
+      "osmFeatureName": "31st Street Harbor",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "oakwood-beach",
+      "name": "Oakwood Beach",
+      "lat": 41.8212893,
+      "lon": -87.5957434,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/32971925",
+        "https://www.chicagoparkdistrict.com/parks-facilities/oakwood-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/32971925; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "OSM calls the feature 41st Street Beach; the Park District explicitly identifies Oakwood/41st Street Beach as the same beach.",
+      "originalLat": 41.821,
+      "originalLon": -87.5966,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 77.9,
+      "osmFeatureName": "41st Street Beach",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "burnham-park",
+      "name": "Burnham Park",
+      "lat": 41.80949,
+      "lon": -87.587428,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/15772174",
+        "https://www.chicagoparkdistrict.com/parks-facilities/burnham-daniel-park",
+        "https://www.openstreetmap.org/way/24914362"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/15772174; deliberately selected actual Lakefront Trail vertex within the mapped Burnham Park boundary; OSM extract reviewed 2026-11-18.",
+      "pointKind": "park trail reference point",
+      "notes": "Burnham Park extends from 1200 to 5700 South and has no single exact entrance. This deliberately selected mapped trail vertex represents its central/southern lakefront section near 47th–49th Street, rather than pretending the point is the whole park. Trail source: https://www.openstreetmap.org/way/24914362.",
+      "originalLat": 41.809,
+      "originalLon": -87.5891,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "High confidence in the mapped feature; the representative subarea is an explicit editorial choice within a much larger park, not a unique entrance.",
+      "offsetFromOriginalMeters": 148.9,
+      "osmFeatureName": "Burnham Park",
+      "coordinateMethod": "deliberately selected actual Lakefront Trail vertex within the mapped Burnham Park boundary",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "promontory-point",
+      "name": "Promontory Point",
+      "lat": 41.7964506,
+      "lon": -87.576147,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/125502842",
+        "https://www.chicagoparkdistrict.com/parks-facilities/promontory-point"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/125502842; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "fieldhouse building reference point",
+      "notes": "The recognizable fieldhouse provides a precise landmark within the much larger Promontory Point peninsula. Pin is not the peninsula tip or an entrance.",
+      "originalLat": 41.796442,
+      "originalLon": -87.576173,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 2.4,
+      "osmFeatureName": "Promontory Point Park Field House",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "57th-street-beach",
+      "name": "57th Street Beach",
+      "lat": 41.7911354,
+      "lon": -87.5789731,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/220417525",
+        "https://www.chicagoparkdistrict.com/parks-facilities/57th-street-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/220417525; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "Represents the mapped sand beach, moved northwest from the former point beyond its principal extent.",
+      "originalLat": 41.7904,
+      "originalLon": -87.578,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 114.9,
+      "osmFeatureName": "57th Street Beach",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "griffin-msi",
+      "name": "Griffin Museum of Science and Industry",
+      "lat": 41.7907138,
+      "lon": -87.5827605,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/24826230",
+        "https://www.griffinmsi.org/pricing"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/24826230; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "museum building reference point",
+      "notes": "Actual Griffin Museum of Science and Industry footprint; not the visitor parking lot or a generic museum illustration.",
+      "originalLat": 41.7906,
+      "originalLon": -87.5831,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 30.9,
+      "osmFeatureName": "Griffin Museum of Science and Industry",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "jackson-park",
+      "name": "Jackson Park & Wooded Island",
+      "lat": 41.7842051,
+      "lon": -87.582547,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/18995990",
+        "https://www.chicagoparkdistrict.com/parks-facilities/jackson-andrew-park",
+        "https://www.chicagoparkdistrict.com/cherry-blossoms"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/18995990; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "Wooded Island interior reference point",
+      "notes": "The combined Jackson Park & Wooded Island card is anchored on Wooded Island itself. Jackson Park is much larger; this point is not an entrance and is not the separate Garden of the Phoenix/Osaka Garden.",
+      "originalLat": 41.7833,
+      "originalLon": -87.5826,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "High confidence in the mapped feature; the representative subarea is an explicit editorial choice within a much larger park, not a unique entrance.",
+      "offsetFromOriginalMeters": 100.7,
+      "osmFeatureName": "Wooded Island",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "63rd-street-beach",
+      "name": "63rd Street Beach",
+      "lat": 41.7821248,
+      "lon": -87.5736317,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/24925308",
+        "https://www.chicagoparkdistrict.com/parks-facilities/63rd-street-beach"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/24925308; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "beach interior reference point",
+      "notes": "Represents the sand beach. Its historic pavilion is a separate mapped building and requires its own illustration anchor.",
+      "originalLat": 41.781825,
+      "originalLon": -87.573621,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 33.4,
+      "osmFeatureName": "63rd Street Beach",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "illustrationAnchor": {
+        "lat": 41.7814895,
+        "lon": -87.573694,
+        "sourceUrl": "https://www.openstreetmap.org/way/125954267",
+        "featureName": "63rd Street Beach Pavilion",
+        "pointKind": "beach house building reference point",
+        "coordinateMethod": "area-weighted centroid, checked inside the mapped feature"
+      },
+      "originalInsideMappedFeature": true
+    },
+    {
+      "id": "south-shore-cultural-center",
+      "name": "South Shore Cultural Center",
+      "lat": 41.7683981,
+      "lon": -87.5639707,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/relation/19789822",
+        "https://www.chicagoparkdistrict.com/parks-facilities/south-shore-cultural-centerfieldhouse"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/19789822; area-weighted centroid, checked inside the mapped feature; OSM extract reviewed 2026-11-18.",
+      "pointKind": "cultural center building reference point",
+      "notes": "Corrected from the larger park-area average to the actual historic clubhouse/fieldhouse footprint at 7059 S. South Shore Drive.",
+      "originalLat": 41.768396,
+      "originalLon": -87.563086,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 73.4,
+      "osmFeatureName": "South Shore Cultural Center",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature",
+      "originalInsideMappedFeature": false
+    },
+    {
+      "id": "71st-street-trailhead",
+      "name": "71st Street · The southern end",
+      "lat": 41.7662868,
+      "lon": -87.5626689,
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1013863379",
+        "https://www.chicagoparkdistrict.com/lakefront-trail",
+        "https://www.chicagoparkdistrict.com/media/26886",
+        "https://www.wttw.com/touring-chicagos-lakefront/guided-tour-of-chicagos-lakefront-trail-by-bike"
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/1013863379; exact final vertex of named Lakefront Trail way, cross-checked against official trail endpoint maps; OSM extract reviewed 2026-11-18.",
+      "pointKind": "southern trail terminus",
+      "notes": "Mapped southern end of the named Lakefront Trail at 71st Street/South Shore Drive, just east of Coles Avenue, south of the Cultural Center. Previous point stopped west of the final eastward 71st Street segment.",
+      "originalLat": 41.7669,
+      "originalLon": -87.566,
+      "verifiedAt": "2026-11-18",
+      "confidence": "high",
+      "confidenceNotes": "Named feature identity and mapped geometry agree; area reference points are not claimed as entrances.",
+      "offsetFromOriginalMeters": 284.6,
+      "osmFeatureName": "Lakefront Trail",
+      "coordinateMethod": "exact final vertex of named Lakefront Trail way, cross-checked against official trail endpoint maps"
+    },
+    {
+      "id": "theater-on-the-lake",
+      "name": "Theater on the Lake",
+      "lat": 41.9270834,
+      "lon": -87.6306705,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "23989552",
+        "name": "Theater on the Lake",
+        "url": "https://www.openstreetmap.org/way/23989552",
+        "bbox": [
+          -87.6310686,
+          41.9267371,
+          -87.6302334,
+          41.9274519
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/theatre-lake"
+      ],
+      "verifiedFact": "Dwight Perkins designed the building; the Park District converted it into a theater in 1953.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": true
+      }
+    },
+    {
+      "id": "lincoln-park-conservatory",
+      "name": "Lincoln Park Conservatory",
+      "lat": 41.9244017,
+      "lon": -87.6347993,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "23986733",
+        "name": "Lincoln Park Conservatory",
+        "url": "https://www.openstreetmap.org/way/23986733",
+        "bbox": [
+          -87.6355917,
+          41.9238274,
+          -87.634505,
+          41.9249759
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-conservatory"
+      ],
+      "verifiedFact": "The conservatory was built in stages from 1890 to 1895 and contains four display houses.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": true
+      }
+    },
+    {
+      "id": "peggy-notebaert-nature-museum",
+      "name": "Peggy Notebaert Nature Museum",
+      "lat": 41.9267245,
+      "lon": -87.6352308,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "23986958",
+        "name": "The Peggy Notebaert Nature Museum",
+        "url": "https://www.openstreetmap.org/way/23986958",
+        "bbox": [
+          -87.6357522,
+          41.9262491,
+          -87.6346365,
+          41.9273242
+        ]
+      },
+      "primarySources": [
+        "https://naturemuseum.org/",
+        "https://www.chicagoparkdistrict.com/parks-facilities/peggy-notebaert-nature-museum"
+      ],
+      "verifiedFact": "The museum is part of the Chicago Academy of Sciences and combines public exhibits with conservation research.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": true
+      }
+    },
+    {
+      "id": "nature-boardwalk",
+      "name": "South Pond · Nature Boardwalk",
+      "lat": 41.9182184,
+      "lon": -87.6331069,
+      "pointKind": "named boardwalk bridge midpoint",
+      "osmFeature": {
+        "type": "way",
+        "id": "758462743",
+        "name": "Bridge Over South Pond",
+        "url": "https://www.openstreetmap.org/way/758462743",
+        "bbox": [
+          -87.6333835,
+          41.9181211,
+          -87.6328304,
+          41.9183158
+        ]
+      },
+      "primarySources": [
+        "https://www.lpzoo.org/pressroom/nature-boardwalk/",
+        "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-south-pond-natural-area"
+      ],
+      "verifiedFact": "Lincoln Park Zoo opened the restored Nature Boardwalk habitat in 2010.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description.",
+      "note": "Anchor is on the named pedestrian bridge within Nature Boardwalk, not in the middle of South Pond. The official zoo page identifies the bridge as a Boardwalk feature.",
+      "geometryValidation": {
+        "onNamedBridge": true,
+        "lineMidpoint": true,
+        "nodeCount": 2
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "cafe-brauer",
+      "name": "Café Brauer",
+      "lat": 41.9191125,
+      "lon": -87.6338995,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "24826112",
+        "name": "Café Brauer (South Pond Refectory)",
+        "url": "https://www.openstreetmap.org/way/24826112",
+        "bbox": [
+          -87.6341516,
+          41.9187879,
+          -87.6336285,
+          41.9194058
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/cafe-brauer-cermanic-tile-murals-artwork",
+        "https://www.lpzoo.org/private-events/"
+      ],
+      "verifiedFact": "Dwight Perkins designed the 1908 South Pond Refectory, now commonly called Café Brauer.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": true
+      }
+    },
+    {
+      "id": "standing-lincoln",
+      "name": "Abraham Lincoln: The Man",
+      "lat": 41.9126287,
+      "lon": -87.6302569,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "1428865096",
+        "name": "Abraham Lincoln: The Man",
+        "url": "https://www.openstreetmap.org/way/1428865096",
+        "bbox": [
+          -87.6302873,
+          41.9126124,
+          -87.6302266,
+          41.912645
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/abraham-lincoln-man-monument"
+      ],
+      "verifiedFact": "Augustus Saint-Gaudens created this Lincoln monument, installed in Lincoln Park in 1887.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "couch-tomb",
+      "name": "Couch Tomb",
+      "lat": 41.9129277,
+      "lon": -87.6314229,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "1398715844",
+        "name": "Couch Tomb",
+        "url": "https://www.openstreetmap.org/way/1398715844",
+        "bbox": [
+          -87.6314485,
+          41.9129021,
+          -87.6313973,
+          41.9129533
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/couch-tomb-artwork"
+      ],
+      "verifiedFact": "The 1858 tomb is the last above-ground reminder of Lincoln Park’s former public cemetery.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "grant-monument",
+      "name": "Ulysses S. Grant Monument",
+      "lat": 41.9175454,
+      "lon": -87.6308243,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "210686228",
+        "name": "Ulysses S. Grant Monument",
+        "url": "https://www.openstreetmap.org/way/210686228",
+        "bbox": [
+          -87.6308874,
+          41.9174726,
+          -87.6307663,
+          41.9176174
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/ulysses-s-grant-monument"
+      ],
+      "verifiedFact": "Louis T. Rebisso’s equestrian Grant monument was dedicated in 1891.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "goethe-monument",
+      "name": "Goethe Monument",
+      "lat": 41.9326031,
+      "lon": -87.6386173,
+      "pointKind": "mapped feature point",
+      "osmFeature": {
+        "type": "node",
+        "id": "589510009",
+        "name": "Johann Wolfgang von Goethe Monument",
+        "url": "https://www.openstreetmap.org/node/589510009",
+        "bbox": [
+          -87.6386173,
+          41.9326031,
+          -87.6386173,
+          41.9326031
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/johann-wolfgang-von-goethe-monument"
+      ],
+      "verifiedFact": "Herman Hahn’s 1913 monument represents Goethe’s creative spirit rather than a literal portrait of the writer.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "matchesNamedNode": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "schiller-monument",
+      "name": "Schiller Monument",
+      "lat": 41.922011,
+      "lon": -87.6351902,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "210686587",
+        "name": "Johann Christoph Friedrich von Schiller Monument",
+        "url": "https://www.openstreetmap.org/way/210686587",
+        "bbox": [
+          -87.6352279,
+          41.9219799,
+          -87.6351525,
+          41.9220421
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/johann-christoph-friedrich-von-schiller-monument"
+      ],
+      "verifiedFact": "Chicago’s German community helped fund this Schiller monument, unveiled in 1886.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "shakespeare-monument",
+      "name": "William Shakespeare Monument",
+      "lat": 41.9238241,
+      "lon": -87.6362139,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "316772307",
+        "name": "William Shakespeare Monument",
+        "url": "https://www.openstreetmap.org/way/316772307",
+        "bbox": [
+          -87.6362374,
+          41.9238047,
+          -87.6361904,
+          41.9238435
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/william-shakespeare-monument"
+      ],
+      "verifiedFact": "William Ordway Partridge’s bronze sculpture was unveiled in Lincoln Park in 1894.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "hamilton-monument",
+      "name": "Alexander Hamilton Monument",
+      "lat": 41.931713,
+      "lon": -87.6384365,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "1433718663",
+        "name": "Alexander Hamilton Monument",
+        "url": "https://www.openstreetmap.org/way/1433718663",
+        "bbox": [
+          -87.6384497,
+          41.9317021,
+          -87.6384234,
+          41.9317238
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/alexander-hamilton-monument"
+      ],
+      "verifiedFact": "Kate Sturges Buckingham commissioned John Angel’s statue of Alexander Hamilton for Lincoln Park.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "franklin-monument",
+      "name": "Benjamin Franklin Monument",
+      "lat": 41.913803,
+      "lon": -87.6310961,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "608421763",
+        "name": "Benjamin Franklin",
+        "url": "https://www.openstreetmap.org/way/608421763",
+        "bbox": [
+          -87.6311224,
+          41.9137825,
+          -87.6310694,
+          41.9138225
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/benjamin-franklin-monument"
+      ],
+      "verifiedFact": "Richard Henry Park created this monument with support from newspaper publisher Joseph Medill and Chicago printers.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "andersen-monument",
+      "name": "Hans Christian Andersen Monument",
+      "lat": 41.9196016,
+      "lon": -87.634664,
+      "pointKind": "mapped feature point",
+      "osmFeature": {
+        "type": "node",
+        "id": "3229514445",
+        "name": "Hans Christian Andersen Monument",
+        "url": "https://www.openstreetmap.org/node/3229514445",
+        "bbox": [
+          -87.634664,
+          41.9196016,
+          -87.634664,
+          41.9196016
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/hans-christian-andersen-monument"
+      ],
+      "verifiedFact": "Johannes Gelert’s monument to the Danish author was installed in 1896.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "matchesNamedNode": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "lasalle-monument",
+      "name": "Robert Cavelier de La Salle Monument",
+      "lat": 41.9133732,
+      "lon": -87.6327488,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "1396668783",
+        "name": "Robert Cavalier de LaSalle",
+        "url": "https://www.openstreetmap.org/way/1396668783",
+        "bbox": [
+          -87.632762,
+          41.9133633,
+          -87.6327355,
+          41.9133831
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/robert-cavelier-de-lasalle-monument"
+      ],
+      "verifiedFact": "Belgian sculptor Count Jacques de La Laing cast the monument in Belgium before it was shipped to Chicago.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "altgeld-monument",
+      "name": "John Peter Altgeld Monument",
+      "lat": 41.9321934,
+      "lon": -87.63753,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "1433718665",
+        "name": "John Peter Altgeld Momument",
+        "url": "https://www.openstreetmap.org/way/1433718665",
+        "bbox": [
+          -87.6375976,
+          41.9321431,
+          -87.637462,
+          41.9322442
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/john-peter-altgeld-monument"
+      ],
+      "verifiedFact": "Gutzon Borglum created the Altgeld monument, installed in 1915.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "oglesby-monument",
+      "name": "Richard Oglesby Monument",
+      "lat": 41.9301485,
+      "lon": -87.6370807,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "1433718651",
+        "name": "Richard Oglesby Monument",
+        "url": "https://www.openstreetmap.org/way/1433718651",
+        "bbox": [
+          -87.6371232,
+          41.930118,
+          -87.6370383,
+          41.930179
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/richard-oglesby-monument"
+      ],
+      "verifiedFact": "Leonard Crunelle’s 1919 sculpture stands on Mount Prospect, a manmade hill in Lincoln Park.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "sheridan-monument",
+      "name": "General Philip Sheridan Monument",
+      "lat": 41.9404649,
+      "lon": -87.6392416,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "1288462337",
+        "name": "General Philip Henry Sheridan Monument",
+        "url": "https://www.openstreetmap.org/way/1288462337",
+        "bbox": [
+          -87.6392968,
+          41.9404242,
+          -87.6391864,
+          41.9405061
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/general-philip-henry-sheridan-monument"
+      ],
+      "verifiedFact": "Gutzon Borglum’s Sheridan monument was installed here in 1923.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "greene-vardiman-black",
+      "name": "Greene Vardiman Black Memorial",
+      "lat": 41.9113982,
+      "lon": -87.6276843,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "1398715934",
+        "name": "Greene Vardiman Black",
+        "url": "https://www.openstreetmap.org/way/1398715934",
+        "bbox": [
+          -87.6277024,
+          41.9113894,
+          -87.6276661,
+          41.9114071
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/greene-vardiman-black-memorial"
+      ],
+      "verifiedFact": "The National Dental Association donated Frederick Cleveland Hibbard’s 1918 memorial to dentist G. V. Black.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "swedenborg-monument",
+      "name": "Emanuel Swedenborg Monument",
+      "lat": 41.9314708,
+      "lon": -87.6316845,
+      "pointKind": "mapped feature point",
+      "osmFeature": {
+        "type": "node",
+        "id": "3554719291",
+        "name": "Emanuel Swedenborg Monument",
+        "url": "https://www.openstreetmap.org/node/3554719291",
+        "bbox": [
+          -87.6316845,
+          41.9314708,
+          -87.6316845,
+          41.9314708
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/emanuel-swedenborg-monument"
+      ],
+      "verifiedFact": "The original monument was installed in 1924; its missing bust was recreated in 2012.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "matchesNamedNode": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "jose-rizal-monument",
+      "name": "Dr. José Rizal Monument",
+      "lat": 41.9671409,
+      "lon": -87.6482031,
+      "pointKind": "mapped feature point",
+      "osmFeature": {
+        "type": "node",
+        "id": "3554723291",
+        "name": "Doctor José Rizal Monument",
+        "url": "https://www.openstreetmap.org/node/3554723291",
+        "bbox": [
+          -87.6482031,
+          41.9671409,
+          -87.6482031,
+          41.9671409
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/dr-jose-rizal-monument"
+      ],
+      "verifiedFact": "Antonio T. Mondejar’s Chicago sculpture was unveiled in 1999 as a replica of his monument in Dapitan, Philippines.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "matchesNamedNode": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "the-alarm",
+      "name": "The Alarm",
+      "lat": 41.9362619,
+      "lon": -87.6325293,
+      "pointKind": "mapped feature point",
+      "osmFeature": {
+        "type": "node",
+        "id": "3554716802",
+        "name": "The Alarm",
+        "url": "https://www.openstreetmap.org/node/3554716802",
+        "bbox": [
+          -87.6325293,
+          41.9362619,
+          -87.6325293,
+          41.9362619
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/alarm-artwork"
+      ],
+      "verifiedFact": "John J. Boyle created the sculpture, and it was moved to its current lakefront setting in 1974.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "matchesNamedNode": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "signal-of-peace",
+      "name": "A Signal of Peace",
+      "lat": 41.9331913,
+      "lon": -87.6314027,
+      "pointKind": "mapped feature point",
+      "osmFeature": {
+        "type": "node",
+        "id": "667225235",
+        "name": "A Signal of Peace",
+        "url": "https://www.openstreetmap.org/node/667225235",
+        "bbox": [
+          -87.6314027,
+          41.9331913,
+          -87.6314027,
+          41.9331913
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/signal-peace-artwork"
+      ],
+      "verifiedFact": "Cyrus Edwin Dallin’s sculpture appeared at the 1893 World’s Columbian Exposition before moving to Lincoln Park.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "matchesNamedNode": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "diversey-natural-area",
+      "name": "Diversey Natural Area",
+      "lat": 41.9371841,
+      "lon": -87.6353075,
+      "pointKind": "area label point inside mapped boundary",
+      "osmFeature": {
+        "type": "way",
+        "id": "1159730456",
+        "name": "Diversey Natural Area",
+        "url": "https://www.openstreetmap.org/way/1159730456",
+        "bbox": [
+          -87.6365031,
+          41.9364503,
+          -87.634018,
+          41.9382062
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-diversey-natural-area"
+      ],
+      "verifiedFact": "The Park District converted this often-flooded lawn into prairie, savanna and wetland habitat that also retains stormwater.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "Area markers identify the destination and are not turn-by-turn entrances.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "bill-jarvis-sanctuary",
+      "name": "Bill Jarvis Migratory Bird Sanctuary",
+      "lat": 41.9489063,
+      "lon": -87.640682,
+      "pointKind": "interior label point in assembled sanctuary polygon",
+      "osmFeature": {
+        "type": "relation",
+        "id": "19825133",
+        "name": "Bill Jarvis Migratory Bird Sanctuary",
+        "url": "https://www.openstreetmap.org/relation/19825133",
+        "bbox": [
+          -87.6422423,
+          41.9477831,
+          -87.6392044,
+          41.9499801
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/natural-areas-community-stewardship-days",
+        "https://www.chicagoparkdistrict.com/community-science",
+        "https://assets.chicagoparkdistrict.com/s3fs-public/documents/stewardship/map-NAStewardship-11x17-20240618.pdf"
+      ],
+      "verifiedFact": "The sanctuary is one of the Park District sites where volunteers monitor purple martin nesting towers.",
+      "reviewedAt": "2026-11-18",
+      "method": "Joined member ways by node IDs into closed outer rings; selected a polygon centroid and verified that the rounded point lies inside the mapped polygon.",
+      "note": "Area label, not a public entrance or an instruction to enter protected habitat.",
+      "geometryValidation": {
+        "closedOuterRings": 1,
+        "insideMappedBoundary": true,
+        "previousAggregateMeanInsideBoundary": true,
+        "memberWayUrls": [
+          "https://www.openstreetmap.org/way/1449927083",
+          "https://www.openstreetmap.org/way/1448085125",
+          "https://www.openstreetmap.org/way/1449927088",
+          "https://www.openstreetmap.org/way/1449927082",
+          "https://www.openstreetmap.org/way/1449927085",
+          "https://www.openstreetmap.org/way/1449927087"
+        ]
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "waveland-clock-tower",
+      "name": "Waveland Clock Tower",
+      "lat": 41.9518818,
+      "lon": -87.6411055,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "53582240",
+        "name": "Waveland Clock Tower",
+        "url": "https://www.openstreetmap.org/way/53582240",
+        "bbox": [
+          -87.6413198,
+          41.9516403,
+          -87.6409219,
+          41.9521116
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/media/35311/download?inline="
+      ],
+      "verifiedFact": "The Park District’s Lincoln Park map locates the tower beside Sydney R. Marovitz Golf Course.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "peace-garden",
+      "name": "Lincoln Park Peace Garden",
+      "lat": 41.9586588,
+      "lon": -87.6455393,
+      "pointKind": "area label point inside mapped boundary",
+      "osmFeature": {
+        "type": "way",
+        "id": "1387134566",
+        "name": "Peace Garden",
+        "url": "https://www.openstreetmap.org/way/1387134566",
+        "bbox": [
+          -87.6458595,
+          41.9582402,
+          -87.6452581,
+          41.9591078
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-peace-garden"
+      ],
+      "verifiedFact": "The Park District, Greenpeace Great Lakes and Uptown residents renovated this former rock garden in the mid-1980s.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "Area markers identify the destination and are not turn-by-turn entrances.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "montrose-beach-dunes",
+      "name": "Montrose Beach Dunes",
+      "lat": 41.9656122,
+      "lon": -87.6333271,
+      "pointKind": "area label point inside mapped boundary",
+      "osmFeature": {
+        "type": "way",
+        "id": "238689193",
+        "name": "Montrose Beach Dunes Natural Area",
+        "url": "https://www.openstreetmap.org/way/238689193",
+        "bbox": [
+          -87.6351968,
+          41.963659,
+          -87.6316495,
+          41.96724
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-montrose-beach-dunes-natural-area"
+      ],
+      "verifiedFact": "The Park District stopped grooming this area in 2001, allowing dune and rare panne habitat to develop.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "Area markers identify the destination and are not turn-by-turn entrances.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "chess-pavilion",
+      "name": "Chess Pavilion",
+      "lat": 41.911312,
+      "lon": -87.6250015,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "210686258",
+        "name": "Chess Pavilion",
+        "url": "https://www.openstreetmap.org/way/210686258",
+        "bbox": [
+          -87.6250491,
+          41.91123,
+          -87.6249597,
+          41.9114003
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/chess-pavilion-artwork"
+      ],
+      "verifiedFact": "The 1957 pavilion combines architect Maurice Webster’s design with sculptural work by Boris Gilbertson.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "eli-bates-fountain",
+      "name": "Eli Bates Fountain",
+      "lat": 41.9227619,
+      "lon": -87.6352143,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "210686594",
+        "name": "Eli Bates Fountain (Storks at Play)",
+        "url": "https://www.openstreetmap.org/way/210686594",
+        "bbox": [
+          -87.6352849,
+          41.9227093,
+          -87.6351444,
+          41.9228145
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/eli-bates-fountain"
+      ],
+      "verifiedFact": "Augustus Saint-Gaudens and Frederick MacMonnies collaborated on this 1887 fountain, also called Storks at Play.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "fountain-girl",
+      "name": "Fountain Girl",
+      "lat": 41.912163,
+      "lon": -87.6294241,
+      "pointKind": "mapped feature point",
+      "osmFeature": {
+        "type": "node",
+        "id": "3554705512",
+        "name": "Fountain Girl",
+        "url": "https://www.openstreetmap.org/node/3554705512",
+        "bbox": [
+          -87.6294241,
+          41.912163,
+          -87.6294241,
+          41.912163
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/fountain-girl-artwork"
+      ],
+      "verifiedFact": "George Wade designed the figure for a temperance fountain displayed at the 1893 World’s Columbian Exposition.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "matchesNamedNode": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "grandmothers-garden",
+      "name": "Grandmother’s Garden",
+      "lat": 41.922954,
+      "lon": -87.6362668,
+      "pointKind": "interior label point in largest garden polygon",
+      "osmFeature": {
+        "type": "relation",
+        "id": "19585859",
+        "name": "Grandmother's Garden",
+        "url": "https://www.openstreetmap.org/relation/19585859",
+        "bbox": [
+          -87.6363993,
+          41.922086,
+          -87.635897,
+          41.9250341
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/grandmothers-garden"
+      ],
+      "verifiedFact": "The Park District identifies this garden at Stockton Drive and Webster Avenue, extending across three blocks.",
+      "reviewedAt": "2026-11-18",
+      "method": "Joined member ways by node IDs into closed outer rings; selected a polygon centroid and verified that the rounded point lies inside the mapped polygon.",
+      "note": "Area label, not a public entrance or instruction to enter planting or protected habitat. Grandmother’s Garden consists of seven distinct mapped garden polygons.",
+      "geometryValidation": {
+        "closedOuterRings": 7,
+        "insideMappedBoundary": true,
+        "previousAggregateMeanInsideBoundary": false,
+        "memberWayUrls": [
+          "https://www.openstreetmap.org/way/1428454728",
+          "https://www.openstreetmap.org/way/1428454729",
+          "https://www.openstreetmap.org/way/1428454730",
+          "https://www.openstreetmap.org/way/1428454731",
+          "https://www.openstreetmap.org/way/1428454740",
+          "https://www.openstreetmap.org/way/1428454742",
+          "https://www.openstreetmap.org/way/1428454743"
+        ]
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "aids-garden",
+      "name": "AIDS Garden Chicago",
+      "lat": 41.9389641,
+      "lon": -87.6347622,
+      "pointKind": "mapped feature point",
+      "osmFeature": {
+        "type": "node",
+        "id": "11948584298",
+        "name": "AIDS Garden Chicago",
+        "url": "https://www.openstreetmap.org/node/11948584298",
+        "bbox": [
+          -87.6347622,
+          41.9389641,
+          -87.6347622,
+          41.9389641
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-aids-garden-chicago",
+        "https://www.chicagoparkdistrict.com/parks-facilities/self-portrait-artwork"
+      ],
+      "verifiedFact": "The garden occupies the former Belmont Rocks gathering place and honors those affected by Chicago’s HIV epidemic.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway. CPD garden page contains an unrelated copied Lily Pool hours line, which was excluded. Sculpture and garden facts come from the dedicated Self-Portrait artwork page.",
+      "geometryValidation": {
+        "matchesNamedNode": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "chicago-fire-relic",
+      "name": "Chicago Fire Relic",
+      "lat": 41.9129422,
+      "lon": -87.6323251,
+      "pointKind": "artwork footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "1398715857",
+        "name": "Chicago Fire Relic",
+        "url": "https://www.openstreetmap.org/way/1398715857",
+        "bbox": [
+          -87.6323446,
+          41.9129275,
+          -87.6323055,
+          41.9129568
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/chicago-fire-relic",
+        "https://www.chicagohistory.org/exhibition/jaffee-history-trail/"
+      ],
+      "verifiedFact": "Workers found the relic in 1890 while excavating the site of a new Masonic Temple at State and Randolph.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "peoples-gas-pavilion",
+      "name": "Peoples Gas Education Pavilion",
+      "lat": 41.9178353,
+      "lon": -87.6323666,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "186667195",
+        "name": "People's Gas Educational Pavilion",
+        "url": "https://www.openstreetmap.org/way/186667195",
+        "bbox": [
+          -87.6324467,
+          41.9177643,
+          -87.6322864,
+          41.9179064
+        ]
+      },
+      "primarySources": [
+        "https://www.lpzoo.org/pressroom/nature-boardwalk/",
+        "https://www.lpzoo.org/private-events/"
+      ],
+      "verifiedFact": "Studio Gang designed the pavilion as part of Lincoln Park Zoo’s Nature Boardwalk.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": true
+      }
+    },
+    {
+      "id": "olive-park",
+      "name": "Milton Lee Olive Park",
+      "lat": 41.8943773,
+      "lon": -87.6104169,
+      "pointKind": "area label point inside mapped boundary",
+      "osmFeature": {
+        "type": "way",
+        "id": "211039472",
+        "name": "Milton Lee Olive Park",
+        "url": "https://www.openstreetmap.org/way/211039472",
+        "bbox": [
+          -87.6122724,
+          41.8926989,
+          -87.6091228,
+          41.8962177
+        ]
+      },
+      "primarySources": [
+        "https://www.choosechicago.com/listing/olive-park/"
+      ],
+      "verifiedFact": "The park is named in honor of Milton Lee Olive, a Chicago-born Medal of Honor recipient.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "Area markers identify the destination and are not turn-by-turn entrances.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "polk-bros-park",
+      "name": "Polk Bros Park",
+      "lat": 41.8910077,
+      "lon": -87.6110143,
+      "pointKind": "area label point inside mapped boundary",
+      "osmFeature": {
+        "type": "way",
+        "id": "273203457",
+        "name": "Polk Bros Park",
+        "url": "https://www.openstreetmap.org/way/273203457",
+        "bbox": [
+          -87.6137956,
+          41.8896584,
+          -87.6095205,
+          41.892966
+        ]
+      },
+      "primarySources": [
+        "https://navypier.org/pier-locations/polk-bros-park/"
+      ],
+      "verifiedFact": "This 13-acre public space includes outdoor performance lawns and was transformed through the Polk family’s 2014 gift.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "Area markers identify the destination and are not turn-by-turn entrances.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "chicago-shakespeare-theater",
+      "name": "Chicago Shakespeare Theater",
+      "lat": 41.8913149,
+      "lon": -87.6057335,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "753474606",
+        "name": "Chicago Shakespeare Theater",
+        "url": "https://www.openstreetmap.org/way/753474606",
+        "bbox": [
+          -87.6062504,
+          41.8911946,
+          -87.6052406,
+          41.8914413
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoshakes.com/"
+      ],
+      "verifiedFact": "The company’s Navy Pier address is 800 East Grand Avenue, with Shakespeare and other productions on its stages.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": true
+      }
+    },
+    {
+      "id": "chicago-history-museum",
+      "name": "Chicago History Museum",
+      "lat": 41.9120055,
+      "lon": -87.6315215,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "23987046",
+        "name": "Chicago History Museum",
+        "url": "https://www.openstreetmap.org/way/23987046",
+        "bbox": [
+          -87.6320688,
+          41.9115242,
+          -87.6309729,
+          41.9124573
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagohistory.org/about-us/museum-history/",
+        "https://www.chicagohistory.org/contact/",
+        "https://www.chicagohistory.org/exhibition/jaffee-history-trail/"
+      ],
+      "verifiedFact": "The museum’s building at Clark Street and North Avenue opened in 1932.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway. Used museum building way23987046; explicitly excluded similarly named underground parking geometry north of the museum.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": true
+      }
+    },
+    {
+      "id": "north-avenue-beach-house",
+      "name": "North Avenue Beach House",
+      "lat": 41.9134844,
+      "lon": -87.6241902,
+      "pointKind": "building footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "417380833",
+        "name": "North Avenue Beach House",
+        "url": "https://www.openstreetmap.org/way/417380833",
+        "bbox": [
+          -87.6247368,
+          41.9131825,
+          -87.6236846,
+          41.9137855
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/north-avenue-beach-house",
+        "https://www.chicagoparkdistrict.com/parks-facilities/north-avenue-beach"
+      ],
+      "verifiedFact": "The present beach house was dedicated in 2000 and echoes the ship-like design of the earlier 1940 building.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM feature matched to official facility or operator description; polygon centers checked to lie inside the mapped footprint.",
+      "note": "The pin identifies the feature, not a guaranteed public doorway.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": false,
+        "culture": false
+      }
+    },
+    {
+      "id": "kwa-ma-rolas",
+      "name": "Kwa-Ma-Rolas · Kwanusila",
+      "lat": 41.9489802,
+      "lon": -87.6424356,
+      "pointKind": "mapped sculpture point",
+      "osmFeature": {
+        "type": "node",
+        "id": "589512469",
+        "name": "Kwa-Ma-Rolas",
+        "url": "https://www.openstreetmap.org/node/589512469",
+        "bbox": [
+          -87.6424356,
+          41.9489802,
+          -87.6424356,
+          41.9489802
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/kwa-ma-rolas-artwork"
+      ],
+      "verifiedFact": "Tony Hunt carved the replica after the original pole was returned to British Columbia.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM sculpture matched to Park District artwork history and location notes. Closed sculpture footprint centroid checked inside the polygon where applicable.",
+      "note": "Exact named OSM artwork node. CPD location notes place it east of Lake Shore Drive on the Addison axis. The CPD year summary and narrative differ, so no installation year is asserted.",
+      "geometryValidation": {
+        "matchesNamedNode": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "eugene-field-memorial",
+      "name": "Eugene Field Memorial",
+      "lat": 41.9211449,
+      "lon": -87.6321326,
+      "pointKind": "sculpture footprint center",
+      "osmFeature": {
+        "type": "way",
+        "id": "210686593",
+        "name": "Eugene Field Memorial",
+        "url": "https://www.openstreetmap.org/way/210686593",
+        "bbox": [
+          -87.6321386,
+          41.9211282,
+          -87.6321266,
+          41.9211616
+        ]
+      },
+      "primarySources": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-eugene-field-memorial"
+      ],
+      "verifiedFact": "Edward McCartan’s memorial was installed in 1922; scenes and lines from Field’s writing appear on its stone base.",
+      "reviewedAt": "2026-11-18",
+      "method": "Named OSM sculpture matched to Park District artwork history and location notes. Closed sculpture footprint centroid checked inside the polygon where applicable.",
+      "note": "Uses the named sculpture footprint northeast of Helen Brach Primate House, matching CPD’s location note rather than its generic park mailing address.",
+      "geometryValidation": {
+        "insideMappedFootprint": true,
+        "closedRing": true
+      },
+      "practicalReview": "Reviewed 2026-11-18: location guidance follows named geometry or primary location notes; current hours, tickets, reservations, programs and facility operation are deferred to the linked operator.",
+      "filterReview": {
+        "art": true,
+        "culture": false
+      }
+    },
+    {
+      "id": "federal-building-columns",
+      "lat": 41.8841912,
+      "lon": -87.6174201,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/federal-building-columns",
+        "https://www.openstreetmap.org/node/4036766872"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin uses the eastern of the two individually mapped columns at the garden’s north entrance; the paired western column is OSM node/6379083795. Official identity/source reviewed alongside Federal Building Columns (node/4036766872).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "4036766872",
+      "osmName": "Federal Building Columns"
+    },
+    {
+      "id": "harris-theater",
+      "lat": 41.8839033,
+      "lon": -87.6218984,
+      "sourceUrls": [
+        "https://www.harristheaterchicago.org/our-story",
+        "https://www.harristheaterchicago.org/resident-companies",
+        "https://www.openstreetmap.org/way/234847962"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the performance itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Joan W. and Irving B. Harris Theater for Music and Dance (way/234847962).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "234847962",
+      "osmName": "Joan W. and Irving B. Harris Theater for Music and Dance"
+    },
+    {
+      "id": "jay-pritzker-pavilion",
+      "lat": 41.8835123,
+      "lon": -87.6218923,
+      "sourceUrls": [
+        "https://www.millenniumparkfoundation.org/art-architecture",
+        "https://www.openstreetmap.org/way/126978545"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the performance itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Jay Pritzker Pavilion (way/126978545).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "126978545",
+      "osmName": "Jay Pritzker Pavilion"
+    },
+    {
+      "id": "cloud-gate",
+      "lat": 41.8826865,
+      "lon": -87.6233394,
+      "sourceUrls": [
+        "https://www.millenniumparkfoundation.org/art-architecture",
+        "https://www.openstreetmap.org/way/137060274"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Cloud Gate (way/137060274).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "137060274",
+      "osmName": "Cloud Gate"
+    },
+    {
+      "id": "crown-fountain",
+      "lat": 41.8814878,
+      "lon": -87.6237515,
+      "sourceUrls": [
+        "https://www.millenniumparkfoundation.org/art-architecture",
+        "https://www.openstreetmap.org/relation/3154126"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin is the centroid of the mapped reflecting-pool outline between the two towers. It is an artwork reference point, not a walking-route instruction. Official identity/source reviewed alongside Crown Fountain (relation/3154126).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "relation",
+      "osmId": "3154126",
+      "osmName": "Crown Fountain"
+    },
+    {
+      "id": "lurie-garden",
+      "lat": 41.8814282,
+      "lon": -87.6217059,
+      "sourceUrls": [
+        "https://www.luriegarden.org/about/",
+        "https://www.openstreetmap.org/way/126945427"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the garden itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Lurie Garden (way/126945427).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "126945427",
+      "osmName": "Lurie Garden"
+    },
+    {
+      "id": "chicago-stock-exchange-arch",
+      "lat": 41.8806735,
+      "lon": -87.6211747,
+      "sourceUrls": [
+        "https://www.artic.edu/files/1d601e15-af7f-4dc2-8aaf-f82030261b59/AIC_MuseumStudies_14-1_UPDF.pdf",
+        "https://www.openstreetmap.org/way/283892909"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the architecture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Chicago Stock Exchange Arch (way/283892909).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "283892909",
+      "osmName": "Chicago Stock Exchange Arch"
+    },
+    {
+      "id": "art-institute-lions",
+      "lat": 41.8797267,
+      "lon": -87.6241509,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/lions-artwork",
+        "https://www.openstreetmap.org/way/210671756"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin anchors the pair to the mapped north lion, rather than the road between the statues. The south lion is OSM way/210671752. Official identity/source reviewed alongside Lion \"on the prowl\" (way/210671756).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "210671756",
+      "osmName": "Lion \"on the prowl\""
+    },
+    {
+      "id": "fountain-great-lakes",
+      "lat": 41.8788038,
+      "lon": -87.6234058,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/fountain-great-lakes-artwork",
+        "https://www.openstreetmap.org/way/210671750"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the fountain itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Fountain of the Great Lakes (way/210671750).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "210671750",
+      "osmName": "Fountain of the Great Lakes"
+    },
+    {
+      "id": "sir-georg-solti",
+      "lat": 41.8778676,
+      "lon": -87.6236335,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/sir-georg-solti-bust",
+        "https://www.openstreetmap.org/node/3554700407"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Sir Georg Solti Bust (node/3554700407).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "3554700407",
+      "osmName": "Sir Georg Solti Bust"
+    },
+    {
+      "id": "seated-lincoln",
+      "lat": 41.8772931,
+      "lon": -87.6215429,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/abraham-lincoln-head-state-monument",
+        "https://www.openstreetmap.org/way/763952137"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the monument itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Abraham Lincoln: The Head of State (way/763952137).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "763952137",
+      "osmName": "Abraham Lincoln: The Head of State"
+    },
+    {
+      "id": "bowman-and-spearman",
+      "lat": 41.8759782,
+      "lon": -87.6235076,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/equestrian-indians-artwork",
+        "https://www.openstreetmap.org/way/210671755"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "The pair is anchored to the mapped Bowman footprint north of the road, not to the roadway midpoint. The Spearman is OSM way/210671749. Official identity/source reviewed alongside Equestrian Indians (The Bowman) (way/210671755).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "210671755",
+      "osmName": "Equestrian Indians (The Bowman)"
+    },
+    {
+      "id": "spirit-of-music",
+      "lat": 41.8733974,
+      "lon": -87.6235221,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/spirit-music-artwork",
+        "https://www.openstreetmap.org/way/765851953"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Spirit of Music (Theodore Thomas Memorial) (way/765851953).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "765851953",
+      "osmName": "Spirit of Music (Theodore Thomas Memorial)"
+    },
+    {
+      "id": "logan-monument",
+      "lat": 41.87062,
+      "lon": -87.6234633,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/john-alexander-logan-monument",
+        "https://www.openstreetmap.org/way/766343991"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the monument itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside John Alexander Logan Monument (way/766343991).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "766343991",
+      "osmName": "John Alexander Logan Monument"
+    },
+    {
+      "id": "rosenberg-fountain",
+      "lat": 41.8686932,
+      "lon": -87.6238089,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/joseph-rosenberg-fountain",
+        "https://www.openstreetmap.org/way/1457885975"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the fountain itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Rosenberg Fountain (Hebe) (way/1457885975).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "1457885975",
+      "osmName": "Rosenberg Fountain (Hebe)"
+    },
+    {
+      "id": "agora",
+      "lat": 41.86821,
+      "lon": -87.6234,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/agora-artwork",
+        "https://www.openstreetmap.org/relation/10624440"
+      ],
+      "pointKind": "reviewed-feature-interior",
+      "notes": "Reviewed interior point in the principal mapped sculpture footprint of the multi-part Agora installation; not an average of all disconnected polygon vertices. Official identity/source reviewed alongside Agora (relation/10624440).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "relation",
+      "osmId": "10624440",
+      "osmName": "Agora"
+    },
+    {
+      "id": "olmec-head",
+      "lat": 41.8671514,
+      "lon": -87.6157214,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/olmec-head-artwork",
+        "https://www.openstreetmap.org/node/3554682901"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Olmec Head (node/3554682901).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "3554682901",
+      "osmName": "Olmec Head"
+    },
+    {
+      "id": "man-with-fish",
+      "lat": 41.8671371,
+      "lon": -87.6146694,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/man-fish-artwork",
+        "https://www.openstreetmap.org/node/3554680797"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the fountain itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Man with Fish (node/3554680797).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "3554680797",
+      "osmName": "Man with Fish"
+    },
+    {
+      "id": "man-enters-cosmos",
+      "lat": 41.8667661,
+      "lon": -87.6071237,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/man-enters-cosmos-artwork",
+        "https://www.openstreetmap.org/way/766549300"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Man Enters The Cosmos (way/766549300).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "766549300",
+      "osmName": "Man Enters The Cosmos"
+    },
+    {
+      "id": "brachiosaurus-replica",
+      "lat": 41.8666577,
+      "lon": -87.6184708,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/brachiosaurus-replica-artwork",
+        "https://www.openstreetmap.org/node/4426074799"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Brachiosaurus Replica (node/4426074799).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "4426074799",
+      "osmName": "Brachiosaurus Replica"
+    },
+    {
+      "id": "copernicus-monument",
+      "lat": 41.8663516,
+      "lon": -87.6078024,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/nicolaus-copernicus-monument",
+        "https://www.openstreetmap.org/way/766549284"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the monument itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Nicolaus Copernicus Monument (way/766549284).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "766549284",
+      "osmName": "Nicolaus Copernicus Monument"
+    },
+    {
+      "id": "karel-havlicek-monument",
+      "lat": 41.8663119,
+      "lon": -87.6104688,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/karel-havlicek-monument",
+        "https://www.openstreetmap.org/way/766536502"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the monument itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Karel Havlíček Monument (way/766536502).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "766536502",
+      "osmName": "Karel Havlíček Monument"
+    },
+    {
+      "id": "kosciuszko-monument",
+      "lat": 41.8662824,
+      "lon": -87.6125181,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/thaddeus-kosciuszko-monument",
+        "https://www.openstreetmap.org/way/766536496"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the monument itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Tadeusz Kościuszko Monument (way/766536496).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "766536496",
+      "osmName": "Tadeusz Kościuszko Monument"
+    },
+    {
+      "id": "spiral-galaxy",
+      "lat": 41.8660023,
+      "lon": -87.6071706,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/spiral-galaxy-artwork",
+        "https://www.openstreetmap.org/node/3536979402"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Spiral Galaxy (node/3536979402).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "3536979402",
+      "osmName": "Spiral Galaxy"
+    },
+    {
+      "id": "americas-courtyard",
+      "lat": 41.8656406,
+      "lon": -87.6065703,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/americas-courtyard-artwork",
+        "https://www.openstreetmap.org/node/3536978767"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside America's Courtyard (node/3536978767).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "3536978767",
+      "osmName": "America's Courtyard"
+    },
+    {
+      "id": "tribute-to-freedom",
+      "lat": 41.864864,
+      "lon": -87.6169538,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/tribute-freedom-and-water-wall-artwork",
+        "https://www.openstreetmap.org/node/4426074801"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the memorial itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Tribute to Freedom (node/4426074801).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "4426074801",
+      "osmName": "Tribute to Freedom"
+    },
+    {
+      "id": "huntington-bank-pavilion",
+      "lat": 41.8631195,
+      "lon": -87.6086082,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/huntington-bank-pavilion-northerly-island",
+        "https://www.chicagoparkdistrict.com/parks-facilities/northerly-island-park",
+        "https://www.openstreetmap.org/way/24925806"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the performance itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Huntington Bank Pavilion at Northerly Island (way/24925806).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "24925806",
+      "osmName": "Huntington Bank Pavilion at Northerly Island"
+    },
+    {
+      "id": "gold-star-families-memorial",
+      "lat": 41.8624399,
+      "lon": -87.6141036,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/gold-star-family-memorial",
+        "https://www.openstreetmap.org/node/3536996073"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the memorial itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Gold Star Families Memorial (node/3536996073).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "3536996073",
+      "osmName": "Gold Star Families Memorial"
+    },
+    {
+      "id": "daphne-garden",
+      "lat": 41.860768,
+      "lon": -87.6079937,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/daphne-garden-artwork",
+        "https://www.openstreetmap.org/way/766571359"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Daphne Garden (way/766571359).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "766571359",
+      "osmName": "Daphne Garden"
+    },
+    {
+      "id": "arie-crown-theater",
+      "lat": 41.8519011,
+      "lon": -87.6117906,
+      "sourceUrls": [
+        "https://www.ariecrown.com/",
+        "https://www.ariecrown.com/about/history/",
+        "https://www.openstreetmap.org/way/1286946899"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the performance itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Arie Crown Theater (way/1286946899).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "1286946899",
+      "osmName": "Arie Crown Theater"
+    },
+    {
+      "id": "great-northern-migration",
+      "lat": 41.8468697,
+      "lon": -87.6175097,
+      "sourceUrls": [
+        "https://bmrc.lib.uchicago.edu/portal/curated/south-side-chicago-neighborhoods/",
+        "https://www.openstreetmap.org/way/1190230713"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin uses the mapped sculpture footprint. A separate named OSM node farther north appears to identify accompanying interpretive material; it is not used for the statue location. Official identity/source reviewed alongside Monument to Great Northern Migration (way/1190230713).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "1190230713",
+      "osmName": "Monument to Great Northern Migration"
+    },
+    {
+      "id": "1919-race-riot-memorial",
+      "lat": 41.8424955,
+      "lon": -87.6089284,
+      "sourceUrls": [
+        "https://library.isgs.illinois.edu/Pubs/pdfs/walkingguide/burnham-park.pdf",
+        "https://www.openstreetmap.org/node/5852249345"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Exact named OSM plaque node beside the present-day trail. Historic shoreline position differs from today’s filled lakefront; do not label the pin as the precise 1919 drowning location. Official identity/source reviewed alongside 1919 Race Riot Plaque (node/5852249345).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "5852249345",
+      "osmName": "1919 Race Riot Plaque"
+    },
+    {
+      "id": "la-sirena",
+      "lat": 41.8200395,
+      "lon": -87.5950783,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/mermaid-artwork",
+        "https://www.openstreetmap.org/node/3554667214"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Mermaid (La Sirena) (node/3554667214).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "3554667214",
+      "osmName": "Mermaid (La Sirena)"
+    },
+    {
+      "id": "david-wallach-fountain",
+      "lat": 41.7956351,
+      "lon": -87.5785594,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/david-wallach-memorial-fountain",
+        "https://www.openstreetmap.org/node/512737856"
+      ],
+      "pointKind": "mapped-point",
+      "notes": "Pin identifies the fountain itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside David Wallach Memorial Fountain (node/512737856).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "node",
+      "osmId": "512737856",
+      "osmName": "David Wallach Memorial Fountain"
+    },
+    {
+      "id": "garden-of-the-phoenix",
+      "lat": 41.7863757,
+      "lon": -87.5827359,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/osaka-garden",
+        "https://www.openstreetmap.org/way/125657819"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin is within the mapped Japanese garden footprint on northeastern Wooded Island, not the broader Jackson Park center or a street address. Official identity/source reviewed alongside Japanese Garden (way/125657819).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "125657819",
+      "osmName": "Japanese Garden"
+    },
+    {
+      "id": "sky-landing",
+      "lat": 41.7862775,
+      "lon": -87.583126,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/sky-landing-artwork",
+        "https://www.openstreetmap.org/way/1378431774"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the sculpture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Sky Landing (way/1378431774).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "1378431774",
+      "osmName": "Sky Landing"
+    },
+    {
+      "id": "statue-of-the-republic",
+      "lat": 41.7796061,
+      "lon": -87.5799028,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/statue-republic",
+        "https://www.openstreetmap.org/way/575754755"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the monument itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Statue of the Republic (way/575754755).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "575754755",
+      "osmName": "Statue of the Republic"
+    },
+    {
+      "id": "jackson-harbor-station",
+      "lat": 41.7786313,
+      "lon": -87.5751895,
+      "sourceUrls": [
+        "https://uslife-savingservice.org/station-buildings/jackson-park-station-house-2/",
+        "https://www.chicagoparkdistrict.com/parks-facilities/jackson-park-outer-harbor",
+        "https://www.openstreetmap.org/way/24925442"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the architecture itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside Jackson Harbor Station (way/24925442).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "24925442",
+      "osmName": "Jackson Harbor Station"
+    },
+    {
+      "id": "south-shore-nature-sanctuary",
+      "lat": 41.7681,
+      "lon": -87.560372,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/south-shore-nature-sanctuary",
+        "https://www.openstreetmap.org/way/274189562"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the nature-sanctuary itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside South Shore Nature Sanctuary (way/274189562).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "274189562",
+      "osmName": "South Shore Nature Sanctuary"
+    },
+    {
+      "id": "south-shore-formal-garden",
+      "lat": 41.7677456,
+      "lon": -87.5645956,
+      "sourceUrls": [
+        "https://www.chicagoparkdistrict.com/parks-facilities/south-shore-formal-garden",
+        "https://www.openstreetmap.org/way/1447224078"
+      ],
+      "pointKind": "mapped-footprint-centroid",
+      "notes": "Pin identifies the garden itself from the named OpenStreetMap feature, not a street address or navigation entrance. Official identity/source reviewed alongside South Shore Formal Garden (way/1447224078).",
+      "verifiedAt": "2026-11-18",
+      "osmType": "way",
+      "osmId": "1447224078",
+      "osmName": "South Shore Formal Garden"
+    }
+  ]
+}

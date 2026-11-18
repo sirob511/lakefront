@@ -1,0 +1,166 @@
+{
+  "testedAt": "2026-11-18",
+  "environment": "Local Chromium, 1440×1000, 160 programmatic scroll frames; timings are local measurements, not a device-wide guarantee.",
+  "before": {
+    "attractions": 38,
+    "frameP95": 49.9,
+    "longTasks": [
+      89,
+      52
+    ]
+  },
+  "after": {
+    "attractions": 120,
+    "frameP95": 16.800000000000182,
+    "frames": 160,
+    "heap": 1899325,
+    "longTasks": [],
+    "resources": [
+      {
+        "bytes": 5370,
+        "duration": 7.400000002235174,
+        "name": "preview-0.svg"
+      },
+      {
+        "bytes": 5374,
+        "duration": 35.30000000074506,
+        "name": "preview-1.svg"
+      },
+      {
+        "bytes": 5376,
+        "duration": 35.5,
+        "name": "preview-2.svg"
+      },
+      {
+        "bytes": 5376,
+        "duration": 42.19999999925494,
+        "name": "preview-3.svg"
+      },
+      {
+        "bytes": 5376,
+        "duration": 11.600000001490116,
+        "name": "preview-4.svg"
+      },
+      {
+        "bytes": 5376,
+        "duration": 34.69999999925494,
+        "name": "preview-5.svg"
+      },
+      {
+        "bytes": 271458,
+        "duration": 44.10000000149011,
+        "name": "tile-1-1.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 15412,
+        "duration": 37,
+        "name": "tile-1-2.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 363588,
+        "duration": 57.20000000298023,
+        "name": "tile-2-1.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 15272,
+        "duration": 41.19999999925494,
+        "name": "tile-2-2.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 322946,
+        "duration": 62.400000002235174,
+        "name": "tile-3-1.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 16818,
+        "duration": 56.099999997764826,
+        "name": "tile-3-2.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 192964,
+        "duration": 62.69999999925494,
+        "name": "tile-4-1.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 105574,
+        "duration": 63.5,
+        "name": "tile-4-2.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 188396,
+        "duration": 15.199999999254942,
+        "name": "tile-0-1.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 15040,
+        "duration": 13,
+        "name": "tile-0-2.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 5376,
+        "duration": 5.400000002235174,
+        "name": "preview-6.svg"
+      },
+      {
+        "bytes": 174232,
+        "duration": 19.100000001490116,
+        "name": "tile-5-1.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 120034,
+        "duration": 18.5,
+        "name": "tile-5-2.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 5376,
+        "duration": 8.599999997764826,
+        "name": "preview-7.svg"
+      },
+      {
+        "bytes": 137046,
+        "duration": 16.800000000745058,
+        "name": "tile-6-1.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 136452,
+        "duration": 17.5,
+        "name": "tile-6-2.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 5376,
+        "duration": 4.899999998509884,
+        "name": "preview-8.svg"
+      },
+      {
+        "bytes": 25146,
+        "duration": 10.399999998509884,
+        "name": "tile-7-1.webp?v=5d4d3e2560b9"
+      },
+      {
+        "bytes": 286270,
+        "duration": 11.700000002980232,
+        "name": "tile-7-2.webp?v=5d4d3e2560b9"
+      }
+    ]
+  },
+  "anchors": [
+    {
+      "width": 1440,
+      "zoom": 1,
+      "maxPixelError": 0.07238902878928058
+    },
+    {
+      "width": 1440,
+      "zoom": 2,
+      "maxPixelError": 0.14481827664084873
+    },
+    {
+      "width": 390,
+      "zoom": 1,
+      "maxPixelError": 0.05205147511509784
+    }
+  ],
+  "errors": {
+    "errors": []
+  }
+}

@@ -27,7 +27,15 @@
     "place": "63rd-street-beach",
     "asset": "beach-house-v2",
     "width": 78,
-    "height": 53
+    "height": 53,
+    "anchor": {
+      "lat": 41.7814895,
+      "lon": -87.573694,
+      "sourceUrl": "https://www.openstreetmap.org/way/125954267",
+      "featureName": "63rd Street Beach Pavilion",
+      "pointKind": "beach house building reference point",
+      "coordinateMethod": "area-weighted centroid, checked inside the mapped feature"
+    }
   },
   {
     "place": "south-shore-cultural-center",
