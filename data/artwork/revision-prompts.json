@@ -1,0 +1,32 @@
+[
+  {
+    "asset": "south-shore-v2",
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/home/boris/lakefront/atlas/dist/assets/photos/south-shore-cultural-center.webp"
+    ],
+    "prompt": "Use case: style-transfer. Create a precise architectural watercolor cutout for a Chicago illustrated map, using the supplied photograph as the authoritative subject reference: South Shore Cultural Center. Preserve the actual terracotta-orange stucco fa\u00e7ade, two square towers at the left and right ends, broad red tile roofs, cream window trim, tall arched tower windows and the three-arch entrance porch. Do not substitute a generic cream villa or a single central bell tower. Show the same front fa\u00e7ade with a slightly elevated but almost frontal viewpoint; preserve the proportions and window arrangement shown in the photo. Fine warm-gray ink outlines, muted watercolor in terracotta, limestone cream and sage, gentle daylight. Isolate the building with a very small strip of entry landscaping; remove sky, background, cars, flags and large trees that obscure the fa\u00e7ade. Transparent background, complete silhouette with generous clear edges, no text. This will be a small map vignette, so architecture and silhouette must be clear and faithful.",
+    "outputOriginal": "data/artwork/south-shore-v2.png",
+    "outputWeb": "dist/assets/south-shore-v2.webp",
+    "referenceAuthor": "Zol87 from Chicago, IL, USA",
+    "referenceUrl": "https://commons.wikimedia.org/wiki/File:South_Shore_Cultural_Center.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "asset": "beach-house-v2",
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/home/boris/lakefront/atlas/dist/assets/photos/63rd-street-beach.webp"
+    ],
+    "prompt": "Use case: style-transfer. Create a faithful architectural watercolor cutout of Chicago's 63rd Street Beach House from the supplied reference photograph. Use the photograph as the architectural authority. Preserve the long low gray-beige masonry arcaded building, rooftop balustrades, square open pavilion towers with distinctive shallow green pyramidal roofs, and the actual asymmetric perspective showing the towers and arcade receding toward the left. Follow the number and locations of towers visible in the photo; do not invent a central dome, red tile roof, palace or new courtyard composition. Same view from the beach, slightly elevated only enough to clarify roof planes. Fine warm-gray ink drawing with muted watercolor, limestone cream, soft olive-green roofs and small sage planting details. Remove sky, floodlight pole, people, distant scenery and broad beach foreground. Building alone plus a very small sand footing, complete silhouette on a truly transparent background. No lettering. This is an accurate small landmark vignette for a geographic map.",
+    "outputOriginal": "data/artwork/beach-house-v2.png",
+    "outputWeb": "dist/assets/beach-house-v2.webp",
+    "referenceAuthor": "User:TonyTheTiger",
+    "referenceUrl": "https://commons.wikimedia.org/wiki/File:20070602_Jackson_Park_Beach_(6).JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  }
+]

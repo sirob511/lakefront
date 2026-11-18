@@ -1,0 +1,126 @@
+{
+  "projection": {
+    "originLon": -87.7,
+    "originLat": 41.996,
+    "scaleX": 28000,
+    "scaleY": 28000,
+    "offsetX": 400,
+    "offsetY": 120
+  },
+  "width": 5200,
+  "height": 6900,
+  "landmarks": [
+    {
+      "place": "navy-pier",
+      "asset": "navy-pier",
+      "anchor": [
+        3074.000000000035,
+        3040.400000000058
+      ],
+      "width": 145,
+      "height": 96
+    },
+    {
+      "place": "field-museum",
+      "asset": "museum",
+      "anchor": [
+        2733.2959999999616,
+        3753.6720000001324
+      ],
+      "width": 104,
+      "height": 70
+    },
+    {
+      "place": "shedd-aquarium",
+      "asset": "shedd",
+      "anchor": [
+        2807.9999999999586,
+        3715.199999999977
+      ],
+      "width": 82,
+      "height": 55
+    },
+    {
+      "place": "soldier-field",
+      "asset": "soldier-field",
+      "anchor": [
+        2732.4000000002343,
+        3863.6000000001286
+      ],
+      "width": 92,
+      "height": 75
+    },
+    {
+      "place": "63rd-street-beach",
+      "asset": "beach-house-v2",
+      "anchor": [
+        3938.6120000000005,
+        6116.900000000124
+      ],
+      "width": 78,
+      "height": 53
+    },
+    {
+      "place": "south-shore-cultural-center",
+      "asset": "south-shore-v2",
+      "anchor": [
+        4233.592000000124,
+        6492.911999999986
+      ],
+      "width": 102,
+      "height": 68
+    }
+  ],
+  "lakeLabels": [
+    {
+      "section": 0,
+      "x": 2056.972581655517,
+      "y": 450,
+      "vertical": false,
+      "shorelineX": 1806.972581655517
+    },
+    {
+      "section": 2,
+      "x": 2480.6367133758627,
+      "y": 1720,
+      "vertical": true,
+      "shorelineX": 2355.6367133758627
+    },
+    {
+      "section": 4,
+      "x": 3365.480523636275,
+      "y": 3100,
+      "vertical": true,
+      "shorelineX": 3240.480523636275
+    },
+    {
+      "section": 7,
+      "x": 3689.9036085920916,
+      "y": 5170,
+      "vertical": true,
+      "shorelineX": 3564.9036085920916
+    },
+    {
+      "section": 9,
+      "x": 4616.1567802691225,
+      "y": 6550,
+      "vertical": true,
+      "shorelineX": 4491.1567802691225
+    }
+  ],
+  "counts": {
+    "roads": 17107,
+    "parks": 5977,
+    "beaches": 30,
+    "water": 140,
+    "buildings": 61793,
+    "piers": 1998,
+    "trails": 260,
+    "sports": 1089,
+    "paved": 2734,
+    "trees": 20649,
+    "railways": 1382,
+    "construction": 65
+  },
+  "vegetation": "Mapped woodland/scrub polygons and individual OSM tree locations; no decorative forest belt."
+}

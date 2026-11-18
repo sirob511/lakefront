@@ -1,16 +1,25 @@
 {
-  "osterman-beach": {
-    "src": "/assets/photos/osterman-beach.webp",
-    "alt": "Kathy Osterman Beach Beacon Chicago 2021",
-    "title": "File:Kathy Osterman Beach Beacon Chicago 2021.jpg",
-    "author": "Paul R. Burley",
+  "ardmore-trailhead": {
+    "src": "/assets/photos/ardmore-trailhead.webp",
+    "alt": "The northern Lakefront Trail terminus at Ardmore Avenue, facing Sheridan Road",
+    "title": "File:Northern terminus of the Lakefront Trail.jpg",
+    "author": "AlphaBeta135",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kathy_Osterman_Beach_Beacon_Chicago_2021.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Northern_terminus_of_the_Lakefront_Trail.jpg"
+  },
+  "osterman-beach": {
+    "src": "/assets/photos/osterman-beach.webp",
+    "alt": "Kathy Osterman Beach with Edgewater apartment towers behind the park",
+    "title": "File:Edgewater Beach Chicago.JPG",
+    "author": "Alanscottwalker",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edgewater_Beach_Chicago.JPG"
   },
   "foster-beach": {
     "src": "/assets/photos/foster-beach.webp",
-    "alt": "Foster Beach, Edgewater, Chicago",
+    "alt": "Visitors on the sand at Foster Beach in Chicago",
     "title": "File:Foster Beach, Edgewater, Chicago.jpg",
     "author": "Alanscottwalker",
     "license": "CC BY 3.0",
@@ -19,7 +28,7 @@
   },
   "montrose-beach": {
     "src": "/assets/photos/montrose-beach.webp",
-    "alt": "Montrose Beach Chicago 060820",
+    "alt": "The sandy shoreline at Montrose Beach in Chicago",
     "title": "File:Montrose Beach Chicago 060820.jpg",
     "author": "User:JeremyA",
     "license": "CC BY-SA 2.5",
@@ -28,16 +37,16 @@
   },
   "montrose-point": {
     "src": "/assets/photos/montrose-point.webp",
-    "alt": "Icteria virens, Montrose Point Bird Sanctuary, Chicago, Illinois 1",
-    "title": "File:Icteria virens, Montrose Point Bird Sanctuary, Chicago, Illinois 1.jpg",
-    "author": "peterwchen",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Icteria_virens,_Montrose_Point_Bird_Sanctuary,_Chicago,_Illinois_1.jpg"
+    "alt": "The signed entrance and wooded path at Montrose Point Bird Sanctuary",
+    "title": "File:Montrose Point Bird Sanctuary Summer Cropped.jpg",
+    "author": "Theemausoliam",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montrose_Point_Bird_Sanctuary_Summer_Cropped.jpg"
   },
   "belmont-harbor": {
     "src": "/assets/photos/belmont-harbor.webp",
-    "alt": "Chicago Skyline viewed from Belmont Harbor",
+    "alt": "Sailboats in Belmont Harbor with the Chicago skyline beyond",
     "title": "File:Chicago Skyline viewed from Belmont Harbor.jpg",
     "author": "TheWxResearcher",
     "license": "CC BY-SA 4.0",
@@ -46,16 +55,43 @@
   },
   "diversey-harbor": {
     "src": "/assets/photos/diversey-harbor.webp",
-    "alt": "Diversey Harbor (8599757428)",
+    "alt": "Diversey Harbor and illuminated neighborhood buildings at night",
     "title": "File:Diversey Harbor (8599757428).jpg",
     "author": "edward stojakovic from Portland, OR, United States",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diversey_Harbor_(8599757428).jpg"
   },
+  "north-pond": {
+    "src": "/assets/photos/north-pond.webp",
+    "alt": "North Pond Nature Sanctuary with Lincoln Park neighborhood towers behind it",
+    "title": "File:North Pond Nature Sanctuary - panoramio.jpg",
+    "author": "Bohao Zhao",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Pond_Nature_Sanctuary_-_panoramio.jpg"
+  },
+  "caldwell-lily-pool": {
+    "src": "/assets/photos/caldwell-lily-pool.webp",
+    "alt": "Water lilies and the Prairie-style pavilion at Alfred Caldwell Lily Pool",
+    "title": "File:20100801 Alfred Caldwell Lily Pool from southsoutheast-2 cropped.jpg",
+    "author": "TonyTheTiger",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20100801_Alfred_Caldwell_Lily_Pool_from_southsoutheast-2_cropped.jpg"
+  },
+  "lincoln-park-zoo": {
+    "src": "/assets/photos/lincoln-park-zoo.webp",
+    "alt": "The stone entrance sign at Lincoln Park Zoo in Chicago",
+    "title": "File:Lincoln Park Zoo -entrance-10May2005.jpg",
+    "author": "chascarper from Chicago, U.S.A.",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Park_Zoo_-entrance-10May2005.jpg"
+  },
   "north-avenue-beach": {
     "src": "/assets/photos/north-avenue-beach.webp",
-    "alt": "Chicago from North Avenue Beach June 2015 panorama 2",
+    "alt": "Chicago skyline viewed from North Avenue Beach at dusk",
     "title": "File:Chicago from North Avenue Beach June 2015 panorama 2.jpg",
     "author": "King of Hearts",
     "license": "CC BY-SA 3.0",
@@ -64,7 +100,7 @@
   },
   "oak-street-beach": {
     "src": "/assets/photos/oak-street-beach.webp",
-    "alt": "Oak Street Beach - Chicago - Illinois - USA - 01",
+    "alt": "Visitors on the sand at Oak Street Beach in Chicago",
     "title": "File:Oak Street Beach - Chicago - Illinois - USA - 01.jpg",
     "author": "Adam Jones, Ph.D.",
     "license": "CC BY-SA 3.0",
@@ -73,16 +109,25 @@
   },
   "navy-pier": {
     "src": "/assets/photos/navy-pier.webp",
-    "alt": "Navy Pier, Chicago, Illinois (14023982898)",
-    "title": "File:Navy Pier, Chicago, Illinois (14023982898).jpg",
-    "author": "Ken Lund from Reno, Nevada, USA",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Navy_Pier,_Chicago,_Illinois_(14023982898).jpg"
+    "alt": "Navy Pier viewed from Lake Michigan, with its terminal buildings and downtown skyline",
+    "title": "File:Downtown Chicago and Navy Pier from lake Michigan.jpg",
+    "author": "Moses8910",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Chicago_and_Navy_Pier_from_lake_Michigan.jpg"
+  },
+  "millennium-park": {
+    "src": "/assets/photos/millennium-park.webp",
+    "alt": "The Jay Pritzker Pavilion and overhead trellis in Millennium Park",
+    "title": "File:Jay Pritzker Pavilion, Chicago, Illinois, Estados Unidos, 2012-10-20, DD 08.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jay_Pritzker_Pavilion,_Chicago,_Illinois,_Estados_Unidos,_2012-10-20,_DD_08.jpg"
   },
   "buckingham-fountain": {
     "src": "/assets/photos/buckingham-fountain.webp",
-    "alt": "Grant Park, Chicago, Illinois, Estados Unidos, 2012-10-20, DD 05",
+    "alt": "Buckingham Fountain and the Chicago skyline in Grant Park",
     "title": "File:Grant Park, Chicago, Illinois, Estados Unidos, 2012-10-20, DD 05.jpg",
     "author": "Diego Delso",
     "license": "CC BY-SA 3.0",
@@ -91,7 +136,7 @@
   },
   "field-museum": {
     "src": "/assets/photos/field-museum.webp",
-    "alt": "Field Museum exterior in Chicago in Chicago",
+    "alt": "The columned north entrance of the Field Museum in Chicago",
     "title": "File:Field Museum Exterior, March 2024.jpg",
     "author": "SarahLucciaLynch",
     "license": "CC BY 4.0",
@@ -100,7 +145,7 @@
   },
   "shedd-aquarium": {
     "src": "/assets/photos/shedd-aquarium.webp",
-    "alt": "Shedd Aquarium Exterior May 2014 Chicago Illinois",
+    "alt": "The classical entrance façade of Shedd Aquarium in Chicago",
     "title": "File:Shedd Aquarium Exterior May 2014 Chicago Illinois.jpg",
     "author": "Djngsf",
     "license": "CC BY-SA 4.0",
@@ -109,34 +154,43 @@
   },
   "adler-planetarium": {
     "src": "/assets/photos/adler-planetarium.webp",
-    "alt": "Chicago - Adler Planetarium Sundial & Skyline (983196683)",
-    "title": "File:Chicago - Adler Planetarium Sundial & Skyline (983196683).jpg",
-    "author": "David Ohmer from Cincinnati, USA",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicago_-_Adler_Planetarium_Sundial_%26_Skyline_(983196683).jpg"
+    "alt": "Adler Planetarium’s domed main building and glass wings",
+    "title": "File:Adler external 1.jpg",
+    "author": "Adler Planetarium",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adler_external_1.jpg"
+  },
+  "soldier-field": {
+    "src": "/assets/photos/soldier-field.webp",
+    "alt": "Soldier Field’s stone exterior and modern seating bowl",
+    "title": "File:Soldier Field, Lake Shore Drive, Chicago, IL; November 2023 (54215628332).jpg",
+    "author": "Warren LeMay from Chicago, IL, United States",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soldier_Field,_Lake_Shore_Drive,_Chicago,_IL;_November_2023_(54215628332).jpg"
   },
   "promontory-point": {
     "src": "/assets/photos/promontory-point.webp",
-    "alt": "Chicago from Promontory Point Park",
+    "alt": "A paved lakeside path at Promontory Point with the Chicago skyline beyond",
     "title": "File:Chicago from Promontory Point Park.jpg",
     "author": "Danielbv~enwiki",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicago_from_Promontory_Point_Park.jpg"
   },
-  "south-shore-cultural-center": {
-    "src": "/assets/photos/south-shore-cultural-center.webp",
-    "alt": "South Shore Cultural Center (24895141981)",
-    "title": "File:South Shore Cultural Center (24895141981).jpg",
-    "author": "Daniel X. O'Neil from USA",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_Shore_Cultural_Center_(24895141981).jpg"
+  "griffin-msi": {
+    "src": "/assets/photos/griffin-msi.webp",
+    "alt": "The north façade and central dome of Chicago’s Museum of Science and Industry",
+    "title": "File:Museum of Science and Industry Chicago exterior 01.jpg",
+    "author": "GualdimG",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Science_and_Industry_Chicago_exterior_01.jpg"
   },
   "jackson-park": {
     "src": "/assets/photos/jackson-park.webp",
-    "alt": "Jackson Park Chicago 6",
+    "alt": "A wooded lagoon in Jackson Park, Chicago",
     "title": "File:Jackson Park Chicago 6.jpg",
     "author": "JulDer Wiki",
     "license": "CC BY 4.0",
@@ -145,11 +199,20 @@
   },
   "63rd-street-beach": {
     "src": "/assets/photos/63rd-street-beach.webp",
-    "alt": "63rd Street Beach pavilion in Chicago in Chicago",
+    "alt": "The twin towers and arcades of the 63rd Street Beach pavilion",
     "title": "File:20070602 Jackson Park Beach (6).JPG",
     "author": "User:TonyTheTiger",
     "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:20070602_Jackson_Park_Beach_(6).JPG"
+  },
+  "south-shore-cultural-center": {
+    "src": "/assets/photos/south-shore-cultural-center.webp",
+    "alt": "The red-roofed entrance façade of South Shore Cultural Center",
+    "title": "File:South Shore Cultural Center.jpg",
+    "author": "Zol87 from Chicago, IL, USA",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_Shore_Cultural_Center.jpg"
   }
 }

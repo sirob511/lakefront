@@ -1,0 +1,38 @@
+[
+  {
+    "place": "navy-pier",
+    "asset": "navy-pier",
+    "width": 145,
+    "height": 96
+  },
+  {
+    "place": "field-museum",
+    "asset": "museum",
+    "width": 104,
+    "height": 70
+  },
+  {
+    "place": "shedd-aquarium",
+    "asset": "shedd",
+    "width": 82,
+    "height": 55
+  },
+  {
+    "place": "soldier-field",
+    "asset": "soldier-field",
+    "width": 92,
+    "height": 75
+  },
+  {
+    "place": "63rd-street-beach",
+    "asset": "beach-house-v2",
+    "width": 78,
+    "height": 53
+  },
+  {
+    "place": "south-shore-cultural-center",
+    "asset": "south-shore-v2",
+    "width": 102,
+    "height": 68
+  }
+]

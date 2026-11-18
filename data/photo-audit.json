@@ -1,0 +1,424 @@
+{
+  "reviewedAt": "2026-11-18",
+  "scope": "All 38 attraction cards and all published photos",
+  "photoCount": 24,
+  "note": "Photos establish the identity of each place; historic capture dates do not assert current conditions. Images are resized and format-converted only. Missing photos must never fall back to category artwork that depicts a different place.",
+  "places": [
+    {
+      "placeId": "ardmore-trailhead",
+      "placeName": "Ardmore Avenue",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Northern_terminus_of_the_Lakefront_Trail.jpg",
+      "alt": "The northern Lakefront Trail terminus at Ardmore Avenue, facing Sheridan Road",
+      "action": "added",
+      "previousTitle": null
+    },
+    {
+      "placeId": "osterman-beach",
+      "placeName": "Kathy Osterman Beach",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edgewater_Beach_Chicago.JPG",
+      "alt": "Kathy Osterman Beach with Edgewater apartment towers behind the park",
+      "action": "replaced-with-clearer-subject-view",
+      "previousTitle": "File:Kathy Osterman Beach Beacon Chicago 2021.jpg"
+    },
+    {
+      "placeId": "foster-beach",
+      "placeName": "Foster Beach",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foster_Beach,_Edgewater,_Chicago.jpg",
+      "alt": "Visitors on the sand at Foster Beach in Chicago",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "cricket-hill",
+      "placeName": "Cricket Hill",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "montrose-beach",
+      "placeName": "Montrose Beach",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montrose_Beach_Chicago_060820.jpg",
+      "alt": "The sandy shoreline at Montrose Beach in Chicago",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "montrose-point",
+      "placeName": "Montrose Point Bird Sanctuary",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montrose_Point_Bird_Sanctuary_Summer_Cropped.jpg",
+      "alt": "The signed entrance and wooded path at Montrose Point Bird Sanctuary",
+      "action": "replaced-with-clearer-subject-view",
+      "previousTitle": "File:Icteria virens, Montrose Point Bird Sanctuary, Chicago, Illinois 1.jpg"
+    },
+    {
+      "placeId": "montrose-harbor",
+      "placeName": "Montrose Harbor",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "belmont-harbor",
+      "placeName": "Belmont Harbor",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicago_Skyline_viewed_from_Belmont_Harbor.jpg",
+      "alt": "Sailboats in Belmont Harbor with the Chicago skyline beyond",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "diversey-harbor",
+      "placeName": "Diversey Harbor",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diversey_Harbor_(8599757428).jpg",
+      "alt": "Diversey Harbor and illuminated neighborhood buildings at night",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "north-pond",
+      "placeName": "North Pond",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Pond_Nature_Sanctuary_-_panoramio.jpg",
+      "alt": "North Pond Nature Sanctuary with Lincoln Park neighborhood towers behind it",
+      "action": "added",
+      "previousTitle": null
+    },
+    {
+      "placeId": "caldwell-lily-pool",
+      "placeName": "Alfred Caldwell Lily Pool",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20100801_Alfred_Caldwell_Lily_Pool_from_southsoutheast-2_cropped.jpg",
+      "alt": "Water lilies and the Prairie-style pavilion at Alfred Caldwell Lily Pool",
+      "action": "added",
+      "previousTitle": null
+    },
+    {
+      "placeId": "lincoln-park-zoo",
+      "placeName": "Lincoln Park Zoo",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Park_Zoo_-entrance-10May2005.jpg",
+      "alt": "The stone entrance sign at Lincoln Park Zoo in Chicago",
+      "action": "added",
+      "previousTitle": null
+    },
+    {
+      "placeId": "north-avenue-beach",
+      "placeName": "North Avenue Beach",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicago_from_North_Avenue_Beach_June_2015_panorama_2.jpg",
+      "alt": "Chicago skyline viewed from North Avenue Beach at dusk",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "oak-street-beach",
+      "placeName": "Oak Street Beach",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oak_Street_Beach_-_Chicago_-_Illinois_-_USA_-_01.jpg",
+      "alt": "Visitors on the sand at Oak Street Beach in Chicago",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "ohio-street-beach",
+      "placeName": "Ohio Street Beach",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "navy-pier",
+      "placeName": "Navy Pier",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Chicago_and_Navy_Pier_from_lake_Michigan.jpg",
+      "alt": "Navy Pier viewed from Lake Michigan, with its terminal buildings and downtown skyline",
+      "action": "replaced-with-clearer-subject-view",
+      "previousTitle": "File:Navy Pier, Chicago, Illinois (14023982898).jpg"
+    },
+    {
+      "placeId": "dusable-harbor",
+      "placeName": "DuSable Harbor",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "millennium-park",
+      "placeName": "Millennium Park",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jay_Pritzker_Pavilion,_Chicago,_Illinois,_Estados_Unidos,_2012-10-20,_DD_08.jpg",
+      "alt": "The Jay Pritzker Pavilion and overhead trellis in Millennium Park",
+      "action": "added",
+      "previousTitle": null
+    },
+    {
+      "placeId": "maggie-daley-park",
+      "placeName": "Maggie Daley Park",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "monroe-harbor",
+      "placeName": "Monroe Harbor",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "buckingham-fountain",
+      "placeName": "Buckingham Fountain",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grant_Park,_Chicago,_Illinois,_Estados_Unidos,_2012-10-20,_DD_05.jpg",
+      "alt": "Buckingham Fountain and the Chicago skyline in Grant Park",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "field-museum",
+      "placeName": "Field Museum",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Field_Museum_Exterior,_March_2024.jpg",
+      "alt": "The columned north entrance of the Field Museum in Chicago",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "shedd-aquarium",
+      "placeName": "Shedd Aquarium",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shedd_Aquarium_Exterior_May_2014_Chicago_Illinois.jpg",
+      "alt": "The classical entrance façade of Shedd Aquarium in Chicago",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "adler-planetarium",
+      "placeName": "Adler Planetarium",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adler_external_1.jpg",
+      "alt": "Adler Planetarium’s domed main building and glass wings",
+      "action": "replaced-with-clearer-subject-view",
+      "previousTitle": "File:Chicago - Adler Planetarium Sundial & Skyline (983196683).jpg"
+    },
+    {
+      "placeId": "soldier-field",
+      "placeName": "Soldier Field",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soldier_Field,_Lake_Shore_Drive,_Chicago,_IL;_November_2023_(54215628332).jpg",
+      "alt": "Soldier Field’s stone exterior and modern seating bowl",
+      "action": "added",
+      "previousTitle": null
+    },
+    {
+      "placeId": "northerly-island",
+      "placeName": "Northerly Island",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "burnham-harbor",
+      "placeName": "Burnham Harbor",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "31st-street-beach",
+      "placeName": "Margaret T. Burroughs Beach",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "31st-street-harbor",
+      "placeName": "31st Street Harbor",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "oakwood-beach",
+      "placeName": "Oakwood Beach",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "burnham-park",
+      "placeName": "Burnham Park",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "promontory-point",
+      "placeName": "Promontory Point",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicago_from_Promontory_Point_Park.jpg",
+      "alt": "A paved lakeside path at Promontory Point with the Chicago skyline beyond",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "57th-street-beach",
+      "placeName": "57th Street Beach",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    },
+    {
+      "placeId": "griffin-msi",
+      "placeName": "Griffin Museum of Science and Industry",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Science_and_Industry_Chicago_exterior_01.jpg",
+      "alt": "The north façade and central dome of Chicago’s Museum of Science and Industry",
+      "action": "added",
+      "previousTitle": null
+    },
+    {
+      "placeId": "jackson-park",
+      "placeName": "Jackson Park & Wooded Island",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jackson_Park_Chicago_6.jpg",
+      "alt": "A wooded lagoon in Jackson Park, Chicago",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "63rd-street-beach",
+      "placeName": "63rd Street Beach",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20070602_Jackson_Park_Beach_(6).JPG",
+      "alt": "The twin towers and arcades of the 63rd Street Beach pavilion",
+      "action": "retained",
+      "previousTitle": null
+    },
+    {
+      "placeId": "south-shore-cultural-center",
+      "placeName": "South Shore Cultural Center",
+      "status": "verified-subject-and-license",
+      "method": "Visual inspection of downloaded photograph and Wikimedia Commons file description/license metadata",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_Shore_Cultural_Center.jpg",
+      "alt": "The red-roofed entrance façade of South Shore Cultural Center",
+      "action": "replaced-with-clearer-subject-view",
+      "previousTitle": "File:South Shore Cultural Center (24895141981).jpg"
+    },
+    {
+      "placeId": "71st-street-trailhead",
+      "placeName": "71st Street · The southern end",
+      "status": "no-photo-selected",
+      "method": "Use location header; do not substitute an unrelated landmark or generic illustration",
+      "sourceUrl": null,
+      "alt": null,
+      "action": "no-photo",
+      "previousTitle": null
+    }
+  ],
+  "illustrationReview": [
+    {
+      "asset": "/assets/museum.webp",
+      "intendedSubject": "Field Museum",
+      "finding": "Permitted only for the Field Museum; former category fallback incorrectly showed this building for Ardmore and unrelated landmarks. Original art is a simplified architectural interpretation, not a photo."
+    },
+    {
+      "asset": "/assets/south-shore.webp",
+      "intendedSubject": "South Shore Cultural Center",
+      "finding": "Existing artwork has a generic pale villa façade and one central tower; visually differs from verified red-brick entrance façade with two towers. Regenerate from the verified photograph or omit the vignette.",
+      "referencePhoto": "/assets/photos/south-shore-cultural-center.webp"
+    },
+    {
+      "asset": "/assets/beach-house.webp",
+      "intendedSubject": "63rd Street Beach pavilion",
+      "finding": "Existing artwork changes the pavilion roof and tower silhouette. Regenerate from the verified photograph or omit the vignette.",
+      "referencePhoto": "/assets/photos/63rd-street-beach.webp"
+    },
+    {
+      "asset": "/assets/harbor.webp",
+      "intendedSubject": "Generic harbor illustration",
+      "finding": "Invented semicircular basin cannot stand in for the actual outlines of distinct named harbors. Use the mapped basins and docks."
+    },
+    {
+      "asset": "/assets/navy-pier.webp",
+      "intendedSubject": "Navy Pier",
+      "finding": "Stylized architecture and scale require checking against the verified aerial. Keep a location anchor and do not let the silhouette replace the actual mapped pier footprint.",
+      "referencePhoto": "/assets/photos/navy-pier.webp"
+    },
+    {
+      "asset": "/assets/soldier-field.webp",
+      "intendedSubject": "Soldier Field",
+      "finding": "Stylized seating bowl and colonnade need geographic anchor and restrained scale. Verified exterior photo added.",
+      "referencePhoto": "/assets/photos/soldier-field.webp"
+    }
+  ]
+}

@@ -7,6 +7,10 @@ try{
 b('set','media','light','reduced-motion');
 for(const [w,h] of [[1440,1000],[390,844],[320,740]]){
  console.log('Checking viewport',w,h);b('set','viewport',String(w),String(h));b('open','http://127.0.0.1:4179/');b('wait','--fn',"document.querySelector('#section-list').children.length===10");b('wait','--fn',visibleTiles);
+ if(w===1440){
+  const result=ev(`(async()=>{const data=await fetch('/places-data.json').then(r=>r.json()),failures=[];for(const p of data){document.querySelector('[data-place="'+p.id+'"]').click();const img=document.querySelector('#card-content img');if(p.photo?img?.getAttribute('src')!==p.photo.src:!!img)failures.push(p.id);document.querySelector('#place-card').close()}return {checked:data.length,failures}})()`);
+  assert.equal(result.checked,38);assert.deepEqual(result.failures,[]);report.push({flow:"Attraction card image identity",status:"pass",checkedPlaces:38,verifiedPhotoCards:24,locationHeaders:14});
+ }
  assert.equal(ev('document.querySelectorAll("h1").length'),1);assert.equal(ev('document.querySelectorAll(".map-marker").length'),38);assert(!ev('document.documentElement.scrollWidth>innerWidth'));assert.equal(ev('getComputedStyle(document.documentElement).scrollBehavior'),'auto');
  b('click','#search-open');b('fill','#search-input','a place that does not exist');assert.equal(ev('document.querySelectorAll(".search-result").length'),0);
  b('fill','#search-input','Promontory');assert.equal(ev('document.querySelectorAll(".search-result").length'),1);b('click','[data-result="promontory-point"]');b('wait','--fn',visibleTiles);assert.equal(ev('document.querySelector("#card-title").textContent'),'Promontory Point');assert(ev('location.search.includes("place=promontory-point")'));assert(ev('document.querySelector("#place-card").open'));

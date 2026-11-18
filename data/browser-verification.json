@@ -2,6 +2,13 @@
   "tested": "2026-11-18",
   "report": [
     {
+      "flow": "Attraction card image identity",
+      "status": "pass",
+      "checkedPlaces": 38,
+      "verifiedPhotoCards": 24,
+      "locationHeaders": 14
+    },
+    {
       "viewport": "1440x1000",
       "status": "pass",
       "checks": [

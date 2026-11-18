@@ -1,31 +1,80 @@
+"""Acquire only exact, visually reviewed Commons files.
+
+Edit data/reviewed-photos.json after inspecting the subject and its license.
+Search results are never automatically promoted to published photographs.
+Run with --refresh to re-download already installed files.
+"""
+import argparse
+import html
+import json
+import pathlib
+import re
+import subprocess
+import tempfile
 import time
-import urllib.request,urllib.parse,json,pathlib,re,concurrent.futures,subprocess
-root=pathlib.Path(__file__).resolve().parents[1];out=root/'dist/assets/photos';out.mkdir(exist_ok=True)
-queries={'osterman-beach':'Osterman Beach Chicago','foster-beach':'Foster Beach Chicago','montrose-beach':'Montrose Beach Chicago -plover -Monty -bird','montrose-point':'Montrose Point Bird Sanctuary Chicago','belmont-harbor':'Belmont Harbor Chicago','diversey-harbor':'Diversey Harbor Chicago','north-avenue-beach':'North Avenue Beach Chicago skyline','oak-street-beach':'Oak Street Beach Chicago','navy-pier':'Navy Pier Chicago aerial','buckingham-fountain':'Buckingham Fountain Chicago','field-museum': 'intitle:"Field Museum" Chicago -postcard -interior -exhibit -dinosaur' ,'shedd-aquarium':'Shedd Aquarium Chicago exterior','adler-planetarium':'Adler Planetarium Chicago exterior','31st-street-beach': 'intitle:"31st" intitle:"Beach" Chicago' ,'promontory-point': 'intitle:"Promontory Point" Chicago -weathervane -Weather -Field -plaque' ,'63rd-street-beach': 'intitle:"63rd" intitle:"Beach"' ,'south-shore-cultural-center':'South Shore Cultural Center Chicago','jackson-park':'Jackson Park Chicago lagoon'}
-def get(url):return urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'LakefrontAtlas/1.0 (educational travel guide; photo attribution included)'}),timeout=30).read()
-existing=json.loads((root/'data/photos.json').read_text()) if (root/'data/photos.json').exists() else {}
-def task(pair):
- key,q=pair
- if key in existing:return key,existing[key]
- time.sleep(2)
- try:
-  args={'action':'query','generator':'search','gsrsearch':q+' filetype:bitmap','gsrnamespace':6,'gsrlimit':5,'prop':'imageinfo','iiprop':'url|extmetadata|size','iiurlwidth':960,'format':'json'}
-  j=json.loads(get('https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(args)))
-  pages=sorted(j.get('query',{}).get('pages',{}).values(),key=lambda p:p.get('index',999))
-  choices=[p for p in pages if p.get('imageinfo') and p['imageinfo'][0]['width']>p['imageinfo'][0]['height']*1.15]
-  if not choices:choices=pages
-  for p in choices:
-   i=p['imageinfo'][0];m=i.get('extmetadata',{});lic=m.get('LicenseShortName',{}).get('value','')
-   if not any(x in lic.lower() for x in ['cc','public domain']):continue
-   url=i.get('thumburl',i['url']);dest=out/(key+'.jpg')
-   try:dest.write_bytes(get(url))
-   except:continue
-   # Format conversion and responsive sizing only; photographic content unchanged.
-   subprocess.run(['convert',str(dest),'-resize','960x960>','-quality','84',str(out/(key+'.webp'))],check=True,capture_output=True);dest.unlink()
-   result={'src':'/assets/photos/'+key+'.webp','alt':p['title'].replace('File:','').rsplit('.',1)[0].replace('_',' '),'title':p['title'],'author':re.sub('<[^>]+>','',m.get('Artist',{}).get('value','Wikimedia Commons contributor')),'license':lic,'licenseUrl':m.get('LicenseUrl',{}).get('value','https://commons.wikimedia.org/'),'sourceUrl':i['descriptionurl']}
-   print(key,lic,p['title'],flush=True);return key,result
-  print('NO PHOTO',key,flush=True)
- except Exception as e:print('PHOTO ERROR',key,str(e),flush=True)
- return key,None
-with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:results=dict(pool.map(task,queries.items()))
-(root/'data/photos.json').write_text(json.dumps({k:v for k,v in results.items() if v},ensure_ascii=False,indent=2))
+import urllib.parse
+import urllib.request
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+OUT = ROOT / 'dist/assets/photos'
+OUT.mkdir(exist_ok=True)
+MANIFEST = json.loads((ROOT / 'data/reviewed-photos.json').read_text())
+PHOTO_FILE = ROOT / 'data/photos.json'
+photos = json.loads(PHOTO_FILE.read_text()) if PHOTO_FILE.exists() else {}
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--refresh', action='store_true')
+args = parser.parse_args()
+
+
+def get(url):
+    request = urllib.request.Request(url, headers={
+        'User-Agent': 'LakefrontAtlas/1.0 (reviewed photograph acquisition; attribution included)'
+    })
+    with urllib.request.urlopen(request, timeout=45) as response:
+        return response.read()
+
+
+for place_id, reviewed in MANIFEST.items():
+    dest = OUT / f'{place_id}.webp'
+    existing = photos.get(place_id)
+    if (not args.refresh and dest.exists() and existing
+            and existing['title'] == reviewed['title']):
+        existing['alt'] = reviewed['alt']
+        continue
+    query = urllib.parse.urlencode({
+        'action': 'query', 'titles': reviewed['title'], 'prop': 'imageinfo',
+        'iiprop': 'url|extmetadata', 'iiurlwidth': 960, 'format': 'json'
+    })
+    result = json.loads(get('https://commons.wikimedia.org/w/api.php?' + query))
+    page = next(iter(result['query']['pages'].values()))
+    if page['title'] != reviewed['title'] or not page.get('imageinfo'):
+        raise RuntimeError(f'Exact reviewed source was not found: {reviewed["title"]}')
+    info = page['imageinfo'][0]
+    metadata = info['extmetadata']
+    license_name = metadata['LicenseShortName']['value']
+    license_url = metadata.get('LicenseUrl', {}).get('value')
+    if not license_name.startswith(('CC BY', 'CC0')) or not license_url:
+        raise RuntimeError(f'License requires manual review for {place_id}: {license_name}')
+    with tempfile.TemporaryDirectory(prefix='lakefront-photo-') as temporary:
+        original = pathlib.Path(temporary) / 'source.image'
+        original.write_bytes(get(info.get('thumburl', info['url'])))
+        # Resize and format conversion only; do not generate or alter the subject.
+        subprocess.run(['convert', str(original), '-resize', '960x960>',
+                        '-quality', '84', str(dest)], check=True)
+    photos[place_id] = {
+        'src': f'/assets/photos/{place_id}.webp',
+        'alt': reviewed['alt'],
+        'title': page['title'],
+        'author': html.unescape(re.sub('<[^>]+>', '', metadata['Artist']['value'])),
+        'license': license_name,
+        'licenseUrl': license_url.replace('http://', 'https://'),
+        'sourceUrl': info['descriptionurl'],
+    }
+    # Save successful files individually so a rate limit does not discard work.
+    PHOTO_FILE.write_text(json.dumps(photos, ensure_ascii=False, indent=2) + '\n')
+    print(f'{place_id}: {page["title"]} ({license_name})', flush=True)
+    time.sleep(1)
+
+photos = {place_id: photos[place_id] for place_id in MANIFEST}
+PHOTO_FILE.write_text(json.dumps(photos, ensure_ascii=False, indent=2) + '\n')
+print(f'{len(photos)} exact reviewed photographs installed.')

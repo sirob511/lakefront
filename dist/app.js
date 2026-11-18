@@ -4,17 +4,18 @@ const byId=new Map(places.map(p=>[p.id,p]));
 const symbols={beach:'≈',nature:'♧',harbor:'⚓',landmark:'◇'};
 const regions=[['Edgewater & Montrose',41.979,'Quiet beaches & the Magic Hedge'],['Harbors of Lincoln Park',41.945,'Masts, lawns & open water'],['Lincoln Park & North Avenue',41.920,'Park paths meet the skyline'],['The Gold Coast',41.906,'Sand at the foot of the city'],['Streeterville & Navy Pier',41.895,'A city reaching into the lake'],['The downtown lakefront',41.879,'Grand parks & a thousand sails'],['Museum Campus',41.863,'Big discoveries, wider horizons'],['The southern harbors',41.834,'A different view of downtown'],['Burnham Park & the Point',41.803,'Long lawns & limestone edges'],['Jackson Park & South Shore',41.781,'Lagoons, history & one last beach']];
 const boundaries=[41.966,41.926,41.911,41.902,41.888,41.867,41.838,41.820,41.792];
-const mapY=lat=>(41.996-lat)*28000+120,mapX=lon=>(lon+87.68)*14000+600;
+const projection=config.projection;
+const mapY=lat=>(projection.originLat-lat)*projection.scaleY+projection.offsetY,mapX=lon=>(lon-projection.originLon)*projection.scaleX+projection.offsetX;
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let scale=1,shiftX=0,shiftY=0,currentLat=41.988,filter='all',selected=null,lastTrigger=null,raf=0,urlTimer;
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const mobile=()=>innerWidth<=700;
 let keyboardNavigation=false;addEventListener('keydown',e=>{if(e.key==='Tab')keyboardNavigation=true});addEventListener('pointerdown',()=>{keyboardNavigation=false},{passive:true});
 function cameraX(y){const points=config.camera,i=Math.max(0,Math.min(points.length-2,Math.floor(y/60))),a=points[i],b=points[i+1],t=Math.max(0,Math.min(1,(y-a[0])/(b[0]-a[0])));return a[1]+(b[1]-a[1])*t}
-function layout(){scale=mobile()?.8:Math.min(1.15,innerWidth/1440);shiftY=mobile()?170:0;$('#atlas').style.height=`${config.height*scale+shiftY}px`;updatePosition()}
+function layout(){scale=mobile()?.72:Math.min(1.12,innerWidth/1440);shiftY=mobile()?170:0;$('#map-canvas').style.width=`${config.width}px`;$('#atlas').style.height=`${config.height*scale+shiftY}px`;updatePosition()}
 function updatePosition(){
- const rect=$('#atlas').getBoundingClientRect();const y=Math.max(0,Math.min(config.height,(innerHeight*.44-rect.top-shiftY)/scale));currentLat=41.996-(y-120)/28000;
- if(mobile()){const focusId=selected||(keyboardNavigation?document.activeElement?.dataset?.place:null);const focus=focusId&&byId.has(focusId)?mapX(byId.get(focusId).lon):cameraX(y);shiftX=Math.max(innerWidth-config.width*scale,Math.min(0,innerWidth*.53-focus*scale));}else shiftX=Math.max(innerWidth-config.width*scale,Math.min(0,innerWidth*.58-cameraX(y)*scale));
+ const rect=$('#atlas').getBoundingClientRect();const y=Math.max(0,Math.min(config.height,(innerHeight*.44-rect.top-shiftY)/scale));currentLat=projection.originLat-(y-projection.offsetY)/projection.scaleY;
+ if(mobile()){const focusId=selected||(keyboardNavigation?document.activeElement?.dataset?.place:null);const focus=focusId&&byId.has(focusId)?mapX(byId.get(focusId).lon):cameraX(y);shiftX=Math.max(innerWidth-config.width*scale,Math.min(0,innerWidth*.53-focus*scale));}else shiftX=Math.max(innerWidth-config.width*scale,Math.min(0,innerWidth*.62-cameraX(y)*scale));
  $('#map-canvas').style.transform=`translate(${shiftX}px,${shiftY}px) scale(${scale})`;
  // Preserve readable labels and minimum touch targets as the map scales.
  $$('.map-marker').forEach(el=>{el.style.setProperty('--map-scale',scale);const screenX=mapX(byId.get(el.dataset.place).lon)*scale+shiftX;el.classList.toggle('mobile-left',mobile()&&screenX>innerWidth*.48);const left=mobile()?el.classList.contains('mobile-left'):el.classList.contains('align-left');el.style.transform=`translate(${left?'calc(-100% + 16px)':'-16px'},-22px) scale(${Math.max(1,1/scale)})`;el.style.transformOrigin=left?'right center':'left center'});
@@ -29,16 +30,23 @@ addEventListener('resize',layout);
 function jump(lat,{smooth=true}={}){const top=$('#atlas').offsetTop+shiftY+mapY(lat)*scale-innerHeight*.4;scrollTo({top:Math.max(0,top),behavior:smooth&&!reduced.matches?'smooth':'instant'});updatePosition()}
 // Sections share one coordinate system; neighboring art loads before it comes into view.
 const tileObserver=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){loadTile(e.target);tileObserver.unobserve(e.target)}},{rootMargin:'1100px 0px'});
-async function loadTile(el){if(el.dataset.loaded)return;el.dataset.loaded='loading';try{const res=await fetch(`/assets/map/section-${el.dataset.tile}.svg`);if(!res.ok)throw Error('Map section unavailable');el.innerHTML=await res.text();el.dataset.loaded='true'}catch{el.dataset.loaded='';el.innerHTML='<p class="tile-error">This part of the illustration could not load. <button type="button">Try again</button></p>';el.querySelector('button').onclick=()=>loadTile(el)}}
-$$('.map-tile').forEach(el=>{if(el.dataset.tile==='0')el.dataset.loaded='true';else tileObserver.observe(el)});
+function loadTile(el){
+ if(el.dataset.loaded)return;el.dataset.loaded='loading';
+ const img=new Image();img.alt='';img.width=config.width;img.height=config.tileHeight;img.decoding='async';
+ img.onload=()=>{el.replaceChildren(img);el.dataset.loaded='true'};
+ img.onerror=()=>{el.dataset.loaded='';el.innerHTML='<p class="tile-error">This part of the illustration could not load. <button type="button">Try again</button></p>';el.querySelector('button').onclick=()=>loadTile(el)};
+ img.src=`/assets/map/section-${el.dataset.tile}.svg`;
+}
+$$('.map-tile').forEach(el=>tileObserver.observe(el));
+
 function toast(message){$('#toast').textContent=message;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),3200)}
 async function share(id){const url=new URL(location.origin+'/');if(id)url.searchParams.set('place',id);else url.searchParams.set('at',currentLat.toFixed(4));try{await navigator.clipboard.writeText(url.href);toast('Link copied. Share a little lakefront.')}catch{if(navigator.share){try{await navigator.share({title:'Lakefront Trail · Chicago',url:url.href})}catch{}}else{prompt('Copy this lakefront link:',url.href)}}}
 function openCard(id,{travel=false,historyUpdate=true}={}){
  const p=byId.get(id);if(!p)return;selected=id;lastTrigger=document.activeElement;
  $$('.map-marker').forEach(el=>el.classList.toggle('selected',el.dataset.place===id));
  if(travel)jump(p.lat);
- const photo=p.photo;const image=photo?`<img class="card-photo" src="${escape(photo.src)}" alt="${escape(photo.alt)}" width="960" height="640">`:`<div class="card-art"><img src="/assets/${p.category==='harbor'?'harbor':p.category==='landmark'?'museum':'grove'}.webp" alt="Original watercolor illustration"></div>`;
- $('#card-content').innerHTML=`${image}<div class="card-content"><p class="eyebrow">${symbols[p.category]} ${escape(p.category.toUpperCase())} <span>·</span> ${escape(p.access.toUpperCase())}</p><h2 id="card-title">${escape(p.name)}</h2><p class="card-description">${escape(p.description)}</p><p class="card-fact">${escape(p.fact)}</p><div class="card-practical"><strong>A little before-you-go.</strong><br>${escape(p.practical)}</div><div class="card-actions"><a href="${p.story?`/places/${p.id}/`:`/places/#${p.id}`}">Discover this place <span aria-hidden="true">↗</span></a><button id="share-place">Share ↗</button></div>${photo?`<p class="photo-credit">Photo: ${escape(photo.author)} · <a href="${escape(photo.licenseUrl)}" target="_blank" rel="noopener">${escape(photo.license)}</a> · <a href="${escape(photo.sourceUrl)}" target="_blank" rel="noopener">Source</a></p>`:'<p class="photo-credit">Original atlas illustration. Visitor information from the linked official source.</p>'}</div>`;
+ const photo=p.photo;const image=photo?`<img class="card-photo" src="${escape(photo.src)}" alt="${escape(photo.alt)}" width="960" height="640">`:`<div class="card-location"><span aria-hidden="true">${symbols[p.category]}</span><p>${escape(p.regionName)}<small>${p.lat.toFixed(4)}° N · ${Math.abs(p.lon).toFixed(4)}° W</small></p></div>`;
+ $('#card-content').innerHTML=`${image}<div class="card-content"><p class="eyebrow">${symbols[p.category]} ${escape(p.category.toUpperCase())} <span>·</span> ${escape(p.access.toUpperCase())}</p><h2 id="card-title">${escape(p.name)}</h2><p class="card-description">${escape(p.description)}</p><p class="card-fact">${escape(p.fact)}</p><div class="card-practical"><strong>A little before-you-go.</strong><br>${escape(p.practical)}</div><div class="card-actions"><a href="${p.story?`/places/${p.id}/`:`/places/#${p.id}`}">Discover this place <span aria-hidden="true">↗</span></a><button id="share-place">Share ↗</button></div>${photo?`<p class="photo-credit">Photo: ${escape(photo.author)} · <a href="${escape(photo.licenseUrl)}" target="_blank" rel="noopener">${escape(photo.license)}</a> · <a href="${escape(photo.sourceUrl)}" target="_blank" rel="noopener">Source</a></p>`:'<p class="photo-credit">Visitor information from the linked official source.</p>'}</div>`;
  $('#share-place').onclick=()=>share(id);if(!$('#place-card').open)$('#place-card').showModal();$('#place-card .close-button').focus({preventScroll:true});
  if(historyUpdate){const url=new URL(location.href);url.searchParams.delete('at');url.searchParams.set('place',id);history.pushState({place:id},'',url)}
  updatePosition();
