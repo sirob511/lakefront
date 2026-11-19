@@ -17,8 +17,8 @@ Preview: http://127.0.0.1:4179. Static deploy output: `dist/`. `vercel.json` sup
 ## Structure
 
 - `data/geography.json`: OpenStreetMap geometry, retrieved November 18, 2026; source URLs and original way IDs retained. Raw download cache is excluded from Git.
-- `data/places.json`: 169 source-audited places and 14 extended destination stories. Minor destinations remain substantive entries in the collection rather than thin standalone pages.
-- `data/photos.json`: 144 subject-reviewed photographs with creator attribution, photo licenses and source links; 25 discoveries currently use accurate location headers.
+- `data/places.json`: 185 source-audited places and 14 extended destination stories. Minor destinations remain substantive entries in the collection rather than thin standalone pages.
+- `data/photos.json`: 151 subject-reviewed photographs with creator attribution, photo licenses and source links; 34 discoveries currently use accurate location headers.
 - `data/home-template.html`: editable homepage markup. `dist/index.html` is rebuilt from this template.
 - `scripts/build-map.mjs`: shared coordinate projection, continuous geographic shapes, separate trail styles, original artwork, ten adjacent SVG sections.
 - `scripts/render-map.mjs`: pre-renders the ten source SVG rows into forty WebP display tiles, with a source-hash cache.
@@ -59,10 +59,12 @@ The revised photo-based South Shore and 63rd Street illustrations are saved in `
 
 The discovery audit expanded the collection from 120 to 169 stops. The second photo review brings verified coverage to 144 photographs, with 25 explicit gaps; see `data/photo-integration-audit.json` and `data/photo-gaps.json`.
 
-Map controls support two-axis mouse and single-finger dragging; native pinch zoom remains available. Every discovery uses the same unnumbered dot. Place details are nonmodal, with a compact mobile sheet and a visible selected pin; the end-of-trail message is below the map. Opening and closing a card preserves the camera, and zoom preserves the geographic center after manual panning.
+Map controls support two-axis mouse and single-finger dragging; native pinch zoom remains available. Every discovery uses the same unnumbered dot. Place details are nonmodal, with a compact mobile sheet and a visible selected pin; the compact shared footer sits below the map. Opening and closing a card preserves the camera, and zoom preserves the geographic center after manual panning.
 
 Both detailed trail lines and the overview derive from connected OSM route relations, including the Navy Pier Flyover. `data/trail-routes.json` is a reproducible extract from the cached geography download, `scripts/trail-geometry.mjs` builds the shared geometry, and `data/trail-render-audit.json` records source IDs and connectivity. The overview preserves geographic aspect and uses latitude-based position samples. The former inaccurate Navy Pier vignette is suppressed in favor of its actual mapped footprint. `scripts/street-labels.mjs` adds 35 selected street names along their source road centerlines in the atlas palette.
 
 `npm run check` also validates trail connectivity, flyover rendering and overview interpolation. `scripts/check-map-interactions.mjs` verifies mouse dragging, compact nonmodal details, consistent dots and unobstructed endpoints across three viewport sizes; native Chromium touch verification is recorded in `data/touch-verification.json`.
 
-The main navigation focuses on the map and attractions. The former Trail guide and History pages are retired and removed from build output and the sitemap. The opening card shows the official 18-mile bicycle and 18.5-mile walking distances, the live discovery count, and the Park District’s 2018 trail-separation milestone.
+The main navigation focuses on the map and attractions. The former Trail guide and History pages are retired and removed from build output and the sitemap. The opening card shows the official 18-mile bicycle and 18.5-mile walking distances, the live discovery count.
+
+The final audit expanded the inventory to 185 discoveries, with 151 verified photos and 34 documented photo gaps. `data/discoveries-audit-round3.json`, `data/location-audit-round3.json`, and `data/location-audit-round3-additions.json` retain independent feature evidence; `data/photo-audit-round3.json` records the complete photo review. Photos preserve their full composition in every responsive frame. Nearby overlapping hit targets resolve to the closest geographic dot without shifting the markers; `scripts/check-hotspots.mjs` verifies each discovery at three viewport sizes.

@@ -8,3 +8,6 @@
 .editorial-main{padding-top:calc(var(--header-height) + 44px);padding-bottom:48px}
 .place-group,.directory-place{scroll-margin-top:20px}
 @media(max-width:700px){.editorial-main{padding-top:calc(var(--header-height) + 28px);padding-bottom:32px}}
+
+/* Preserve the complete reviewed photograph in every responsive frame. */
+.editorial-photo img,.directory-place>a>img{object-fit:contain;background:#e8e9de}

@@ -1,24 +1,60 @@
 {
+  "reviewedAt": "2026-11-18",
   "status": "pass",
   "viewport": "390x844",
   "input": "Chromium native CDP touch events",
+  "hotspots": [
+    {
+      "id": "cloud-gate",
+      "status": "pass"
+    },
+    {
+      "id": "elks-national-memorial",
+      "status": "pass"
+    },
+    {
+      "id": "south-shore-cultural-center",
+      "status": "pass"
+    },
+    {
+      "id": "ten-thousand-ripples",
+      "status": "pass"
+    }
+  ],
   "events": [
     {
-      "type": "touch",
-      "trusted": true
+      "trusted": true,
+      "detail": 1,
+      "pointerType": "touch"
+    },
+    {
+      "trusted": true,
+      "detail": 2,
+      "pointerType": "touch"
+    },
+    {
+      "trusted": true,
+      "detail": 1,
+      "pointerType": "touch"
+    },
+    {
+      "trusted": true,
+      "detail": 1,
+      "pointerType": "touch"
     }
   ],
   "before": {
-    "scrollY": 1991,
-    "x": -1837.28
+    "scrollY": 1424,
+    "x": -1475.48
   },
   "after": {
-    "scrollY": 2091,
-    "x": -1767.28
+    "scrollY": 1524,
+    "x": -1405.48,
+    "cardOpen": false
   },
   "checks": [
-    "trusted touch pointer",
-    "two-axis drag",
-    "no accidental card"
+    "trusted touch taps select exact geographic dots in dense clusters",
+    "two-axis touch drag",
+    "no accidental card after drag"
   ]
 }

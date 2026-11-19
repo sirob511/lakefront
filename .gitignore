@@ -2,3 +2,8 @@ data/raw/
 node_modules/
 *.tar.gz
 .DS_Store
+
+# Local workspace configuration and credentials
+/.agents/
+/.codex/
+/.aws/

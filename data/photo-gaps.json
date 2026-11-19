@@ -1,6 +1,6 @@
 {
   "reviewedAt": "2026-11-18",
-  "count": 25,
+  "count": 34,
   "places": [
     {
       "placeId": "osterman-beach-dunes",
@@ -98,6 +98,19 @@
       "action": "retain-accurate-location-header"
     },
     {
+      "placeId": "american-bison",
+      "placeName": "American Bison",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "american-bison",
+        "placeName": "American Bison",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "Search results for real zoo bison and Humboldt Park’s Edward Kemeys bison depict different subjects; not substituted for Chris Williams’s steel American Bison."
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
       "placeId": "curve-xxii",
       "placeName": "Curve XXII · I Will",
       "status": "location-header-no-photo",
@@ -108,25 +121,6 @@
         "name": "Curve XXII · I Will",
         "reason": "Flickr photographs of Ellsworth Kelly’s Curve XXII were found, but the photograph license alone does not establish permission for the underlying modern sculpture. No fully reusable candidate verified.",
         "identitySource": "https://www.chicagoparkdistrict.com/parks-facilities/curve-xxii-artwork",
-        "searchedSources": [
-          "Wikimedia Commons exact-title and category search",
-          "Openverse licensed-image search",
-          "Targeted web search and primary attraction page"
-        ]
-      },
-      "action": "retain-accurate-location-header"
-    },
-    {
-      "placeId": "grandmothers-garden",
-      "placeName": "Grandmother’s Garden",
-      "status": "location-header-no-photo",
-      "method": "Commons, Flickr and licensed-image searches; no confidently identified and reusable photo accepted.",
-      "reviewEvidence": {
-        "status": "gap-no-verified-reusable-photo",
-        "reviewedOn": "2026-11-18",
-        "name": "Grandmother’s Garden",
-        "reason": "No contemporary freely licensed site photograph located. Official Park District garden photographs are identifiable but have no explicit reuse license; generic conservatory/formal-garden images depict a different garden.",
-        "identitySource": "https://www.chicagoparkdistrict.com/parks-facilities/grandmothers-garden",
         "searchedSources": [
           "Wikimedia Commons exact-title and category search",
           "Openverse licensed-image search",
@@ -151,6 +145,19 @@
           "Openverse licensed-image search",
           "Targeted web search and primary attraction page"
         ]
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
+      "placeId": "north-avenue-beach-dunes",
+      "placeName": "North Avenue Beach Dunes",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "north-avenue-beach-dunes",
+        "placeName": "North Avenue Beach Dunes",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "No confidently identified reusable photograph acquired in this bounded audit."
       },
       "action": "retain-accurate-location-header"
     },
@@ -193,6 +200,19 @@
       "action": "retain-accurate-location-header"
     },
     {
+      "placeId": "butterfly-house",
+      "placeName": "The Butterfly House at Navy Pier",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "butterfly-house",
+        "placeName": "The Butterfly House at Navy Pier",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "No confidently identified reusable photograph acquired in this bounded audit."
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
       "placeId": "flyover-chicago",
       "placeName": "Flyover Chicago",
       "status": "location-header-no-photo",
@@ -208,6 +228,58 @@
           "Openverse licensed-image search",
           "Targeted web search and primary attraction page"
         ]
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
+      "placeId": "bob-newhart-statue",
+      "placeName": "Bob Newhart Statue & Couch",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "bob-newhart-statue",
+        "placeName": "Bob Newhart Statue & Couch",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "Exact statue Flickr candidates checked: one unavailable and Todd Franklin image all rights reserved. Portraits of the actor are wrong subjects."
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
+      "placeId": "crack-the-whip",
+      "placeName": "Crack the Whip",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "crack-the-whip",
+        "placeName": "Crack the Whip",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "Exact Navy Pier photograph by Wally Gobetz uses CC BY-NC-ND 2.0; omitted. Other-city casts are not substituted."
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
+      "placeId": "riverwalk-gateway",
+      "placeName": "Riverwalk Gateway Murals",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "riverwalk-gateway",
+        "placeName": "Riverwalk Gateway Murals",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "No confidently identified reusable photograph acquired in this bounded audit."
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
+      "placeId": "fountain-figures",
+      "placeName": "Grant Park Fountain Figures",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "fountain-figures",
+        "placeName": "Grant Park Fountain Figures",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "No confidently identified reusable photograph acquired in this bounded audit."
       },
       "action": "retain-accurate-location-header"
     },
@@ -288,6 +360,19 @@
       "action": "retain-accurate-location-header"
     },
     {
+      "placeId": "burnham-centennial-prairie",
+      "placeName": "Burnham Centennial Prairie",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "burnham-centennial-prairie",
+        "placeName": "Burnham Centennial Prairie",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "No confidently identified reusable photograph acquired in this bounded audit."
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
       "placeId": "caracol",
       "placeName": "Caracol",
       "status": "location-header-no-photo",
@@ -318,6 +403,19 @@
           "Flickr original source pages"
         ],
         "reason": "A wide city aerial showed harbor too small to identify; newer licensed shots show abstract shore seating rather than marina. Construction photos are not a useful present-day view."
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
+      "placeId": "letter-to-bessie-coleman",
+      "placeName": "Letter to Bessie Coleman",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "letter-to-bessie-coleman",
+        "placeName": "Letter to Bessie Coleman",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "No confidently identified reusable photograph acquired in this bounded audit."
       },
       "action": "retain-accurate-location-header"
     },
@@ -354,6 +452,19 @@
           "Flickr original page checks where candidates existed"
         ],
         "rejected": "Flickr Mermaid 4781253540 is a person underwater, not the sculpture; Commons results were unrelated art or boats. CPD has a correct image but no reuse license found."
+      },
+      "action": "retain-accurate-location-header"
+    },
+    {
+      "placeId": "sankofa-for-the-earth",
+      "placeName": "Sankofa for the Earth",
+      "status": "location-header-no-photo",
+      "method": "Bounded Commons/Flickr and primary-source search; no confidently identified reusable image acquired.",
+      "reviewEvidence": {
+        "placeId": "sankofa-for-the-earth",
+        "placeName": "Sankofa for the Earth",
+        "status": "gap-no-verified-reusable-photo",
+        "reason": "No confidently identified reusable photograph acquired in this bounded audit."
       },
       "action": "retain-accurate-location-header"
     },

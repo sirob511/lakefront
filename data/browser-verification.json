@@ -9,9 +9,9 @@
     {
       "flow": "Attraction card image identity",
       "status": "pass",
-      "checkedPlaces": 169,
-      "verifiedPhotoCards": 144,
-      "locationHeaders": 25
+      "checkedPlaces": 185,
+      "verifiedPhotoCards": 151,
+      "locationHeaders": 34
     },
     {
       "viewport": "1440x1000",
@@ -19,7 +19,7 @@
       "checks": [
         "render",
         "no horizontal overflow",
-        "169 coordinate markers",
+        "185 coordinate markers",
         "lazy tiles",
         "search and empty state",
         "shareable place URL",
@@ -40,7 +40,7 @@
       "checks": [
         "render",
         "no horizontal overflow",
-        "169 coordinate markers",
+        "185 coordinate markers",
         "lazy tiles",
         "search and empty state",
         "shareable place URL",
@@ -61,7 +61,7 @@
       "checks": [
         "render",
         "no horizontal overflow",
-        "169 coordinate markers",
+        "185 coordinate markers",
         "lazy tiles",
         "search and empty state",
         "shareable place URL",
@@ -75,14 +75,6 @@
         "zoom controls",
         "art category filter"
       ]
-    },
-    {
-      "route": "/guide/",
-      "status": "pass"
-    },
-    {
-      "route": "/history/",
-      "status": "pass"
     },
     {
       "route": "/places/",

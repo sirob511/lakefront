@@ -13,7 +13,7 @@
 .section-dialog{overflow-y:auto;overscroll-behavior:contain}
 
 /* The map has a wider geographic canvas; imagery never substitutes for an unknown place. */
-.card-location{min-height:120px;padding:32px 26px 18px;display:flex;align-items:center;gap:16px;background:#e2e8d5;color:#54705b}.card-location>span{font:42px Georgia}.card-location p{font:20px var(--serif);margin:0}.card-location small{display:block;font:8px var(--sans);letter-spacing:1px;margin-top:10px}.card-photo{object-position:center}.map-tile{contain:paint}
+.card-location{min-height:120px;padding:32px 26px 18px;display:flex;align-items:center;gap:16px;background:#e2e8d5;color:#54705b}.card-location>span{font:42px Georgia}.card-location p{font:20px var(--serif);margin:0}.card-location small{display:block;font:8px var(--sans);letter-spacing:1px;margin-top:10px}.card-photo{object-position:center;object-fit:contain;background:#e8e9de}.map-tile{contain:paint}
 
 @media(min-width:701px){.map-marker.illustrated{gap:50px}.map-marker.illustrated .marker-label{position:relative}.map-marker.illustrated .marker-label:before{content:"";position:absolute;left:-42px;top:50%;width:34px;border-top:1px solid #7e8d7455}.map-marker.illustrated.align-left .marker-label:before{left:auto;right:-42px}}
 @media(min-width:701px){.map-marker.illustrated .marker-dot{width:22px;min-width:22px;height:22px;margin-left:5px;margin-right:5px;font-size:10px}}
@@ -108,3 +108,7 @@
 .map-attribution:hover{text-decoration:underline}
 @media(max-width:1200px){:root{--header-height:78px}.site-footer{padding:22px 24px}.map-attribution{left:20px}}
 @media(max-width:700px){:root{--header-height:70px}.site-footer{padding:21px 22px;display:block}.footer-signature .brand-word{font-size:25px}.footer-signature p{margin-top:5px}.footer-details{align-items:flex-start;gap:9px;margin-top:16px}.footer-details nav{font-size:9px;gap:21px}.site-credit{font-size:8px;max-width:100%}.site-credit>span{margin:0 3px}.map-attribution{left:12px;bottom:max(1px,env(safe-area-inset-bottom));font-size:6.5px}}
+/* The nearest dot wins when accessible touch targets overlap. */
+.map-marker.pointer-nearest{z-index:16}
+.map-marker.pointer-nearest .marker-dot{background:#b46f4e;transform:scale(1.18)}
+.map-marker.pointer-nearest .marker-label{visibility:visible;pointer-events:auto;background:#fffdf4}

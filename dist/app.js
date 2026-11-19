@@ -101,7 +101,25 @@ function holdCamera(){
  const y=Math.max(0,Math.min(config.height,(viewAnchor().y-atlas.getBoundingClientRect().top-shiftY)/scale));
  panX=shiftX-(viewAnchor().x-cameraX(y)*scale);
 }
-let drag=null,suppressClickUntil=0;
+let drag=null,suppressClickUntil=0,hoveredMarker=null;
+// Resolve overlapping touch targets by distance to the geographic dot, keeping
+// every pin at its source coordinate instead of letting DOM order choose a place.
+function nearestMarker(x,y,radius=22){
+ const top=atlas.getBoundingClientRect().top+shiftY;
+ let nearest=null,distance=radius*radius;
+ for(const marker of markers){
+  if(!matchesFilter(marker.p))continue;
+  const dx=x-(shiftX+mapX(marker.p.lon)*scale),dy=y-(top+mapY(marker.p.lat)*scale),d=dx*dx+dy*dy;
+  if(d<distance){nearest=marker;distance=d}
+ }
+ return nearest;
+}
+function highlightMarker(marker){
+ if(hoveredMarker===marker)return;
+ hoveredMarker?.el.classList.remove('pointer-nearest');
+ hoveredMarker=marker;hoveredMarker?.el.classList.add('pointer-nearest');
+}
+atlas.addEventListener('pointerleave',()=>highlightMarker(null));
 atlas.addEventListener('pointerdown',e=>{
  if(!e.isPrimary){finishDrag();return}
  if(e.button!==0||e.target.closest('a,button:not(.map-marker),input,summary'))return;
@@ -109,9 +127,14 @@ atlas.addEventListener('pointerdown',e=>{
  drag={id:e.pointerId,startX:e.clientX,startY:e.clientY,x:e.clientX,y:e.clientY,moved:false};
 });
 atlas.addEventListener('pointermove',e=>{
+ if(e.pointerType==='mouse'&&!drag){
+  const label=e.target.closest('.marker-label');
+  const dot=nearestMarker(e.clientX,e.clientY,10);
+  highlightMarker(dot||(label?markers.find(m=>m.el===label.closest('.map-marker')):nearestMarker(e.clientX,e.clientY)));
+ }
  if(!drag||e.pointerId!==drag.id)return;
  if(!drag.moved&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)<6)return;
- if(!drag.moved){drag.moved=true;releaseCameraFocus();atlas.setPointerCapture(e.pointerId);atlas.classList.add('dragging');$('#filters').hidden=true;$('#filter-toggle').setAttribute('aria-expanded','false')}
+ if(!drag.moved){drag.moved=true;highlightMarker(null);releaseCameraFocus();atlas.setPointerCapture(e.pointerId);atlas.classList.add('dragging');$('#filters').hidden=true;$('#filter-toggle').setAttribute('aria-expanded','false')}
  const dx=e.clientX-drag.x,dy=e.clientY-drag.y,wanted=clampX(shiftX+dx);
  drag.x=e.clientX;drag.y=e.clientY;
  scrollTo({top:scrollY-dy,behavior:'instant'});
@@ -125,7 +148,18 @@ function finishDrag(e){
  drag=null;atlas.classList.remove('dragging');
 }
 addEventListener('pointerup',finishDrag);addEventListener('pointercancel',finishDrag);addEventListener('blur',()=>finishDrag());
-atlas.addEventListener('click',e=>{if(performance.now()<suppressClickUntil){e.preventDefault();e.stopImmediatePropagation()}},true);
+atlas.addEventListener('click',e=>{
+ if(performance.now()<suppressClickUntil){e.preventDefault();e.stopImmediatePropagation();return}
+ if(!e.detail||e.target.closest('a,button:not(.map-marker),input,summary'))return;
+ // A revealed label can cross another pin. The visible dot still takes priority;
+ // the rest of the label continues to open the place named on that label.
+ const marker=nearestMarker(e.clientX,e.clientY,e.target.closest('.marker-label')?10:22);
+ if(marker){
+  e.preventDefault();e.stopImmediatePropagation();
+  $('#filters').hidden=true;$('#filter-toggle').setAttribute('aria-expanded','false');
+  openCard(marker.p.id,{trigger:marker.el});
+ }
+},true);
 atlas.addEventListener('dragstart',e=>e.preventDefault());
 // Two-dimensional loading: keep both distant rows and offscreen city/lake columns idle.
 const tileObserver=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){loadTile(e.target);tileObserver.unobserve(e.target)}},{rootMargin:'450px 250px'});
@@ -139,11 +173,11 @@ $$('.map-tile').forEach(el=>tileObserver.observe(el));
 
 function toast(message){$('#toast').textContent=message;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),3200)}
 async function share(id){const url=new URL(location.origin+'/');if(id)url.searchParams.set('place',id);else url.searchParams.set('at',currentLat.toFixed(4));try{await navigator.clipboard.writeText(url.href);toast('Link copied. Share a little lakefront.')}catch{if(navigator.share){try{await navigator.share({title:'Lakefront Trail · Chicago',url:url.href})}catch{}}else{prompt('Copy this lakefront link:',url.href)}}}
-function openCard(id,{travel=false,historyUpdate=true}={}){
- const p=byId.get(id);if(!p)return;selected=id;lastTrigger=document.activeElement;
+function openCard(id,{travel=false,historyUpdate=true,trigger=null}={}){
+ const p=byId.get(id);if(!p)return;selected=id;lastTrigger=trigger||document.activeElement;
  $$('.map-marker').forEach(el=>el.classList.toggle('selected',el.dataset.place===id));
  const photo=p.photo;const image=photo?`<img class="card-photo${photo.fit==='contain'?' photo-fit-contain':''}" src="${escape(photo.src)}" alt="${escape(photo.alt)}" width="${photo.width||960}" height="${photo.height||640}" decoding="async">`:`<div class="card-location"><span aria-hidden="true">${symbols[p.category]}</span><p>${escape(p.regionName)}<small>${p.lat.toFixed(4)}° N · ${Math.abs(p.lon).toFixed(4)}° W</small></p></div>`;
- $('#card-content').innerHTML=`${image}${photo?.caption?`<p class="card-photo-caption">${escape(photo.caption)}</p>`:''}<div class="card-content"><p class="eyebrow">${symbols[p.category]} ${escape((p.subtype||p.category).toUpperCase())} <span>·</span> ${escape(p.access.toUpperCase())}</p><h2 id="card-title">${escape(p.name)}</h2><p class="card-description">${escape(p.description)}</p><p class="card-fact">${escape(p.fact)}</p><div class="card-practical"><strong>A little before-you-go.</strong><br>${escape(p.practical)}</div><p class="card-location-source"><a href="${escape(p.coordinateUrl||p.officialUrl)}" target="_blank" rel="noopener">View mapped location ↗</a></p><div class="card-actions"><a href="${p.story?`/places/${p.id}/`:`/places/#${p.id}`}">Discover this place <span aria-hidden="true">↗</span></a><button id="share-place">Share ↗</button></div>${photo?`<p class="photo-credit">Photo: ${escape(photo.author)} · <a href="${escape(photo.licenseUrl)}" target="_blank" rel="noopener">${escape(photo.license)}</a> · <a href="${escape(photo.sourceUrl)}" target="_blank" rel="noopener">Source</a></p>`:'<p class="photo-credit">Visitor information from the linked official source.</p>'}</div>`;
+ $('#card-content').innerHTML=`${image}${photo?.caption?`<p class="card-photo-caption">${escape(photo.caption)}</p>`:''}<div class="card-content"><p class="eyebrow">${symbols[p.category]} ${escape((p.subtype||p.category).toUpperCase())} <span>·</span> ${escape(p.access.toUpperCase())}</p><h2 id="card-title">${escape(p.name)}</h2><p class="card-description">${escape(p.description)}</p><p class="card-fact">${escape(p.fact)}</p><div class="card-practical"><strong>A little before-you-go.</strong><br>${escape(p.practical)}</div><p class="card-location-source"><a href="${escape(p.coordinateMapUrl||p.coordinateUrl||p.officialUrl)}" target="_blank" rel="noopener">View mapped location ↗</a></p><div class="card-actions"><a href="${p.story?`/places/${p.id}/`:`/places/#${p.id}`}">Discover this place <span aria-hidden="true">↗</span></a><button id="share-place">Share ↗</button></div>${photo?`<p class="photo-credit">Photo: ${escape(photo.author)} · <a href="${escape(photo.licenseUrl)}" target="_blank" rel="noopener">${escape(photo.license)}</a> · <a href="${escape(photo.sourceUrl)}" target="_blank" rel="noopener">Source</a></p>`:'<p class="photo-credit">Visitor information from the linked official source.</p>'}</div>`;
  $('#share-place').onclick=()=>share(id);if(!$('#place-card').open)$('#place-card').show();$('#card-content').scrollTop=0;$('#place-card .close-button').focus({preventScroll:true});
  const marker=markers.find(m=>m.p.id===id).el.getBoundingClientRect(),card=$('#place-card').getBoundingClientRect();
  const obscured=marker.right>card.left&&marker.left<card.right&&marker.bottom>card.top&&marker.top<card.bottom;

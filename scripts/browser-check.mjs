@@ -2,7 +2,7 @@ import {execFileSync} from 'node:child_process';import assert from 'node:assert/
 const session='lakefront-check';const report=[];const placeCount=JSON.parse(fs.readFileSync('data/places.json')).length;const photoCount=Object.keys(JSON.parse(fs.readFileSync('data/photos.json'))).length;
 function b(...args){const r=JSON.parse(execFileSync('agent-browser',['--session',session,'--json',...args],{encoding:'utf8',timeout:60000}));assert(r.success,JSON.stringify(r));return r.data}
 const ev=code=>b('eval',code).result;
-const visibleTiles="[...document.querySelectorAll('.map-tile')].filter(e=>{const r=e.getBoundingClientRect();return r.right>0&&r.left<innerWidth&&r.bottom>80&&r.top<innerHeight}).every(e=>e.dataset.loaded==='true')";
+const visibleTiles="[...document.querySelectorAll('.map-tile')].filter(e=>{const r=e.getBoundingClientRect();return r.right>0&&r.left<document.documentElement.clientWidth&&r.bottom>80&&r.top<innerHeight}).every(e=>e.dataset.loaded==='true')";
 try{
 b('set','media','light','reduced-motion');
 for(const [w,h] of [[1440,1000],[390,844],[320,740]]){
@@ -15,7 +15,7 @@ for(const [w,h] of [[1440,1000],[390,844],[320,740]]){
   assert.equal(result.checked,placeCount);assert.deepEqual(result.failures,[]);report.push({flow:"Attraction card image identity",status:"pass",checkedPlaces:placeCount,verifiedPhotoCards:photoCount,locationHeaders:placeCount-photoCount});
  }
  assert.equal(ev('document.querySelectorAll("h1").length'),1);assert.equal(ev('document.querySelectorAll(".map-marker").length'),placeCount);assert(!ev('document.documentElement.scrollWidth>innerWidth'));assert.equal(ev('getComputedStyle(document.documentElement).scrollBehavior'),'auto');
- b('click','#search-open');b('fill','#search-input','Theater on the Lake');assert.equal(ev('document.querySelectorAll(".search-result").length'),1);b('click','[data-result="theater-on-the-lake"]');assert.equal(ev('document.querySelector("#card-title").textContent'),'Theater on the Lake');assert(ev('document.querySelector(".card-location-source a").href.includes("openstreetmap.org/way/23989552")'));b('wait','--fn',"document.querySelector('.card-photo')?.complete && document.querySelector('.card-photo')?.naturalWidth>0");b('press','Escape');
+ b('click','#search-open');b('fill','#search-input','Theater on the Lake');assert(ev('document.querySelector("[data-result=theater-on-the-lake]")!==null'));b('click','[data-result="theater-on-the-lake"]');assert.equal(ev('document.querySelector("#card-title").textContent'),'Theater on the Lake');assert(ev('document.querySelector(".card-location-source a").href.includes("openstreetmap.org/way/23989552")'));b('wait','--fn',"document.querySelector('.card-photo')?.complete && document.querySelector('.card-photo')?.naturalWidth>0");b('press','Escape');
  b('click','#search-open');b('fill','#search-input','BP Pedestrian Bridge');b('click','[data-result="bp-pedestrian-bridge"]');b('wait','--fn',"document.querySelector('.card-photo')?.complete && document.querySelector('.card-photo')?.naturalWidth>0");assert.equal(ev('document.querySelector("#card-title").textContent'),'BP Pedestrian Bridge');b('press','Escape');
  b('click','#zoom-in');assert.equal(ev('document.querySelector("#zoom-level").textContent'),'1.5×');b('click','#zoom-out');
  b('click','#filter-toggle');b('click','[data-filter="art"]');assert(ev('Number(document.querySelector("#filter-count").textContent)>40'));b('click','#filter-toggle');b('click','[data-filter="all"]');

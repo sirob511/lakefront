@@ -1,0 +1,21 @@
+{
+  "reviewedAt": "2026-11-18",
+  "method": "Search each discovery, verify its dot is visible outside its card, close the card, then dispatch a coordinate-based hover and pointer click through the actual element under the dot. Includes overlapping hit targets at all three viewport sizes.",
+  "reports": [
+    {
+      "viewport": "1440x1000",
+      "checked": 185,
+      "failures": []
+    },
+    {
+      "viewport": "390x844",
+      "checked": 185,
+      "failures": []
+    },
+    {
+      "viewport": "320x740",
+      "checked": 185,
+      "failures": []
+    }
+  ]
+}
