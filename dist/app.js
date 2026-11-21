@@ -172,7 +172,7 @@ async function loadTile(el){
 $$('.map-tile').forEach(el=>tileObserver.observe(el));
 
 function toast(message){$('#toast').textContent=message;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),3200)}
-async function share(id){const url=new URL(location.origin+'/');if(id)url.searchParams.set('place',id);else url.searchParams.set('at',currentLat.toFixed(4));try{await navigator.clipboard.writeText(url.href);toast('Link copied. Share a little lakefront.')}catch{if(navigator.share){try{await navigator.share({title:'Lakefront Trail · Chicago',url:url.href})}catch{}}else{prompt('Copy this lakefront link:',url.href)}}}
+async function share(id){const url=new URL(document.querySelector('link[rel="canonical"]').href);if(id)url.searchParams.set('place',id);else url.searchParams.set('at',currentLat.toFixed(4));try{await navigator.clipboard.writeText(url.href);toast('Link copied. Share a little lakefront.')}catch{if(navigator.share){try{await navigator.share({title:'Lakefront Trail · Chicago',url:url.href})}catch{}}else{prompt('Copy this lakefront link:',url.href)}}}
 function openCard(id,{travel=false,historyUpdate=true,trigger=null}={}){
  const p=byId.get(id);if(!p)return;selected=id;lastTrigger=trigger||document.activeElement;
  $$('.map-marker').forEach(el=>el.classList.toggle('selected',el.dataset.place===id));

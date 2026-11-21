@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node scripts/build-map.mjs && node scripts/render-map.mjs && node scripts/build-home.mjs && node scripts/build-pages.mjs",
     "dev": "python3 -m http.server 4179 --directory dist --bind 127.0.0.1",
-    "check": "node scripts/check-site.mjs && node scripts/check-geography.mjs && node scripts/check-trail-geometry.mjs"
+    "check": "node scripts/check-site.mjs && node scripts/check-seo.mjs && node scripts/check-geography.mjs && node scripts/check-trail-geometry.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -12,7 +12,7 @@ npm run check
 npm run dev
 ```
 
-Preview: http://127.0.0.1:4179. Static deploy output: `dist/`. `vercel.json` supports a Vercel static deployment. The Sites deployment identity is in `.openai/hosting.json`.
+Preview: http://127.0.0.1:4179. Static deploy output: `dist/`. Production: https://chicagolakefronttrail.com. `vercel.json` configures the Vercel deployment. `.openai/hosting.json` retains the earlier Sites project identity.
 
 ## Structure
 
@@ -25,6 +25,7 @@ Preview: http://127.0.0.1:4179. Static deploy output: `dist/`. `vercel.json` sup
 - `scripts/build-home.mjs`: lightweight geographic placeholders, accessible coordinate anchors and versioned client assets. Two-dimensional lazy loading fetches only tiles near the viewport.
 - `data/location-audit.json`: source feature IDs, point meanings, verified coordinates and per-attraction evidence. North/south and original audits retain detailed methods.
 - `scripts/build-pages.mjs`: destination pages, collection, credits, sitemap and robots.
+- `scripts/site-seo.mjs`: canonical production origin, page metadata, social cards, linked structured data and Vercel Web Analytics on every page.
 - `scripts/site-chrome.mjs`: shared header, compact footer and search-dialog markup for every page.
 - `dist/site.js`: shared discovery search, keyboard shortcuts and mobile navigation.
 - `dist/app.js`: native-scroll camera, lazy map loading, filters, section jumps, shareable positions and accessible dialogs.
@@ -53,7 +54,17 @@ New art should use a high aerial viewpoint, fine ink, muted watercolor, sage/oli
 
 `npm run check` verifies local links, metadata, coordinate ranges, image credits, section continuity, actual river/harbor water probes, missing-beach regressions, offshore lake labels and shared marker projection. Browser checks cover desktop/mobile rendering, search-to-card flows, close-and-return behavior, category filtering, section jumps, shareable URLs, reduced motion, keyboard access, and the southern endpoint. Browser checks require the installed `agent-browser` CLI and a local preview server; `scripts/browser-check.mjs` records results. `scripts/check-site-chrome.mjs` verifies the shared header, footer and search across map, list, attraction and credits pages at four viewport sizes.
 
-The site has no analytics, accounts, user database, or live conditions service. New Sites are private by default. Canonical URLs use the requested future domain `lakefronttrail.org`; custom-domain connection is separate from this implementation.
+The canonical origin is `https://chicagolakefronttrail.com`, without `www`. Vercel Web Analytics is enabled in the project, and every generated page includes its first-party tracking script. The site has no accounts, user database, or live conditions service.
+
+## Search and AI discovery
+
+`scripts/site-seo.mjs` supplies each page’s canonical URL, Open Graph and Twitter metadata, WebSite/WebPage entities and breadcrumbs. Destination pages include TouristAttraction data; the collection has an ItemList for all discoveries. The collection’s descriptions and source links are rendered in HTML and remain readable without JavaScript. Only the homepage, collection, credits and existing destination stories appear in `sitemap.xml`; map-selection and tracking parameters are omitted from canonicals. Shared links retain their selected place or latitude on the production origin.
+
+`robots.txt` allows search and AI crawlers and advertises the canonical sitemap. `llms.txt` is a generated, source-linked text index for tools that use it, not a requirement for search or AI inclusion. Both regenerate with the pages. There are no fabricated freshness dates or unpublished destination URLs in the sitemap. `npm run check` verifies metadata, structured URLs, sitemap coverage, crawler access, analytics inclusion and legacy-host regressions.
+
+Vercel already redirects `www.chicagolakefronttrail.com` to the apex domain and upgrades HTTP to HTTPS. Redirect settings are managed separately and are unchanged by this migration. Extension and trailing-slash normalization use the existing `cleanUrls`/`trailingSlash` settings.
+
+After deploying, submit `https://chicagolakefronttrail.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools. A Search Console Domain property covers protocols and subdomains. These account-level steps are separate from the build; do not claim submission or indexing without verification.
 
 The revised photo-based South Shore and 63rd Street illustrations are saved in `data/artwork/*-v2.png`, with optimized copies in `dist/assets/*-v2.webp`. `data/artwork/revision-prompts.json` retains the exact built-in image-generation prompts, reference photographs, creator credits and derivative licenses.
 

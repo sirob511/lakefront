@@ -1,15 +1,35 @@
 import {siteHeader,siteFooter,siteSearch,siteScriptUrl} from './site-chrome.mjs';
 import fs from 'node:fs';
+import {SITE_URL, SITE_NAME, siteUrl, seoHead} from './site-seo.mjs';
 // Remove retired pages from existing build output as well as fresh builds.
 for(const route of ['guide','history'])fs.rmSync(`dist/${route}`,{recursive:true,force:true});
 import {createHash} from 'node:crypto';
 const styleRevision=createHash('sha256').update(fs.readFileSync('dist/styles.css')).digest('hex').slice(0,12);const editorialRevision=createHash('sha256').update(fs.readFileSync('dist/editorial.css')).digest('hex').slice(0,12);
-const places=JSON.parse(fs.readFileSync('data/places.json'));const photos=JSON.parse(fs.readFileSync('data/photos.json'));const base='https://lakefronttrail.org';const cp='https://www.chicagoparkdistrict.com/';
+const places=JSON.parse(fs.readFileSync('data/places.json'));const photos=JSON.parse(fs.readFileSync('data/photos.json'));const base=SITE_URL;const cp='https://www.chicagoparkdistrict.com/';
 const esc=s=>String(s??'').trim().replace(/\s+/g,' ').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link=(url,label)=>`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
 const href=p=>p.story?`/places/${p.id}/`:`/places/#${p.id}`;
 const image=p=>{const ph=photos[p.id];return ph?`<figure class="editorial-photo"><img class="${ph.fit==='contain'?'photo-fit-contain':''}" src="${ph.src}" alt="${esc(ph.alt)}" width="${ph.width||960}" height="${ph.height||640}" decoding="async"><figcaption>${ph.caption?esc(ph.caption)+' · ':''}${esc(ph.author)} · ${link(ph.licenseUrl,ph.license)} · ${link(ph.sourceUrl,'Photo source')}. Resized for display.</figcaption></figure>`:''};
-function shell(title,desc,route,content,extra=[]){return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} | Lakefront Trail Chicago</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${base}${route}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:image" content="${base}/assets/og-map.jpg"><meta property="og:url" content="${base}${route}"><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/styles.css?v=${styleRevision}"><link rel="stylesheet" href="/editorial.css?v=${editorialRevision}"><script type="module" src="${siteScriptUrl()}"></script><script type="application/ld+json">${JSON.stringify([{'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Illustrated map',item:base+'/'},{'@type':'ListItem',position:2,name:title,item:base+route}]},...extra]).replace(/</g,'\\u003c')}</script></head><body class="editorial-page"><a class="skip-link" href="#article">Skip to content</a>${siteHeader(route)}<main class="editorial-main" id="article">${content}</main>${siteFooter()}${siteSearch(places.length)}</body></html>`}
+function shell(title,desc,route,content,extra=[]){
+ const place=places.find(p=>route===`/places/${p.id}/`);
+ const photo=place&&photos[place.id];
+ const breadcrumbs=[{name:'Illustrated map',route:'/'}];
+ if(place)breadcrumbs.push({name:'Beaches & attractions',route:'/places/'});
+ breadcrumbs.push({name:title,route});
+ const entities=extra.map(entity=>({...entity,'@id':base+route+'#attraction'}));
+ if(route==='/places/')entities.push({
+  '@type':'ItemList','@id':siteUrl('/places/#discoveries'),name:'Chicago lakefront beaches, parks and attractions',
+  numberOfItems:places.length,itemListElement:places.map((p,index)=>({
+   '@type':'ListItem',position:index+1,name:p.name,url:siteUrl(href(p))
+  }))
+ });
+ const metadata=seoHead({title:`${title} | ${SITE_NAME}`,description:desc,route,
+  type:route==='/places/'?'CollectionPage':route==='/credits/'?'AboutPage':'WebPage',
+  ...(photo?{image:photo.src,imageAlt:photo.alt}:{}),breadcrumbs,entities,
+  mainEntity:entities[0]?.['@id']
+ });
+ return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${metadata}<link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/styles.css?v=${styleRevision}"><link rel="stylesheet" href="/editorial.css?v=${editorialRevision}"><script type="module" src="${siteScriptUrl()}"></script></head><body class="editorial-page"><a class="skip-link" href="#article">Skip to content</a>${siteHeader(route)}<main class="editorial-main" id="article">${content}</main>${siteFooter()}${siteSearch(places.length)}</body></html>`;
+}
 function emit(route,html){fs.mkdirSync('dist'+route,{recursive:true});fs.writeFileSync('dist'+route+'index.html',html)}
 const smallcard=p=>`<a class="related-place" href="${href(p)}"><span>${esc(p.category)} · ${esc(p.regionName)}</span><h3>${esc(p.name)}</h3><p>${esc(p.description)}</p><b>Keep exploring ↗</b></a>`;
 for(const p of places.filter(p=>p.story)){
@@ -18,6 +38,32 @@ emit(`/places/${p.id}/`,shell(p.name,p.description,`/places/${p.id}/`,`<a class=
 const cats={beach:'Sand, sky & a place to pause.',nature:'A quieter kind of Chicago.',harbor:'Follow the masts.',landmark:'Stories written in the skyline.'};
 emit('/places/',shell('Beaches & places along Chicago’s Lakefront Trail',`Find ${places.length} beaches, gardens, statues, theaters, harbors, and landmarks on Chicago’s illustrated lakefront atlas.`,'/places/',`<p class="eyebrow">${places.length} DISCOVERIES · ONE LAKEFRONT</p><h1>Follow your curiosity.</h1><p class="editorial-lede">A hidden pocket of birdsong. A grand old beach house. A skyline you’ve never seen quite this way. There’s a place for every kind of wander.</p><a class="solid-button" href="/">Find your place on the map ↗</a><nav class="category-links" aria-label="Place categories">${Object.keys(cats).map(c=>`<a href="#${c}">${c==='nature'?'Nature':c[0].toUpperCase()+c.slice(1)+'s'}</a>`).join('')}</nav>${Object.entries(cats).map(([cat,title])=>`<section class="place-group" id="${cat}"><p class="eyebrow">${cat.toUpperCase()}</p><h2>${title}</h2><div class="place-directory">${places.filter(p=>p.category===cat).map(p=>`<article class="directory-place" id="${p.id}">${photos[p.id]?`<a href="${href(p)}"><img class="${photos[p.id].fit==='contain'?'photo-fit-contain':''}" src="${photos[p.id].src}" alt="${esc(photos[p.id].alt)}" loading="lazy" decoding="async" width="${photos[p.id].width||960}" height="${photos[p.id].height||640}"></a>`:''}<div><p class="eyebrow">${esc(p.access)}</p><h3>${esc(p.name)}</h3><p>${esc(p.description)}</p><p class="directory-fact">${esc(p.fact)}</p><p class="directory-practical">${esc(p.practical)}</p><div class="directory-actions"><a href="/?place=${p.id}">On the map ↗</a>${p.story?`<a href="/places/${p.id}/">The story ↗</a>`:link(p.officialUrl,'Visitor information')}</div>${photos[p.id]?`${photos[p.id].caption?`<p class="directory-photo-caption">${esc(photos[p.id].caption)}</p>`:''}<p class="directory-credit">Photo: ${esc(photos[p.id].author)} · ${link(photos[p.id].sourceUrl,photos[p.id].license)}</p>`:''}</div></article>`).join('')}</div></section>`).join('')}`));
 const credits=`<p class="eyebrow">ABOUT THIS ATLAS</p><h1>A love letter<br><em>to the lake.</em></h1><p class="editorial-lede">An independent illustrated guide to the places that make Chicago’s shoreline extraordinary.</p><div class="reading-column"><h2>Geography, with room for wonder.</h2><p>The shoreline, mapped walking and bicycle paths, park shapes, roads, beaches, and building footprints use OpenStreetMap data retrieved November 18, 2026. The Park District’s eleven trail-section maps informed the route’s context. Landmarks are placed in a shared latitude-and-longitude coordinate system.</p><p>The atlas uses an expanded east–west scale so city blocks, park grounds and shoreline features have room to read. Small illustrated landmarks are anchored to their mapped locations. It simplifies geometry and omits some features. Artwork is a visual interpretation, not a survey, a record of current conditions, or turn-by-turn navigation. Use ${link(cp+'lakefront-trail','official trail maps and updates')} for travel planning.</p><p>${link('https://www.openstreetmap.org/copyright','© OpenStreetMap contributors · Open Database License')}.</p><h2>Aerial reference.</h2><p>Illustrated geography was reviewed against <a href="https://img.cookcountyil.gov/arcgis/rest/services/CookOrtho2025/ImageServer">Cook County GIS aerial imagery</a> and <a href="https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer">USGS/USDA NAIP imagery</a>, accessed November 18, 2026. These references distinguish built city blocks, lawns, sports grounds, beaches and woodland. The Cook service has inconsistent acquisition-year metadata; the older NAIP survey is from 2019. Neither is presented as live imagery. No aerial basemap is reproduced here.</p><p>Tree symbols follow mapped tree locations, and dense canopy is limited to mapped woodland and scrub. A park boundary does not imply forest.</p><h2>Attraction locations.</h2><p>All ${places.length} attraction pins were reviewed against named map features and official venue, park or institution sources. Statue pins use the mapped statue point; buildings use a point inside the footprint. Beach, harbor and park pins identify an area and do not imply an entrance. Each map card links to its coordinate source. Nearby inland stops require a detour using designated crossings.</p><h2>Original artwork.</h2><p>Architectural vignettes were generated specifically for this project with OpenAI’s image-generation tool. They sit over geographically sourced map layers; the image model did not generate the route. Illustrations may simplify architectural detail. Source prompts, original images, geographic data, and build scripts are retained with the project.</p><p>The revised South Shore Cultural Center vignette is adapted from Zol87’s photograph under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; the revised 63rd Street Beach House vignette is adapted from TonyTheTiger’s photograph under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Their reference photographs and original source links appear below. The adaptations preserve those respective licenses.</p><h2>Photography credits.</h2><p>Photographs are hosted locally, resized for the site, and credited below and at the point of use. The applicable licenses remain with each photograph. Original files and additional licensing details are available through the source links.</p><ul class="photo-sources">${Object.entries(photos).map(([id,p])=>`<li><strong>${esc(places.find(x=>x.id===id)?.name||id)}</strong><br>${esc(p.author)} · ${link(p.licenseUrl,p.license)}<br>${link(p.sourceUrl,p.title.replace('File:',''))}</li>`).join('')}</ul><h2>Type & information.</h2><p>Italiana and DM Sans are used under the SIL Open Font License; license texts are included with the font files. Attraction information draws on the Park District, Chicago Harbors, museum and venue websites, and the Cultural Landscape Foundation. Sources are linked on the destination pages and map cards.</p><p>Reviewed November 18, 2026. This site is not operated by, endorsed by, or affiliated with the Chicago Park District. Hours, tickets, events, access, and conditions should be checked with the relevant operator.</p></div>`;
-emit('/credits/',shell('About the illustrated atlas & image credits','Geographic sources, original artwork, photography licenses, and acknowledgments for LakefrontTrail.org.','/credits/',credits));
+emit('/credits/',shell('About the illustrated atlas & image credits','Geographic sources, original artwork, photography licenses, and acknowledgments for Chicago Lakefront Trail.','/credits/',credits));
 const paths=['/','/places/','/credits/',...places.filter(p=>p.story).map(p=>`/places/${p.id}/`)];fs.writeFileSync('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+paths.map(p=>`<url><loc>${base}${p}</loc></url>`).join('')+'</urlset>');fs.writeFileSync('dist/robots.txt',`User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml\n`);
 console.log(`Built ${paths.length-1} supporting pages, structured data, sitemap and robots.`);
+
+// A concise, source-linked reading index for tools that request plain text.
+fs.writeFileSync('dist/llms.txt',[
+ '# Chicago Lakefront Trail',
+ '',
+ '> An independent illustrated map and guide to Chicago’s Lakefront Trail, beaches, parks, harbors and landmarks.',
+ '',
+ `Canonical website: ${siteUrl('/')}`,
+ `The atlas covers ${places.length} discoveries, with ${places.filter(p=>p.story).length} extended destination stories. The official bicycle trail is 18 miles; the pedestrian trail is 18.5 miles.`,
+ 'The illustrated map is not turn-by-turn navigation or a live conditions service. Some attractions are inland and require a detour. The site is not affiliated with the Chicago Park District.',
+ '',
+ '## Explore',
+ `- [Interactive trail map](${siteUrl('/')}): Share a selected place using /?place=PLACE_ID or a map latitude using /?at=LATITUDE.`,
+ `- [All beaches and attractions](${siteUrl('/places/')}): Descriptions, practical information, sources and photo credits for every discovery, available as ordinary HTML.`,
+ `- [About and sources](${siteUrl('/credits/')}): Geography, methods, image licenses and attribution.`,
+ '',
+ '## Destination guides',
+ ...places.filter(p=>p.story).map(p=>`- [${p.name}](${siteUrl(`/places/${p.id}/`)}): ${p.description}`),
+ '',
+ '## Official information',
+ '- [Chicago Park District trail information](https://www.chicagoparkdistrict.com/lakefront-trail): Official maps and trail updates. Check venue sources for current hours, tickets and access.',
+ '',
+ '## Site index',
+ `- [Sitemap](${siteUrl('/sitemap.xml')}): Canonical, indexable pages.`,
+ ''
+].join('\n'));
